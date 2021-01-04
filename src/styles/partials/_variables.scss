@@ -1,0 +1,51 @@
+// ---Color Schemes---
+// Winter Slate
+$slate-primary-color:#262626;
+$slate-secondary-color:#3f3f3f;
+$slate-primary-offset-color:#f5f5f5;
+$slate-secondary-offset-color:#dcdcdc;
+// Twilight Desert
+$desert-primary-color:#e1b382;
+$desert-secondary-color:#c89666;
+$desert-primary-offset-color:#2d545e;
+$desert-secondary-offset-color:#12343b;
+// Oceanside
+$oceanside-primary-color:#7a9d96;
+$oceanside-secondary-color:#00303f;
+$oceanside-primary-offset-color:#dcae1d;
+$oceanside-secondary-offset-color:#cae4db;
+// Midnight Orange
+$midnight-primary-color:#ff5a09;
+$midnight-secondary-color:#ec7f37;
+$midnight-primary-offset-color:#393939;
+$midnight-secondary-offset-color:#be4f0c;
+// Crisp Mountains
+$mountains-primary-color:#3d7c47;
+$mountains-secondary-color:#09868b;
+$mountains-primary-offset-color:#76c1d4;
+$mountains-secondary-offset-color:#f7f7f7;
+// Fire & Ice
+$fire-primary-color:#b11a21;
+$fire-secondary-color:#e0474c;
+$fire-primary-offset-color:#7acfd6;
+$fire-secondary-offset-color:#f1f0ee;
+// Unknown Dream
+$dream-primary-color:#7c677f;
+$dream-secondary-color:#8076a3;
+$dream-primary-offset-color:#f9c5bd;
+$dream-secondary-offset-color:#9bc400;
+
+// ---Default Font Colors---
+$text-paragraph-color: $slate-secondary-color; //Used as default font color
+$text-offset-color: $slate-primary-offset-color; //Used as font color for hero header
+$text-label-color: $slate-secondary-offset-color; //Used as font color for field entry labels
+
+// ---Default Layout Colors---
+$layout-overlay-color: $slate-primary-color; // Used for the Hero Image Overlay Color
+$layout-bg-color: $slate-primary-offset-color; //Used as the primary backgound color for body
+
+// ---Breakpoints---
+$large-mobile-breakpoint: 425px; /*Used to provide a breakpoint value for larble mobile or small 
+tablet screens. Mostly for responsive design between breakpoints to ensure visual effectiveness */
+$tablet-breakpoint: 768px; //Used to provide a breakpoint value for tablet screens (height: 1024px)
+$desktop-breakpoint: 1200px; //Used to provide a breakpoint value for desktop screens (height: 800px)

@@ -1,0 +1,193 @@
+// ---Adaptive Design Controls---
+
+@mixin large-mobile-adapt {
+    @media screen and (min-width: $large-mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+@mixin tablet-adapt {
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin desktop-adapt {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+/* The below mixins implement flex row with center. While row is the default, it is declared to force swap
+between breakpoints (order: horizontal center, vertical center, full center) */
+
+@mixin flex-r-hcenter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@mixin flex-r-vcenter {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+@mixin flex-r-fcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// The below mixins implement flex column with center. (order: horizontal center, vertical center, full center)
+
+@mixin flex-c-hcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-c-vcenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flex-c-fcenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// The below mixins implement flex row with evenly, around and between. (order: evenly, around, between)
+
+@mixin flex-r-hevenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin flex-r-haround {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin flex-r-hbetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+// ---Component Styling---
+
+@mixin modal-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: $layout-overlay-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+@mixin modal-container {
+    width: 40vw;
+    height: 15vw;
+    background-color: $layout-bg-color;
+    position: fixed;
+    margin-left: -20vw;
+    margin-top: -7.5vw;
+    top: 50%;
+    left: 50%;
+    padding: 16px 24px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 8px 8px 6px;
+}
+
+@mixin modal-button {
+    height: 40px;
+    margin: 8px 0;
+    background-color: $slate-secondary-color;
+    border-radius: 8px;
+    color: $slate-primary-offset-color;
+    cursor: pointer;
+}
+
+// ---Font Scale Sizing---
+
+@mixin top-level-header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+
+    @include tablet-adapt {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+    }
+
+    @include desktop-adapt {
+        font-size: 2.5rem;
+        line-height: 2.625rem;
+        letter-spacing: .4rem;
+    }
+}
+
+@mixin side-primary-header {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+
+    @include desktop-adapt {
+        font-size: .875rem;
+        line-height: 1.375rem;
+    }
+}
+
+@mixin page-primary-header {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+
+    @include desktop-adapt {
+        font-size: .875rem;
+        line-height: 1.375rem;
+    }
+}
+
+@mixin page-secondary-header {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+
+    @include desktop-adapt {
+        font-size: .875rem;
+        line-height: 1.375rem;
+    }
+}
+
+@mixin primary-para-text {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+
+    @include desktop-adapt {
+        font-size: .875rem;
+        line-height: 1.375rem;
+    }
+}
+
+@mixin secondary-para-text {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+
+    @include desktop-adapt {
+        font-size: .875rem;
+        line-height: 1.375rem;
+    }
+}
