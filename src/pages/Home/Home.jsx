@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import WelcomeModal from '../../components/WelcomeModal/WelcomeModal';
 import TopLevelNav from '../../components/TopLevelNav/TopLevelNav';
 import './Home.scss';
-import profileImage from '../../assets/images/profile.png';
-import processImage from '../../assets/images/fire-and-ice.png';
+import profileImage from '../../assets/images/profile.jfif';
+import processImage from '../../assets/images/fire-and-ice.jfif';
 import projectsImage from '../../assets/images/oceanside.jfif';
 import testimonialsImage from '../../assets/images/midnight-orange3.jfif';
-import blogImage from '../../assets/images/crisp-mountains.png';
+import blogImage from '../../assets/images/crisp-mountains.jfif';
 import contactImage from '../../assets/images/unknown-dream3.jfif';
 
 export class Home extends Component {
