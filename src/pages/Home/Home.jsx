@@ -18,6 +18,10 @@ export class Home extends Component {
         this.setState({
             welcomeModalVisible: true,
         })
+        const imagePreLoadList = [profileImage, processImage, projectsImage, testimonialsImage, blogImage, contactImage]
+        imagePreLoadList.forEach((image) => {
+            new Image().src = image
+        });
     }
 
     componentDidUpdate(prevProps) {
