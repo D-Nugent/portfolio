@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
+import {Link, useLocation} from 'react-router-dom';
+import {TransitionGroup, CSSTransition} from 'react-transition-group';
 import WelcomeModal from '../../components/WelcomeModal/WelcomeModal';
 import TopLevelNav from '../../components/TopLevelNav/TopLevelNav';
 import './Home.scss';
@@ -9,53 +11,45 @@ import testimonialsImage from '../../assets/images/midnight-orange3.jfif';
 import blogImage from '../../assets/images/crisp-mountains.jfif';
 import contactImage from '../../assets/images/unknown-dream3.jfif';
 
-export class Home extends Component {
-    state = {
-        welcomeModalVisible: false,
-    }
+function Home () {
+    const [welcomeModalVisible, setWelcomeModalVisible] = useState(false)
+    let location = useLocation()
 
-    componentDidMount() {
-        this.setState({
-            welcomeModalVisible: true,
-        })
+    useEffect(() => {
+        setWelcomeModalVisible(true)
         const imagePreLoadList = [profileImage, processImage, projectsImage, testimonialsImage, blogImage, contactImage]
         imagePreLoadList.forEach((image) => {
             new Image().src = image
         });
-    }
+    }, [])
 
-    componentDidUpdate(prevProps) {
-
-    }
-
-    updateModalVisibility = () => {
-        this.setState({welcomeModalVisible: false})
+    const updateModalVisibility = () => {
+        setWelcomeModalVisible(false)
         setTimeout(() => {
             document.querySelector('.app__main-nav').style.pointerEvents = 'auto';
         }, 3000);
     }
 
-    render() {
-        if (this.state.welcomeModalVisible === true) {
+        if (welcomeModalVisible === true) {
             return (
-                <WelcomeModal visibility={this.state.welcomeModalVisible} updateModalVisibility={this.updateModalVisibility}/>
+                <WelcomeModal visibility={welcomeModalVisible} updateModalVisibility={updateModalVisibility}/>
             )
         } else {
             return (
                 <main className="app__main">
-                    <div className="app__main-overlay"></div>
                     <div className="app__main-nav">
-                        <TopLevelNav navName="profile" navDetails="A brief bio on my background" orientationTop={false} imageSrc={profileImage} colorScheme='desert'/>
-                        <TopLevelNav navName="process" navDetails="An overview of my design philosophy"  orientationTop={true} imageSrc={processImage} colorScheme='fire'/>
-                        <TopLevelNav navName="projects" navDetails="A showcase of some recent projects"  orientationTop={false} imageSrc={projectsImage} colorScheme='oceanside'/>
-                        <TopLevelNav navName="testimonials" navDetails="Hear what others have to say"  orientationTop={true} imageSrc={testimonialsImage} colorScheme='midnight'/>
-                        <TopLevelNav navName="blog" navDetails="Posts to educate or speculate"  orientationTop={false} imageSrc={blogImage} colorScheme='mountains'/>
-                        <TopLevelNav navName="contact" navDetails="If you've gotten this far - let's connect"  orientationTop={true} imageSrc={contactImage} colorScheme='dream'/>
+                        <TransitionGroup component={null}>
+                            <TopLevelNav navName="profile" navDetails="A brief bio on my background" orientationTop={false} imageSrc={profileImage} colorScheme='desert'/>
+                            <TopLevelNav navName="process" navDetails="An overview of my design philosophy"  orientationTop={true} imageSrc={processImage} colorScheme='fire'/>
+                            <TopLevelNav navName="projects" navDetails="A showcase of some recent projects"  orientationTop={false} imageSrc={projectsImage} colorScheme='oceanside'/>
+                            <TopLevelNav navName="testimonials" navDetails="Hear what others have to say"  orientationTop={true} imageSrc={testimonialsImage} colorScheme='midnight'/>
+                            <TopLevelNav navName="blog" navDetails="Posts to educate or speculate"  orientationTop={false} imageSrc={blogImage} colorScheme='mountains'/>
+                            <TopLevelNav navName="contact" navDetails="If you've gotten this far - let's connect"  orientationTop={true} imageSrc={contactImage} colorScheme='dream'/>
+                        </TransitionGroup>
                     </div>
                 </main>
             )
         }
     }
-}
 
 export default Home

@@ -5,121 +5,184 @@
         background-size: 100% 100%;
     }
 }
-@keyframes curtain-entry {
+@keyframes slide-in {
     0% {transform: scaleY(0);}
     100% {transform: scaleY(1)}
 }
+@keyframes slide-out {
+    0% {transform: scaleY(1);}
+    100% {transform: scaleY(0)}
+}
 
-.nav-container {
-    height: 100vh;
-    width: 16.66vw;
-    position: relative;
+.nav{
+    text-decoration: none;
 
-    &-image {
-        height: 50vh;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        animation: curtain-entry forwards ease;
-    }
-
-    &-banner {
-        height: 50vh;
-        width: 100%;
-        padding: 16px;
-        background-color: $slate-secondary-color;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        position: relative;
-        animation: curtain-entry forwards ease;
-
-        &-header {
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-            @include top-level-header;
-            color: $text-offset-color;
-        }
-        
-        &-details {
-            font-size: .8125rem;
-            letter-spacing: .2rem;
-            color: $text-paragraph-color;
-            text-align: center;
-            font-weight: 600;
-            width: 80%;
-            position: absolute;
-            bottom: .5%;
-            left: 50%;
-            margin: 0 0 0 -40%;
-            padding: 4px;
-            border: 2px solid $text-paragraph-color;
-            border-radius: 8px;
-            box-shadow: 2px 2px;
-
-            &--top {
-                @extend .nav-container-banner-details;
-                bottom: initial;
-                top: .5%;
+    &-exit{
+        &-active{
+            & .nav__container-banner{
+                animation: slide-out forwards ease;
+                animation-duration: 2s;
+                transform-origin: top;
+            }
+            & .nav__container-image{
+                animation: slide-out forwards ease;
+                animation-duration: 2s;
+                transform-origin: bottom;
+            }
+            & .nav__container-banner-details{
+                display: none;
             }
         }
-
-        &--top {
-            @extend .nav-container-banner;
-            align-items: flex-end;
+        &-done{
+            position: absolute;
+            transform: scaleY(0);
         }
     }
+    // &-enter{
+    //     &-active{
+    //         position: absolute;
+    //         left:0;
+    //     }
+    //     &-done{
+    //         position: absolute;
+    //         left: 0;
+    //     }
+    // }
     
-    &:hover{
-        cursor: pointer;
-        animation: meld-down 1s forwards ease;
+    &--top-exit{
+        &-active{
+            & .nav__container-banner--top{
+                animation: slide-out forwards ease;
+                animation-duration: 2s;
+                transform-origin: bottom;
+            }
+        
+            & .nav__container-image{
+                animation: slide-out forwards ease;
+                animation-duration: 2s;
+                transform-origin: top;
+            }
+            & .nav__container-banner-details--top{
+                display: none;
+            }
+        } 
+        &-done{
+            position: absolute;
+            transform: scaleY(0);
+        }
     }
+
+    &__container {
+        height: 100vh;
+        width: 16.66vw;
+        position: relative;
     
-    &:hover .nav-container-banner{
-        mix-blend-mode: lighten;
-        cursor: pointer;
-    }
+        &-image {
+            height: 50vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: slide-in forwards ease;
+        }
 
-    &--desert {
-        background: linear-gradient(180deg, $desert-secondary-color 45%, $desert-primary-color) no-repeat 0 0;
-        background-size: 100% 0;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+        &-banner {
+            height: 50vh;
+            width: 100%;
+            padding: 16px;
+            background-color: $slate-secondary-color;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            position: relative;
+            animation: slide-in forwards ease;
 
-    &--fire {
-        background: linear-gradient(180deg, $fire-secondary-color, $fire-primary-color 45%) no-repeat 0 0;
-        background-size: 100% 0;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    &--oceanside {
-        background: linear-gradient(180deg, $oceanside-secondary-color 45%, $oceanside-primary-color) no-repeat 0 0;
-        background-size: 100% 0;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    &--midnight {
-        background: linear-gradient(180deg, $midnight-secondary-color, $midnight-primary-color 45%) no-repeat 0 0;
-        background-size: 100% 0;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    &--mountains {
-        background: linear-gradient(180deg, $mountains-secondary-color 45%, $mountains-primary-color) no-repeat 0 0;
-        background-size: 100% 0;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    &--dream {
-        background: linear-gradient(180deg, $dream-secondary-color, $dream-primary-color 45%) no-repeat 0 0;
-        background-size: 100% 0;
-        background-position: center;
-        background-repeat: no-repeat;
+            &-header {
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                @include top-level-header;
+                color: $text-offset-color;
+            }
+            
+            &-details {
+                font-size: .8125rem;
+                letter-spacing: .2rem;
+                color: $text-paragraph-color;
+                text-align: center;
+                font-weight: 600;
+                width: 80%;
+                position: absolute;
+                bottom: .5%;
+                left: 50%;
+                margin: 0 0 0 -40%;
+                padding: 4px;
+                border: 2px solid $text-paragraph-color;
+                border-radius: 8px;
+                box-shadow: 2px 2px;
+                
+                &--top {
+                    @extend .nav__container-banner-details;
+                    bottom: initial;
+                    top: .5%;
+                }
+            }
+            
+            &--top {
+                @extend .nav__container-banner;
+                align-items: flex-end;
+            }
+        }
+        
+        &:hover{
+            cursor: pointer;
+            animation: meld-down 1s forwards ease;
+        }
+        
+        &:hover .nav__container-banner{
+            mix-blend-mode: lighten;
+            cursor: pointer;
+        }
+        
+        &--desert {
+            background: linear-gradient(180deg, $desert-secondary-color 45%, $desert-primary-color) no-repeat 0 0;
+            background-size: 100% 0;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        &--fire {
+            background: linear-gradient(180deg, $fire-secondary-color, $fire-primary-color 45%) no-repeat 0 0;
+            background-size: 100% 0;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        &--oceanside {
+            background: linear-gradient(180deg, $oceanside-secondary-color 45%, $oceanside-primary-color) no-repeat 0 0;
+            background-size: 100% 0;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        &--midnight {
+            background: linear-gradient(180deg, $midnight-secondary-color, $midnight-primary-color 45%) no-repeat 0 0;
+            background-size: 100% 0;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        &--mountains {
+            background: linear-gradient(180deg, $mountains-secondary-color 45%, $mountains-primary-color) no-repeat 0 0;
+            background-size: 100% 0;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        &--dream {
+            background: linear-gradient(180deg, $dream-secondary-color, $dream-primary-color 45%) no-repeat 0 0;
+            background-size: 100% 0;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
 }
