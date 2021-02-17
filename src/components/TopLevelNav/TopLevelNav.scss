@@ -10,8 +10,12 @@
     100% {transform: scaleY(1)}
 }
 @keyframes slide-out {
-    0% {transform: scaleY(1);}
+    0% {transform: scaleY(1); }
     100% {transform: scaleY(0)}
+}
+@keyframes slide-across {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(var(--moveVal));}
 }
 
 .nav{
@@ -34,20 +38,25 @@
             }
         }
         &-done{
-            position: absolute;
             transform: scaleY(0);
         }
     }
-    // &-enter{
-    //     &-active{
-    //         position: absolute;
-    //         left:0;
-    //     }
-    //     &-done{
-    //         position: absolute;
-    //         left: 0;
-    //     }
-    // }
+    &-enter{
+        &-active{
+            animation: slide-across 2s ease 2s forwards;
+
+            & .nav__container{
+                background-size: 100% 100%;
+            }
+            & .nav__container-banner{
+                mix-blend-mode: lighten;
+            }
+        }
+        &-done{
+            position: absolute;
+            left: 0;
+        }
+    }
     
     &--top-exit{
         &-active{
@@ -67,7 +76,6 @@
             }
         } 
         &-done{
-            position: absolute;
             transform: scaleY(0);
         }
     }

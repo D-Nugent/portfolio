@@ -8,24 +8,31 @@ function TopLevelNav({navName, orientationTop, imageSrc, colorScheme, navDetails
     let location = useLocation();
     const [active, setActive] = useState(false);
     let animTime = '';
+    let shiftVal = '';
     switch (navName) {
         case "profile":
             animTime = '1s';
+            shiftVal = '0';
             break;
-        case "process":
+            case "process":
             animTime = '1.4s';
+            shiftVal = '-100%';
             break;
-        case "projects":
+            case "projects":
             animTime = '1.8s';
+            shiftVal = '-200%';
             break;
-        case "testimonials":
+            case "testimonials":
             animTime = '2.2s';
+            shiftVal = '-300%';
             break;
-        case "blog":
+            case "blog":
             animTime = '2.6s';
+            shiftVal = '-400%';
             break;
-        case "contact":
+            case "contact":
             animTime = '2.8s';
+            shiftVal = '-500%';
             break;
         default:
             break;
@@ -42,8 +49,13 @@ function TopLevelNav({navName, orientationTop, imageSrc, colorScheme, navDetails
         }
     })
 
-    console.log(location.pathname);
-    // console.log(location.pathname.replace('/','')===navName);
+    const activeAdj = (event) => {
+        const banner = event.currentTarget
+        banner.classList.remove("landing-enter-done");
+        banner.classList.add("nav-enter-active");
+        banner.style.setProperty('--moveVal', `${shiftVal}`)
+    }
+
     if (orientationTop===true) {
         return (
             <CSSTransition 
@@ -52,8 +64,7 @@ function TopLevelNav({navName, orientationTop, imageSrc, colorScheme, navDetails
                 classNames={location.pathname!=="/landing"?'nav--top':'landing'}
                 nodeRef={nodeRef}
             >
-                {/* #ToDo - Either manually add the -enter-active class or work-out how to force the change*/}
-                <Link className="nav"
+                <Link className="nav" onClick={(event)=>{activeAdj(event)}} 
                 to={`/${navName}`} ref={nodeRef}>
                     <div className={`nav__container nav__container--${colorScheme}`}>
                         <p className="nav__container-banner-details--top">{navDetails}</p>
@@ -73,7 +84,7 @@ function TopLevelNav({navName, orientationTop, imageSrc, colorScheme, navDetails
                 classNames={location.pathname!=="/landing"?'nav':'landing'}
                 nodeRef={nodeRef}
             >
-                <Link className="nav"
+                <Link className="nav" onClick={(event)=>{activeAdj(event)}}
                 to={`/${navName}`} ref={nodeRef}>
                     <div className={`nav__container nav__container--${colorScheme}`}>
                         <div className={`nav__container-image`} style={{backgroundImage: `url("${imageSrc}")`, transformOrigin: 'top', animationDuration: `${animTime}`}}></div>
