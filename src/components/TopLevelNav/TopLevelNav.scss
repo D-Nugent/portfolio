@@ -18,23 +18,40 @@
     100% {transform: translateX(var(--moveVal));}
 }
 
+.landing-enter-active{
+    pointer-events: none;
+    & .nav__container-image{
+        animation: slide-in forwards ease;
+    }
+    & .nav__container-banner{
+        animation: slide-in forwards ease;
+    }
+}
+
 .nav{
     text-decoration: none;
+    z-index: 3;
 
     &-exit{
         &-active{
+            z-index: 3;
+            pointer-events: none;
             & .nav__container-banner{
                 animation: slide-out forwards ease;
                 animation-duration: 2s;
                 transform-origin: top;
+                z-index: 3;
             }
             & .nav__container-image{
                 animation: slide-out forwards ease;
                 animation-duration: 2s;
                 transform-origin: bottom;
+                z-index: 3;
+
             }
             & .nav__container-banner-details{
                 display: none;
+                z-index: 3;
             }
         }
         &-done{
@@ -43,42 +60,86 @@
     }
     &-enter{
         &-active{
-            animation: slide-across 2s ease 2s forwards;
-
+            pointer-events: none;
             & .nav__container{
-                background-size: 100% 100%;
+                &-image{
+                    animation: slide-in forwards ease;
+                }
+                &-banner{
+                    animation: slide-in forwards ease;
+                    mix-blend-mode: lighten;
+                }
+            }
+        }
+        &-done{
+            animation: slide-across 2s ease 1s forwards;
+    
+            & .nav__container{
+                animation: meld-down 1s forwards ease;
             }
             & .nav__container-banner{
                 mix-blend-mode: lighten;
             }
-        }
-        &-done{
-            position: absolute;
-            left: 0;
+
+            &-init{
+                @extend .nav-enter-done;
+            }
         }
     }
     
-    &--top-exit{
-        &-active{
-            & .nav__container-banner--top{
-                animation: slide-out forwards ease;
-                animation-duration: 2s;
-                transform-origin: bottom;
+    &--top{
+        &-exit{
+            &-active{
+                z-index: 3;
+                pointer-events: none;
+                & .nav__container-banner--top{
+                    animation: slide-out forwards ease;
+                    animation-duration: 2s;
+                    transform-origin: bottom;
+                    z-index: 3;
+                }
+            
+                & .nav__container-image{
+                    animation: slide-out forwards ease;
+                    animation-duration: 2s;
+                    transform-origin: top;
+                    z-index: 3;
+                }
+                & .nav__container-banner-details--top{
+                    display: none;
+                    z-index: 3;
+                }
+            } 
+            &-done{
+                transform: scaleY(0);
             }
-        
-            & .nav__container-image{
-                animation: slide-out forwards ease;
-                animation-duration: 2s;
-                transform-origin: top;
+        }
+        &-enter{
+            &-active{
+                pointer-events: none;
+                & .nav__container{                  
+                    &-image{
+                        animation: slide-in forwards ease;
+                    }
+                    &-banner{
+                        animation: slide-in forwards ease;
+                        mix-blend-mode: lighten;
+                    }
+                }
             }
-            & .nav__container-banner-details--top{
-                display: none;
+            &-done{
+                animation: slide-across 2s ease 1s forwards;
+    
+                & .nav__container{
+                    animation: meld-down 1s forwards ease;
+                }
+                & .nav__container-banner{
+                    mix-blend-mode: lighten;
+                }
             }
-        } 
-        &-done{
-            transform: scaleY(0);
         }
     }
+    
 
     &__container {
         height: 100vh;
@@ -91,7 +152,6 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            animation: slide-in forwards ease;
         }
 
         &-banner {
@@ -103,7 +163,6 @@
             justify-content: flex-end;
             align-items: flex-start;
             position: relative;
-            animation: slide-in forwards ease;
 
             &-header {
                 writing-mode: vertical-rl;

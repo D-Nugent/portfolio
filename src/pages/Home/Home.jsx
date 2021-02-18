@@ -1,6 +1,5 @@
-import React, { Component, useEffect, useState } from 'react';
-import {Link, useLocation} from 'react-router-dom';
-import {TransitionGroup, CSSTransition} from 'react-transition-group';
+import React, {  useEffect, useState } from 'react';
+import {TransitionGroup} from 'react-transition-group';
 import WelcomeModal from '../../components/WelcomeModal/WelcomeModal';
 import TopLevelNav from '../../components/TopLevelNav/TopLevelNav';
 import './Home.scss';
@@ -13,7 +12,6 @@ import contactImage from '../../assets/images/unknown-dream3.jfif';
 
 function Home () {
     const [welcomeModalVisible, setWelcomeModalVisible] = useState(false)
-    let location = useLocation()
 
     useEffect(() => {
         setWelcomeModalVisible(true)

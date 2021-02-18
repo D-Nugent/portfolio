@@ -1,5 +1,16 @@
 @import '../../styles/global';
 
+@keyframes float {
+    0% {transform: translateY(0)};
+    50% {transform: translateY(1vw)};
+    100% {transform: translateY(0)};
+}
+
+@keyframes pullfocus {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.6);}
+}
+
 .profile{
     width: 100vw;
     height: 100vh;
@@ -31,6 +42,26 @@
             &-overview{
                 color: $slate-primary-offset-color;
                 font-size: 1.2rem;
+            }
+
+            &-resources{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+
+                &-link{
+                    margin-top: 2vh;
+                    &-icon{
+                        height: 4vh;
+                        transition-duration: .5s;
+                        border-radius: 4px;
+
+                        &:hover{
+                            box-shadow: 4px 4px 8px $desert-primary-color;
+                            transform: translateY(-4px);
+                        }
+                    }
+                }
             }
         }
         &-nav{
@@ -69,8 +100,21 @@
             justify-content: center;
 
             &-item{
+                height: 6vw;
+                width: 6vw;
+                animation: float 2s ease-in-out infinite;
+                
                 &:nth-child(even){
-                    text-align: right;
+                    align-self: flex-end;
+                    animation: float 1.6s ease-in-out infinite;
+                }
+                &:nth-child(3n){
+                    animation: float 1.8s ease-in-out infinite;
+                }
+
+                &:hover{
+                    animation: pullfocus 1s ease-in-out forwards;
+                    cursor: pointer;
                 }
             }
         }

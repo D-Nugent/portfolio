@@ -1,6 +1,6 @@
 import './App.scss';
 import React from 'react';
-import {Route, Switch, useLocation, Redirect} from 'react-router-dom';
+import {Route, Switch, Redirect} from 'react-router-dom';
 import Home from '../../pages/Home/Home'
 import Landing from '../../pages/Landing/Landing'
 import Profile from '../../pages/Profile/Profile'

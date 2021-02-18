@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
-import {useLocation, useParams, Link} from 'react-router-dom';
-import {TransitionGroup, CSSTransition} from 'react-transition-group';
+import {useLocation, Link} from 'react-router-dom';
+import {CSSTransition} from 'react-transition-group';
 import './TopLevelNav.scss';
 
 function TopLevelNav({navName, orientationTop, imageSrc, colorScheme, navDetails}) {
@@ -41,20 +41,42 @@ function TopLevelNav({navName, orientationTop, imageSrc, colorScheme, navDetails
     useEffect(() => {
         const path = location.pathname;
         const selectedPage = navName;
-        const criteriaMatch = path==="/landing"||path==="/"?true:path.replace('/','')===selectedPage?true:false;
+        const criteriaMatch = path==="/landing"||path==="/"?true:false;
+        const samePage = path.replace('/','')===selectedPage?true:false;
         if (criteriaMatch===true) {
             setActive(true)
+        } else if (samePage===true) {
+            setActive(true);
         } else {
             setActive(false)
         }
+    }, [location.pathname, navName])
+
+    useEffect(() => {
+        let target = document.querySelector(`[class*=${navName}]`);
+        target.style.setProperty('--moveVal', `${shiftVal}`);
+    })
+    
+    useEffect(() => {
+        if(location.pathname.replace('/','')!==navName){
+            let target = document.querySelector(`[class*=nav-enter-done-init]`);
+            if (target!==null && target.classList.contains(`--${navName}`)) {
+                target.classList.remove('nav-enter-done-init')
+            }
+        }
     })
 
-    const activeAdj = (event) => {
-        const banner = event.currentTarget
-        banner.classList.remove("landing-enter-done");
-        banner.classList.add("nav-enter-active");
-        banner.style.setProperty('--moveVal', `${shiftVal}`)
+    const updateActive = (event) => {
+        // setActive(false);
+        // if(active===false){
+        //     setActive(true);
+        // }
+        let target = document.querySelector(`[class*=${navName}]`);
+        target.classList.remove('landing-enter-done');
+        target.classList.add('nav-enter-done-init');
     }
+    
+
 
     if (orientationTop===true) {
         return (
@@ -64,7 +86,7 @@ function TopLevelNav({navName, orientationTop, imageSrc, colorScheme, navDetails
                 classNames={location.pathname!=="/landing"?'nav--top':'landing'}
                 nodeRef={nodeRef}
             >
-                <Link className="nav" onClick={(event)=>{activeAdj(event)}} 
+                <Link className={`nav --${navName}`} onClick={(event)=>{updateActive(event)}}
                 to={`/${navName}`} ref={nodeRef}>
                     <div className={`nav__container nav__container--${colorScheme}`}>
                         <p className="nav__container-banner-details--top">{navDetails}</p>
@@ -84,7 +106,7 @@ function TopLevelNav({navName, orientationTop, imageSrc, colorScheme, navDetails
                 classNames={location.pathname!=="/landing"?'nav':'landing'}
                 nodeRef={nodeRef}
             >
-                <Link className="nav" onClick={(event)=>{activeAdj(event)}}
+                <Link className={`nav --${navName}`} onClick={()=>{updateActive()}}
                 to={`/${navName}`} ref={nodeRef}>
                     <div className={`nav__container nav__container--${colorScheme}`}>
                         <div className={`nav__container-image`} style={{backgroundImage: `url("${imageSrc}")`, transformOrigin: 'top', animationDuration: `${animTime}`}}></div>

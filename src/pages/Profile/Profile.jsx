@@ -1,5 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import GitHubIcon from '../../assets/logos/github.svg'
+import LinkedInIcon from '../../assets/logos/LinkedIn.svg'
+import CSSHTMLLogo from '../../assets/logos/css-and-html.svg'
+import JSLogo from '../../assets/logos/JavaScript-logo.svg'
+import SASSLogo from '../../assets/logos/sass.svg'
+import ReactLogo from '../../assets/logos/react.svg'
+import ReduxLogo from '../../assets/logos/redux.svg'
+import NodeLogo from '../../assets/logos/node.svg'
+import MySQLLogo from '../../assets/logos/mySql.svg'
+import ReactRouterLogo from '../../assets/logos/reactRouter.svg'
+import FirebaseLogo from '../../assets/logos/firebase.svg'
 import './Profile.scss';
 
 function Profile() {
@@ -25,20 +36,27 @@ function Profile() {
                          environment</span>. I'd encourage you to peruse the rest of my portfolio site but if I have piqued your interest <span className="profile__emph">please
                          feel free to contact me</span> directly or learn more about me and my work ethic by reviewing my LinkedIn or GitHub:
                     </p>
+                    <div className="profile__wrapper-body-resources">
+                        <a href="https://www.linkedin.com/in/d-nugent/" className="profile__wrapper-body-resources-link">
+                            <img src={LinkedInIcon} alt="LinkedIn Icon" className="profile__wrapper-body-resources-link-icon"/>
+                        </a>
+                        <a href="https://github.com/d-nugent" className="profile__wrapper-body-resources-link">
+                            <img src={GitHubIcon} alt="Github Icon" className="profile__wrapper-body-resources-link-icon"/>
+                        </a>
+                    </div>
                 </article>
                 <aside className="profile__wrapper-skills">
-                    <p className="profile__wrapper-skills-item">CSS and HTML</p>
-                    <p className="profile__wrapper-skills-item">JavaScript</p>
-                    <p className="profile__wrapper-skills-item">SASS</p>
-                    <p className="profile__wrapper-skills-item">React</p>
-                    <p className="profile__wrapper-skills-item">Redux</p>
-                    <p className="profile__wrapper-skills-item">Node</p>
-                    <p className="profile__wrapper-skills-item">MySQL</p>
-                    <p className="profile__wrapper-skills-item">ReactRouter</p>
-                    <p className="profile__wrapper-skills-item">Firebase</p>
+                    <img src={CSSHTMLLogo} alt="CSS and HTML Logo" className="profile__wrapper-skills-item"/>
+                    <img src={JSLogo} alt="JS Logo" className="profile__wrapper-skills-item"/>
+                    <img src={SASSLogo} alt="Sass Logo" className="profile__wrapper-skills-item"/>
+                    <img src={ReactLogo} alt="React Logo" className="profile__wrapper-skills-item"/>
+                    <img src={ReduxLogo} alt="Redux Logo" className="profile__wrapper-skills-item"/>
+                    <img src={NodeLogo} alt="Node logo" className="profile__wrapper-skills-item"/>
+                    <img src={MySQLLogo} alt="MySQL Logo" className="profile__wrapper-skills-item"/>
+                    <img src={ReactRouterLogo} alt="ReactRouter Logo" className="profile__wrapper-skills-item"/>
+                    <img src={FirebaseLogo} alt="Firebase Logo" className="profile__wrapper-skills-item"/>
                 </aside>
                 <nav className="profile__wrapper-nav">
-                    <Link className="profile__wrapper-nav-link" to="/">Home</Link>
                     <Link className="profile__wrapper-nav-link" to="/process">Process</Link>
                     <Link className="profile__wrapper-nav-link" to="/projects">Projects</Link>
                     <Link className="profile__wrapper-nav-link" to="/testimonials">Testimonials</Link>
