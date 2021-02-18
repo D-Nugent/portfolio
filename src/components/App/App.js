@@ -1,7 +1,8 @@
 import './App.scss';
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, Redirect} from 'react-router-dom';
 import Home from '../../pages/Home/Home'
+import Landing from '../../pages/Landing/Landing'
 import Profile from '../../pages/Profile/Profile'
 import Process from '../../pages/Process/Process'
 import Projects from '../../pages/Projects/Projects'
@@ -9,13 +10,17 @@ import Testimonials from '../../pages/Testimonials/Testimonials'
 import Blog from '../../pages/Blog/Blog'
 import Contact from '../../pages/Contact/Contact'
 
-class App extends React.Component {
-  render() {
+function App () {
+
     return (
       <div className="app">
+      <Home/>
         <Switch>
-          <Route exact path="/" render={(routeProps) =>
-            <Home {...routeProps}/>}/>
+          <Route exact path="/">
+            <Redirect to="/landing"/>
+          </Route>
+          <Route exact path="/landing" render={(routeProps) =>
+            <Landing {...routeProps}/>}/>
           <Route exact path="/profile" render={(routeProps) =>
             <Profile {...routeProps}/>}/>
           <Route exact path="/process" render={(routeProps) =>
@@ -32,6 +37,5 @@ class App extends React.Component {
       </div>
     );
   }
-}
 
 export default App;
