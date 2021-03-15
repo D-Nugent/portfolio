@@ -41,6 +41,7 @@
 
         &-position{
             font-size: 1.5rem;
+            font-style: italic;
             margin-top: 0;
             color: $desert-primary-color;
             align-self: center;
@@ -63,17 +64,46 @@
 
         &-method{
             margin: 10% 0;
-
+            
             & > a {
                 color: white;
                 text-decoration: none;
-                font-size: .8125rem;
+                font-size: .9125rem;
+                display: flex;
+                align-items: center;
             }
+        }
+
+        &-icon{
+            width: 15%;
+            margin-right: 5%;
         }
     }
 
     &__social{
-        height: 200px;
         width: 80%;
+        margin: 15% 0;
+
+        &-icons{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &-icon{
+            width: 100%;
+        }
+
+        &-link {
+            margin: 0 5%;
+            width: 25%;
+            text-decoration: none;
+        }
+
+        &-heading{
+            color: white;
+            margin: 10% 0;
+            text-align: center;
+        }
     }
 }

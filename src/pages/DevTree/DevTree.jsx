@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import InterestCrown from '../../components/InterestCrown/InterestCrown';
 import ProfileTrunk from '../../components/ProfileTrunk/ProfileTrunk';
+import WelcomeRoot from '../../components/WelcomeRoot/WelcomeRoot';
 import './DevTree.scss';
 
 function DevTree() {
-    return (
+
+  useEffect(() => {
+    setTimeout(() => {
+      document.body.scrollTop = document.body.scrollHeight;
+      document.documentElement.scrollTop = document.documentElement.scrollHeight;  
+    }, 100);
+  }, [])
+
+  return (
       <>
         <InterestCrown/>
         <main>
@@ -28,7 +37,7 @@ function DevTree() {
             <aside className="indepth__projects">Projects Detail</aside>
           </section> */}
         </main>
-        <footer className="roots">Hi there, ...</footer>
+        <WelcomeRoot/>
       </>
     )
 }

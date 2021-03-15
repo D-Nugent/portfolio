@@ -66,9 +66,9 @@ function InterestCrown() {
                 </div>
                 <div className="interests__left-bottom">
                     <img src={javascriptIcon} alt="javascript icon" className="interests__icon interests__icon-javascript"/>
+                    <img src={brainIcon} alt="brain icon" className="interests__icon interests__icon-brain"/>
                     <img src={comIcon} alt="com icon" className="interests__icon interests__icon-com"/>
                     <img src={hotelIcon} alt="hotel icon" className="interests__icon interests__icon-hotel"/>
-                    <img src={brainIcon} alt="brain icon" className="interests__icon interests__icon-brain"/>
                     <img src={lightbulbIcon} alt="lightbulb icon" className="interests__icon interests__icon-lightbulb"/>
                     <img src={cogsIcon} alt="cogs icon" className="interests__icon interests__icon-cogs"/>
                     <img src={golfIcon} alt="golf icon" className="interests__icon interests__icon-golf"/>

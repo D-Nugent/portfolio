@@ -1,6 +1,11 @@
 import React from 'react';
 import ProfileImage from '../../assets/images/profileSide.svg';
-import TreeRoots from '../../assets/images/treerootsLarge.png';
+import PhoneIcon from '../../assets/icons/phone-gold.png';
+import EmailIcon from '../../assets/icons/email-gold.png';
+import LocationIcon from '../../assets/icons/location-gold.png';
+import AcumenIcon from '../../assets/icons/acumen-icon.png';
+import GithubIcon from '../../assets/icons/github-icon.png';
+import LinkedInIcon from '../../assets/icons/linkedin-icon.png';
 import './ProfileTrunk.scss';
 
 function ProfileTrunk() {
@@ -21,17 +26,40 @@ function ProfileTrunk() {
           </p>
           <address className="profile__contact">
             <div className="profile__contact-method">
-              <a href="" className="profile__contact-phone">+1 587-834-6559</a>
+              <a href="tel:+15878346559" className="profile__contact-phone">
+              <img src={PhoneIcon} alt="Phone Icon" className="profile__contact-icon"/>
+                +1 587-834-6559
+              </a>
             </div>
             <div className="profile__contact-method">
-              <a href="" className="profile__contact-email">info@davidnugent.me</a>
+              <a href="mailto:info@davidnugent.me" className="profile__contact-email">
+              <img src={EmailIcon} alt="Email Icon" className="profile__contact-icon"/>
+                info@davidnugent.me
+              </a>
             </div>
             <div className="profile__contact-method">
-              <a href="" className="profile__contact-location">Kelowna, BC</a>
+              <a href="https://www.google.com/maps/place/Kelowna,+BC/@49.8998289,-119.5952053,11z/" className="profile__contact-location">
+                <img src={LocationIcon} alt="Location Icon" className="profile__contact-icon"/>
+                Kelowna, BC
+              </a>
             </div>
           </address>
           <section className="profile__social">
-            <p className="profile__social-test">Test</p>
+            <div className="profile__social-icons">
+              <a href="https://www.github.com/d-nugent" className="profile__social-link">
+                <h6 className="profile__social-heading">GitHub</h6>
+                <img src={GithubIcon} alt="Github Icon" className="profile__social-icon"/>
+              </a>
+              <a href="https://www.linkedin.com/in/d-nugent" className="profile__social-link">
+                <h6 className="profile__social-heading">LinkedIn</h6>
+                <img src={LinkedInIcon} alt="LinkedIn Icon" className="profile__social-icon"/>
+              </a>
+              <a href="https://acumen-resume.com/user/QDnFBjYt6jZ67LCtqWftF2BxMC13/abfc0d01-ecb0-4481-b18d-fece67c776d8"
+               className="profile__social-link">
+                <img src={AcumenIcon} alt="Acumen Icon" className="profile__social-icon"/>
+                <h6 className="profile__social-heading">Acumen</h6>
+              </a>
+            </div>
           </section>
       </section>
     )

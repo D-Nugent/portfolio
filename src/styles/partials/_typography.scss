@@ -81,6 +81,13 @@ html, body, textarea, button {
 
 @font-face {
     font-family: 'Raleway';
+    src: url("../../assets/typography/Raleway/Raleway-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
     src: url("../../assets/typography/Raleway/Raleway-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
