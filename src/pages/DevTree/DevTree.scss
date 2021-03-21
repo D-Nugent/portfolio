@@ -7,11 +7,6 @@ main {
     width: 100%;
 }
 
-.appraisal{
-    display: flex;
-    justify-content: center;
-}
-
 .indepth{
     margin-top: 20vh;
 }
@@ -30,10 +25,10 @@ main {
 
     &__left{
         margin-top: 20vh;
-        width: 43%
+        width: 37%
     }
     &__right{
         margin-top: 20vh;
-        width: 43%
+        width: 37%
     }
 }

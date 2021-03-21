@@ -1,5 +1,23 @@
+@import './variables';
+
 @keyframes float {
-    0% {transform: translateY(0px)};
+    0% {transform: translateY(0)};
     50% {transform: translateY(25%)};
-    100% {transform: translateY(0px)};
+    100% {transform: translateY(0)};
+}
+
+@keyframes float-right {
+    0% {transform: translateX(0)};
+    50% {transform: translateX(25%)};
+    100% {transform: translateX(0)};
+}
+
+@keyframes color-fade-arrow {
+    0% {color: $desert-tertiary-offset-color};
+    100% {color: $desert-primary-color};
+}
+
+@keyframes color-fade-button {
+    0% {background-color: $desert-secondary-offset-color};
+    100% {background-color: $desert-primary-color};
 }

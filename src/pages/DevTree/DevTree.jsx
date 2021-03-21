@@ -1,16 +1,17 @@
-import React, {useEffect} from 'react';
+import React, {useLayoutEffect} from 'react';
 import InterestCrown from '../../components/InterestCrown/InterestCrown';
 import ProfileTrunk from '../../components/ProfileTrunk/ProfileTrunk';
 import WelcomeRoot from '../../components/WelcomeRoot/WelcomeRoot';
+import TraitBranch from '../../components/TraitBranch/TraitBranch';
 import './DevTree.scss';
 
 function DevTree() {
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setTimeout(() => {
       document.body.scrollTop = document.body.scrollHeight;
       document.documentElement.scrollTop = document.documentElement.scrollHeight;  
-    }, 100);
+    }, 200);
   }, [])
 
   return (
@@ -23,13 +24,13 @@ function DevTree() {
           </section> */}
           <section className="appraisal">
             <div className="appraisal__left">
-              <article className="appraisal__experience">Experience Overview</article>
-              <article className="appraisal__education">Education Overview</article>
+              <TraitBranch trait="Experience"/>
+              <TraitBranch trait="Education"/>
             </div>
             <ProfileTrunk/>
             <div className="appraisal__right">
-              <article className="appraisal__skills">Skills Overview</article>
-              <article className="appraisal__projects">Projects Overview</article>
+              <TraitBranch trait="Skills"/>
+              <TraitBranch trait="Projects"/>
             </div>
           </section>
           {/* <section className="indepth">

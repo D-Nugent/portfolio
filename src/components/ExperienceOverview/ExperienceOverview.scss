@@ -1,0 +1,50 @@
+@use '../../styles/global' as *;
+
+.experience{
+    &__current{
+        margin: 0;
+        font-size: 1.25rem;
+    };
+
+    &__employer{
+        color: $desert-tertiary-offset-color;
+        font-weight: 800;
+        letter-spacing: .2rem;
+        font-size: 1.5rem;
+    };
+
+    &__role{
+        margin: 1% 0;
+        font-size: .9125rem;
+    }
+
+    &__dates{
+        color: $desert-primary-color;
+        margin: 0;
+        font-size: .9125rem;
+    }
+
+    &__responsibilities{
+        color: $desert-primary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+        &-heading{
+            font-size: .9125rem;
+            margin: 0 0 2%;
+        }
+        
+        &-item{
+            align-self: flex-end;
+            text-align: left;
+            color: #FFF;
+            font-size: .9125rem;
+            margin-bottom: 1%;
+
+            &::marker{
+                color: $desert-tertiary-offset-color;
+            }
+        }
+    }
+}

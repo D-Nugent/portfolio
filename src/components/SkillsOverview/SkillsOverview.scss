@@ -1,0 +1,28 @@
+@use '../../styles/global' as *;
+
+.skills{
+  &__heading{
+    margin: 0;
+    font-size: .9125rem;
+  }
+
+  &__list{
+    padding-left: 5%;
+    column-count: 2;
+    width: 80%;
+    margin: 4% 0;
+
+    &-item{
+      font-size: .9125rem;
+
+      &::marker{
+        color: $desert-tertiary-offset-color;
+      }
+    }
+  }
+
+  &__caption{
+    font-size: .9125rem;
+    color: $desert-primary-color;
+  }
+}
