@@ -18,15 +18,15 @@ function ProjectsOverview() {
             paper resume to an immersive video interview.
           </p>
           <div className="projects__links">
-            <a href="" className="projects__link">Deployed Site</a>
-            <a href="" className="projects__link">Repository</a>
+            <a href="https://www.acumen-resume.com" className="projects__link">Deployed Site</a>
+            <a href="https://github.com/D-Nugent/capstone-acumen" className="projects__link">Repository</a>
           </div>
         </article>
         <article className="projects__wrapper">
-          <h2 className="projects__heading">Current Projects</h2>
-        </article>
-        <article className="projects__wrapper">
-          <h2 className="projects__heading">Future Projects</h2>
+          <h2 className="projects__heading">Current &amp; Future Projects</h2>
+          <p className="projects__description">
+            To see more of the projects I am working on, click below.
+          </p>
         </article>
         <LearnMore position="right"/>
       </div>

@@ -21,10 +21,20 @@
         align-items: center;
     
         &:hover{
+            cursor: pointer;
             animation: color-fade-arrow .7s linear forwards;
     
             & img{
                 animation: float-right 1.4s linear infinite;
+            }
+        }
+
+        &--profile{
+            color: #FFF;
+
+            &:hover{
+                animation: color-fade-arrow--profile .7s linear forwards;
+                cursor: pointer;
             }
         }
     }

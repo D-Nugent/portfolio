@@ -6,7 +6,7 @@ function ExperienceOverview() {
     return (
       <div className="experience trait--left">
         <h2 className="experience__current">Current Role: <span className="experience__employer">BrainStation</span> </h2>
-        <h4 className="experience__role">Web Dev Teaching Assistant | Remote</h4>
+        <h4 className="experience__role">Web Development Teaching Assistant</h4>
         <p className="experience__dates">Feb 2021 - Current</p>
         <ul className="experience__responsibilities"> 
           <h4 className="experience__responsibilities-heading">Responsibilities/Successes:</h4>

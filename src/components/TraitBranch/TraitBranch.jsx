@@ -23,7 +23,7 @@ function TraitBranch({trait}) {
   }
   
     return (
-      <article className={`trait`}>
+      <article className="trait">
         <h2 className="trait__heading">{trait}</h2>
         <div className="trait__wrapper">
           {conditionalRender(trait)}

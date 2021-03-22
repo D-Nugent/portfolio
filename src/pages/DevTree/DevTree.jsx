@@ -3,6 +3,7 @@ import InterestCrown from '../../components/InterestCrown/InterestCrown';
 import ProfileTrunk from '../../components/ProfileTrunk/ProfileTrunk';
 import WelcomeRoot from '../../components/WelcomeRoot/WelcomeRoot';
 import TraitBranch from '../../components/TraitBranch/TraitBranch';
+// import IndepthBranch from '../../components/IndepthBranch/IndepthBranch';
 import './DevTree.scss';
 
 function DevTree() {
@@ -14,14 +15,25 @@ function DevTree() {
     }, 200);
   }, [])
 
+  // const scrollLeft = () => {
+  //   document.body.scrollLeft = 0;
+  //   document.documentElement.scrollLeft = 0;
+  // }
+
+  // const scrollRight = () => {
+  //   document.body.scrollLeft = document.body.scrollWidth;
+  //   document.documentElement.scrollLeft = document.body.scrollWidth;
+  // }
+
   return (
-      <>
+    <>
+      {/* <section className="more-detail more-detail-left">
+        <IndepthBranch trait="Experience"/>
+        <IndepthBranch trait="Education"/>
+      </section> */}
+      <div className="wrapper">
         <InterestCrown/>
         <main>
-          {/* <section className="indepth">
-            <aside className="indepth__experience">Experience Detail</aside>
-            <aside className="indepth__education">Education Detail</aside>
-          </section> */}
           <section className="appraisal">
             <div className="appraisal__left">
               <TraitBranch trait="Experience"/>
@@ -33,13 +45,15 @@ function DevTree() {
               <TraitBranch trait="Projects"/>
             </div>
           </section>
-          {/* <section className="indepth">
-            <aside className="indepth__skills">Skills Detail</aside>
-            <aside className="indepth__projects">Projects Detail</aside>
-          </section> */}
         </main>
         <WelcomeRoot/>
-      </>
+      </div>
+      {/* <section className="more-detail more-detail-right">
+        <IndepthBranch trait="Skills"/>
+        <IndepthBranch trait="Projects"/>
+      </section> */}
+      {/* <div className="width-control"></div> */}
+    </>
     )
 }
 

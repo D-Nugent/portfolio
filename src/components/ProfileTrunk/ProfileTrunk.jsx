@@ -6,6 +6,7 @@ import LocationIcon from '../../assets/icons/location-gold.png';
 import AcumenIcon from '../../assets/icons/acumen-icon.png';
 import GithubIcon from '../../assets/icons/github-icon.png';
 import LinkedInIcon from '../../assets/icons/linkedin-icon.png';
+import LearnMore from '../LearnMore/LearnMore';
 import './ProfileTrunk.scss';
 
 function ProfileTrunk() {
@@ -24,6 +25,7 @@ function ProfileTrunk() {
              of applying tech solutions to operational problems. My love for this is what gave
              me the push to pivot into web development.
           </p>
+          <LearnMore alt='profile'/>
           <address className="profile__contact">
             <div className="profile__contact-method">
               <a href="tel:+15878346559" className="profile__contact-phone">
