@@ -1,0 +1,18 @@
+@use '../../styles/global' as *;
+
+.experience-indepth{
+    position: absolute;
+    right: 0;
+    top: 31.78vw;
+
+    &__heading{
+        border-top: 4px solid $desert-primary-color;
+        border-bottom: 4px solid $desert-primary-color;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1rem;
+        padding: 10px;
+    }
+}

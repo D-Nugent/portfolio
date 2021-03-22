@@ -1,22 +1,23 @@
 import './App.scss';
 import React from 'react';
-import {Route, Switch, Redirect} from 'react-router-dom';
-import Home from '../../pages/Home/Home'
-import Landing from '../../pages/Landing/Landing'
-import Profile from '../../pages/Profile/Profile'
-import Process from '../../pages/Process/Process'
-import Projects from '../../pages/Projects/Projects'
-import Testimonials from '../../pages/Testimonials/Testimonials'
-import Blog from '../../pages/Blog/Blog'
-import Contact from '../../pages/Contact/Contact'
+import {Route, Switch} from 'react-router-dom';
+// import Home from '../../pages/Home/Home';
+// import Landing from '../../pages/Landing/Landing';
+// import Profile from '../../pages/Profile/Profile';
+// import Process from '../../pages/Process/Process';
+// import Projects from '../../pages/Projects/Projects';
+// import Testimonials from '../../pages/Testimonials/Testimonials';
+// import Blog from '../../pages/Blog/Blog';
+// import Contact from '../../pages/Contact/Contact';
+import DevTree from '../../pages/DevTree/DevTree';
 
 function App () {
 
     return (
       <div className="app">
-      <Home/>
+      {/* <Home/> */}
         <Switch>
-          <Route exact path="/">
+          {/* <Route exact path="/">
             <Redirect to="/landing"/>
           </Route>
           <Route exact path="/landing" render={(routeProps) =>
@@ -32,7 +33,9 @@ function App () {
           <Route exact path="/blog" render={(routeProps) =>
             <Blog {...routeProps}/>}/>
           <Route exact path="/contact" render={(routeProps) =>
-            <Contact {...routeProps}/>}/>
+            <Contact {...routeProps}/>}/> */}
+          <Route exact path="/" render={(routeProps) =>
+            <DevTree {...routeProps}/>}/>
         </Switch>
       </div>
     );

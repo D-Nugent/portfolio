@@ -1,0 +1,111 @@
+@use '../../styles/global' as *;
+
+.profile{
+    min-height: 100vh;
+    min-width: 22%;
+    max-width: 300px;
+    background-color: $desert-primary-offset-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+    &__image {
+        width: 80%; 
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -8vw;
+    }
+    
+    &__heading {
+        width: 80%;
+        margin: 35% 0 0;
+        display: flex;
+        flex-direction: column;
+
+        &-first-name{
+            margin-bottom: 0;
+            letter-spacing: .3rem;
+            font-size: 3rem;
+            font-weight: 800;
+        }
+        
+        &-last-name{
+            margin: 0 0 2px;
+            align-self: flex-end;
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        &-position{
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-top: 0;
+            color: $desert-primary-color;
+            align-self: center;
+            
+        }
+    }
+
+    &__overview{
+        width: 80%;
+        margin: 0;
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+
+    &__contact{
+        border-top: 4px solid $desert-primary-color;
+        border-bottom: 4px solid $desert-primary-color;
+        width: 80%;
+        margin-top: 10%;
+        padding: 3% 0;
+
+        &-method{
+            margin: 10% 0;
+            
+            & > a {
+                color: white;
+                text-decoration: none;
+                font-size: .9125rem;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &-icon{
+            width: 15%;
+            margin-right: 5%;
+        }
+    }
+
+    &__social{
+        width: 80%;
+        margin: 15% 0;
+
+        &-icons{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &-icon{
+            width: 100%;
+        }
+
+        &-link {
+            margin: 0 5%;
+            width: 25%;
+            text-decoration: none;
+        }
+
+        &-heading{
+            color: white;
+            margin: 10% 0;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@use '../../styles/global' as *;
+
+.trait{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+
+    &__heading{
+        border-top: 4px solid $desert-primary-color;
+        border-bottom: 4px solid $desert-primary-color;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1rem;
+        padding: 10px;
+        width: 100%;
+    }
+
+    &__wrapper{
+        padding: 0 5%;
+    }
+
+    &--left{
+        text-align: right;
+    }
+}

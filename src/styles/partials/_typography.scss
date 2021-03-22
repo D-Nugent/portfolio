@@ -5,7 +5,8 @@ default font color and font-family with fall-backs */
 
 html, body, textarea, button {
     color: $text-paragraph-color;
-    font-family: 'Zilla Slab', 'Josefin Slab', 'Perpetua', 'Garamond', serif;
+    font-family: 'Raleway', 'Ubuntu', 'Calibri', 'Verdana', sans-serif;
+    // font-family: 'Zilla Slab', 'Josefin Slab', 'Perpetua', 'Garamond', serif;
     font-weight: 400;
     
     & h1, h2, h3, h4, h5, h6 {
@@ -76,6 +77,13 @@ html, body, textarea, button {
     src: url("../../assets/typography/Raleway/Raleway-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../../assets/typography/Raleway/Raleway-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {

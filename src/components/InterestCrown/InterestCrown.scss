@@ -1,0 +1,109 @@
+@use '../../styles/global' as *;
+
+.interests{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: $desert-secondary-offset-color;
+    height: 14vw;
+    width: 100%;
+
+    &__left{
+        width: 42%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+
+        &-top{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            margin-right: -5%;
+        }
+        
+        &-bottom{
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+    }
+
+    &__center{
+        width: 26%;
+        max-width: 300px;
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+    }
+    
+    &__right{
+        width: 42%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        
+
+        &-top{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        
+        &-bottom{
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    }
+
+    &__icon{
+        height: 5vw;
+        width: 5vw;
+        position: relative;
+        
+        &:nth-of-type(odd) {
+            top: 1vw;
+        }
+
+        &:nth-of-type(even) {
+            bottom: .5vw;
+        }
+
+        &-laptop {
+            height: 7vw;
+            width: 7vw;
+            position: relative;
+            top: 0;
+        }
+
+        &-football{
+            position: relative;
+            left: 2.5vw;
+        }
+
+        &-ffvii{
+            position: relative;
+            right: 2vw;
+        }
+
+        &-beach {
+            height: 7vw;
+            width: 7vw;
+        }
+
+        &-book {
+            left: 2vw;
+        }
+    }
+}

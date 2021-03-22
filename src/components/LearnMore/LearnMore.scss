@@ -1,0 +1,41 @@
+@use '../../styles/global' as *;
+
+.learn-more {
+    display: flex;
+
+    &--left{
+        justify-content: flex-end;    
+    };
+
+    &--right{
+        justify-content: flex-start;    
+    };
+
+    &__link{
+        text-decoration: none;
+        color: $desert-tertiary-offset-color;
+        font-weight: 800;
+        font-size: .8125rem;
+        letter-spacing: .2rem;
+        display: flex;
+        align-items: center;
+    
+        &:hover{
+            cursor: pointer;
+            animation: color-fade-arrow .7s linear forwards;
+    
+            & img{
+                animation: float-right 1.4s linear infinite;
+            }
+        }
+
+        &--profile{
+            color: #FFF;
+
+            &:hover{
+                animation: color-fade-arrow--profile .7s linear forwards;
+                cursor: pointer;
+            }
+        }
+    }
+}
