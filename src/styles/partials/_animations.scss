@@ -26,3 +26,17 @@
     0% {background-color: $desert-secondary-offset-color};
     100% {background-color: $desert-primary-color};
 }
+
+@keyframes leaves-fade-in {
+    0% {opacity: 0; }
+    100% {opacity: 1;}
+}
+
+@keyframes branch-reveal{
+    0% {
+        stroke-dashoffset: -134.96;
+    }
+    90% {
+        stroke-dashoffset: 0;
+    }
+}

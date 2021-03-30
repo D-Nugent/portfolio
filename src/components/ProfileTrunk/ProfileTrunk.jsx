@@ -12,7 +12,7 @@ import './ProfileTrunk.scss';
 function ProfileTrunk() {
     return (
       <section className="profile">
-          <img src={ProfileImage} alt="Profile Photo" className="profile__image"/>
+          <img src={ProfileImage} alt="Profile" className="profile__image"/>
           <div className="profile__heading">
             <h2 className="profile__heading-first-name">DAVID</h2>
             <h2 className="profile__heading-last-name">NUGENT</h2>
