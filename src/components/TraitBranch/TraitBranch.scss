@@ -16,10 +16,12 @@
         letter-spacing: 1rem;
         padding: 10px;
         width: 100%;
+        position: absolute;
     }
 
     &__heading-wrapper{
         display: inline;
+        position: relative;
     }
 
     &__wrapper{
@@ -29,14 +31,4 @@
     &--left{
         text-align: right;
     }
-}
-
-.branch-leaves{
-    opacity: 0;
-    animation: leaves-fade-in 1s linear 3s forwards;
-}
-
-.branch-1-reveal{
-    stroke-dasharray: 134.960;
-    animation: branch-reveal 2s linear 2s reverse forwards;
 }
