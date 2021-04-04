@@ -9,14 +9,14 @@
         opacity: 0;
 
         &--active{
-            animation: leaves-fade-in 1s linear 3s forwards;
+            animation: leaves-fade-in 1s linear 2s forwards;
         }
     }
     &__one{
         stroke-dasharray: 134.960;
 
         &--active{
-            animation: branch-reveal 2s linear 2s reverse forwards;
+            animation: branch-reveal 2s linear 1s reverse forwards;
         }
     }
     &--left{

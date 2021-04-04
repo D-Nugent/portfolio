@@ -3,6 +3,7 @@ import InterestCrown from '../../components/InterestCrown/InterestCrown';
 import ProfileTrunk from '../../components/ProfileTrunk/ProfileTrunk';
 import WelcomeRoot from '../../components/WelcomeRoot/WelcomeRoot';
 import TraitBranch from '../../components/TraitBranch/TraitBranch';
+import IndepthBranch from '../../components/IndepthBranch/IndepthBranch';
 import './DevTree.scss';
 
 function DevTree() {
@@ -10,21 +11,45 @@ const [activeSection, setActiveSection] = useState(null);
 
   useLayoutEffect(() => {
     setTimeout(() => {
-      document.querySelector('.wrapper').scrollIntoView({block:'end',inline:'end'})
+      document.querySelector('.wrapper').scrollIntoView({behavior:"smooth",block:'end',inline:'end'})
     }, 300);
   }, [])
 
   const updateActiveBranch = (trait) => {
-    console.log(`It worked! The current branch is ${trait}`);
     setActiveSection(trait);
-    (trait==='Experience'||trait==='Education')?
-    document.querySelector('.branch--left').scrollIntoView({block:'end',inline:'end'})
-    :
-    document.querySelector(`.branch--right`).scrollIntoView({block:'end',inline:'start'})
-  }
 
-  const getCurrentScroll = () => {
-    console.log(document.body.scrollWidth);
+    switch (trait) {
+      case 'Profile':
+        console.log("It's profile");
+        break;
+      case 'Experience':
+        document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'});
+        break;
+      case 'Education':
+        document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'});
+        break;
+      case 'Skills':
+        document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'});
+        break;
+      case 'Projects':
+        document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'});
+        break;
+      case null:
+        document.querySelector('.wrapper').scrollIntoView({behavior:"smooth",block:'end',inline:'end'});
+        break;
+    
+      default:
+        break;
+    }
+
+    // return {
+    //   'Profile': console.log("It's profile"),
+    //   'Experience':document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
+    //   'Education':document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
+    //   'Skills':document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
+    //   'Projects':document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
+    //   null:document.querySelector('.wrapper').scrollIntoView({behavior:"smooth",block:'end',inline:'end'})
+    // }[trait]
   }
 
   return (
@@ -41,9 +66,19 @@ const [activeSection, setActiveSection] = useState(null);
               <TraitBranch trait="Experience" updateActiveBranch={updateActiveBranch}
                 activeBranch={activeSection}
               />
+              {activeSection==='Experience' &&
+                <IndepthBranch trait="Experience" updateActiveBranch={updateActiveBranch}
+                  activeBranch={activeSection}
+                />
+              }
               <TraitBranch trait="Education" updateActiveBranch={updateActiveBranch}
                 activeBranch={activeSection}
-              />
+                />
+              {activeSection==='Education' &&
+                <IndepthBranch trait="Education" updateActiveBranch={updateActiveBranch}
+                  activeBranch={activeSection}
+                />
+              }
             </div>
             <ProfileTrunk trait="Profile" updateActiveBranch={updateActiveBranch}
               activeBranch={activeSection}
@@ -52,21 +87,31 @@ const [activeSection, setActiveSection] = useState(null);
               <TraitBranch trait="Skills" updateActiveBranch={updateActiveBranch}
                 activeBranch={activeSection}
               />
+              {activeSection==='Skills' &&
+                <IndepthBranch trait="Skills" updateActiveBranch={updateActiveBranch}
+                  activeBranch={activeSection}
+                />
+              }
               <TraitBranch trait="Projects" updateActiveBranch={updateActiveBranch}
                 activeBranch={activeSection}
               />
+              {activeSection==='Projects' &&
+                <IndepthBranch trait="Projects" updateActiveBranch={updateActiveBranch}
+                  activeBranch={activeSection}
+                />
+              }
             </div>
           </section>
         </main>
-        <WelcomeRoot/>
+        {activeSection===null &&
+          <WelcomeRoot/>
+        }
       </div>
       {/* <section className="more-detail more-detail-right">
         <IndepthBranch trait="Skills"/>
         <IndepthBranch trait="Projects"/>
       </section> */}
-      {/* {activeSection.widthControl===true &&  */}
-        <div className="width-control" onClick={() => {getCurrentScroll()}}></div>
-      {/* } */}
+        <div className="width-control"></div>
     </>
     )
 }

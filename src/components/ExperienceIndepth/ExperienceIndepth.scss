@@ -1,9 +1,6 @@
 @use '../../styles/global' as *;
 
 .experience-indepth{
-    position: absolute;
-    right: 0;
-    top: 31.78vw;
 
     &__heading{
         border-top: 4px solid $desert-primary-color;
