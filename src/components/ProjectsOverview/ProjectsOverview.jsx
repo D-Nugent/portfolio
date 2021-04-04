@@ -28,7 +28,6 @@ function ProjectsOverview() {
             To see more of the projects I am working on, click below.
           </p>
         </article>
-        <LearnMore position="right"/>
       </div>
     )
 }

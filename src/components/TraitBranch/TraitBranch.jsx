@@ -4,9 +4,10 @@ import ExperienceOverview from '../ExperienceOverview/ExperienceOverview';
 import SkillsOverview from '../SkillsOverview/SkillsOverview';
 import ProjectsOverview from '../ProjectsOverview/ProjectsOverview';
 import BranchSVG from './BranchSVG/BranchSVG';
+import LearnMore from '../LearnMore/LearnMore';
 import './TraitBranch.scss';
 
-function TraitBranch({trait}) {
+function TraitBranch({trait, updateActiveBranch, activeBranch}) {
 
   const conditionalRender = (trait) => {
     switch (trait) {
@@ -22,15 +23,21 @@ function TraitBranch({trait}) {
         break;
     }
   }
+
+  const positionControl = (trait) => {
+    return `${(trait==='Experience'||trait ==='Education')?'left':'right'}`;
+  }
   
     return (
-      <article className="trait">
+      <article className={`trait ${activeBranch!==trait&&activeBranch!==null?'trait--inactive':''}`}>
         <div className="trait__heading-wrapper">
-          <h2 className="trait__heading">{trait}</h2>
-          {<BranchSVG position={(trait==='Experience'||trait ==='Education')?'left':'right'}/>}
+          {<BranchSVG position={positionControl(trait)} section={trait} activeBranch={activeBranch}/>}
         </div>
         <div className="trait__wrapper">
           {conditionalRender(trait)}
+          <LearnMore position={positionControl(trait)} updateActiveBranch={updateActiveBranch}
+            trait={trait}
+          />
         </div>
       </article>
     )

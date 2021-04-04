@@ -6,7 +6,7 @@
     font-weight: 800;
     letter-spacing: .2rem;
     font-size: 1.5rem;
-    margin-bottom: 0;
+    margin: 0;
   };
 
   &__description{
@@ -45,4 +45,7 @@
       animation: color-fade-button .4s linear forwards;
     }
   }
+  &__wrapper{
+    margin-bottom: 16px;
+}
 }

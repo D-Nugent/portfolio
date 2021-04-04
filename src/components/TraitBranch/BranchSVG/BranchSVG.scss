@@ -3,15 +3,21 @@
 .branch{
     overflow: visible;
     position: relative;
-    // bottom: 340px;
+
 
     &__leaves{
         opacity: 0;
-        animation: leaves-fade-in 1s linear 3s forwards;
+
+        &--active{
+            animation: leaves-fade-in 1s linear 3s forwards;
+        }
     }
     &__one{
         stroke-dasharray: 134.960;
-        animation: branch-reveal 2s linear 2s reverse forwards;
+
+        &--active{
+            animation: branch-reveal 2s linear 2s reverse forwards;
+        }
     }
     &--left{
         transform: scaleX(-1);
@@ -19,6 +25,17 @@
 
     &__heading{
         fill: white;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .4rem;
+        padding: 10px;
+        position: absolute;
+        font-size: .625rem;
 
+        &--left{
+            transform: scaleX(-1);
+        }
     }
 }

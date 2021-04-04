@@ -9,7 +9,7 @@ import LinkedInIcon from '../../assets/icons/linkedin-icon.png';
 import LearnMore from '../LearnMore/LearnMore';
 import './ProfileTrunk.scss';
 
-function ProfileTrunk() {
+function ProfileTrunk({trait, updateActiveBranch}) {
     return (
       <section className="profile">
           <img src={ProfileImage} alt="Profile" className="profile__image"/>
@@ -25,7 +25,7 @@ function ProfileTrunk() {
              of applying tech solutions to operational problems. My love for this is what gave
              me the push to pivot into web development.
           </p>
-          <LearnMore alt='profile'/>
+          <LearnMore updateActiveBranch={updateActiveBranch} trait={trait}/>
           <address className="profile__contact">
             <div className="profile__contact-method">
               <a href="tel:+15878346559" className="profile__contact-phone">

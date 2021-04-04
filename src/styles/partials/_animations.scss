@@ -40,3 +40,12 @@
         stroke-dashoffset: 0;
     }
 }
+
+@keyframes branch-fade-out {
+    0%{
+        opacity: 1;
+    }   
+    100%{
+        opacity: 0;
+    }
+}

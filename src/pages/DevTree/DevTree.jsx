@@ -1,29 +1,31 @@
-import React, {useLayoutEffect} from 'react';
+import React, {useLayoutEffect, useState} from 'react';
 import InterestCrown from '../../components/InterestCrown/InterestCrown';
 import ProfileTrunk from '../../components/ProfileTrunk/ProfileTrunk';
 import WelcomeRoot from '../../components/WelcomeRoot/WelcomeRoot';
 import TraitBranch from '../../components/TraitBranch/TraitBranch';
-// import IndepthBranch from '../../components/IndepthBranch/IndepthBranch';
 import './DevTree.scss';
 
 function DevTree() {
+const [activeSection, setActiveSection] = useState(null);
 
   useLayoutEffect(() => {
     setTimeout(() => {
-      document.body.scrollTop = document.body.scrollHeight;
-      document.documentElement.scrollTop = document.documentElement.scrollHeight;  
-    }, 200);
+      document.querySelector('.wrapper').scrollIntoView({block:'end',inline:'end'})
+    }, 300);
   }, [])
 
-  // const scrollLeft = () => {
-  //   document.body.scrollLeft = 0;
-  //   document.documentElement.scrollLeft = 0;
-  // }
+  const updateActiveBranch = (trait) => {
+    console.log(`It worked! The current branch is ${trait}`);
+    setActiveSection(trait);
+    (trait==='Experience'||trait==='Education')?
+    document.querySelector('.branch--left').scrollIntoView({block:'end',inline:'end'})
+    :
+    document.querySelector(`.branch--right`).scrollIntoView({block:'end',inline:'start'})
+  }
 
-  // const scrollRight = () => {
-  //   document.body.scrollLeft = document.body.scrollWidth;
-  //   document.documentElement.scrollLeft = document.body.scrollWidth;
-  // }
+  const getCurrentScroll = () => {
+    console.log(document.body.scrollWidth);
+  }
 
   return (
     <>
@@ -36,13 +38,23 @@ function DevTree() {
         <main>
           <section className="appraisal">
             <div className="appraisal__left">
-              <TraitBranch trait="Experience"/>
-              <TraitBranch trait="Education"/>
+              <TraitBranch trait="Experience" updateActiveBranch={updateActiveBranch}
+                activeBranch={activeSection}
+              />
+              <TraitBranch trait="Education" updateActiveBranch={updateActiveBranch}
+                activeBranch={activeSection}
+              />
             </div>
-            <ProfileTrunk/>
+            <ProfileTrunk trait="Profile" updateActiveBranch={updateActiveBranch}
+              activeBranch={activeSection}
+            />
             <div className="appraisal__right">
-              <TraitBranch trait="Skills"/>
-              <TraitBranch trait="Projects"/>
+              <TraitBranch trait="Skills" updateActiveBranch={updateActiveBranch}
+                activeBranch={activeSection}
+              />
+              <TraitBranch trait="Projects" updateActiveBranch={updateActiveBranch}
+                activeBranch={activeSection}
+              />
             </div>
           </section>
         </main>
@@ -52,7 +64,9 @@ function DevTree() {
         <IndepthBranch trait="Skills"/>
         <IndepthBranch trait="Projects"/>
       </section> */}
-      {/* <div className="width-control"></div> */}
+      {/* {activeSection.widthControl===true &&  */}
+        <div className="width-control" onClick={() => {getCurrentScroll()}}></div>
+      {/* } */}
     </>
     )
 }

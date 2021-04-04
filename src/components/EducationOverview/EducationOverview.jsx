@@ -15,7 +15,6 @@ function EducationOverview() {
           <h4 className="education__course">Bachelor of Science (First Class Honors)</h4>
           <p className="education__dates">Sep 2010 - Jul 2014</p>
         </article>
-        <LearnMore position="left"/>
       </div>
     )
 }

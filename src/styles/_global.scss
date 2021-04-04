@@ -12,14 +12,16 @@ html, body {
     height: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-  }
+    overflow-x: hidden;
 
-  // html {
-  //  overflow: auto;
-  // }
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
   
   *, *:before, *:after {
     box-sizing: inherit;
+    scroll-behavior: inherit;
   }
 
 // ---Re-usable Component styling---

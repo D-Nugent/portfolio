@@ -16,7 +16,6 @@ function ExperienceOverview() {
           <li className="experience__responsibilities-item">Independently running Q&amp;A sessions</li>
           <li className="experience__responsibilities-item">Mentoring Junior Developers</li>
         </ul>
-        <LearnMore position='left'/>
       </div>
     )
 };
