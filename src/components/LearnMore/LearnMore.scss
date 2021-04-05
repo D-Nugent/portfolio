@@ -24,8 +24,11 @@
             cursor: pointer;
             animation: color-fade-arrow .7s linear forwards;
     
-            & img{
+            & .learn-more__double-arrow{
                 animation: float-right 1.4s linear infinite;
+            }
+            & .learn-more__double-arrow--reverse{
+                animation: float-left 1.4s linear infinite;
             }
         }
 
@@ -37,5 +40,8 @@
                 cursor: pointer;
             }
         }
+    }
+    &__double-arrow--reverse{
+        transform: scaleX(-1);
     }
 }

@@ -1,10 +1,62 @@
-import React from 'react'
+import React from 'react';
+import './SkillsIndepth.scss';
 
 function SkillsIndepth() {
+
+      let quote = "True Knowledge Exists In Knowing That You Know Nothing"
+      let quoteArray = quote.split('');
+
     return (
-        <div>
-            Skills Indepth
-        </div>
+        <section className="skills-indepth">
+            <figure className="skills-indepth__quote-container">
+                <blockquote className="skills-indepth__quote-wrapper">
+                <p className="skills-indepth__quote">
+                  {quoteArray.map((letter, i)=>{
+                    console.log(i/6);
+                    return <span className="skills-indepth__quote-letter" style={{animationDelay: `${i/6}s`}}>
+                      {letter}
+                      <span className={`skills-indepth__quote-cursor ${i===53?'skills-indepth__quote-cursor--pulse':''}`}
+                      style={{animationDelay: `${i/6}s`}}>
+                        |
+                      </span>
+                    </span>
+                  })}
+                </p>
+                </blockquote>
+            </figure>
+            <p className="skills-indepth__overview">
+              While I am very confident in my aptitude as a developer, I am also not so naive as to think that
+              I know everything there is to know about my chosen field. I am constantly in the pursuit of mastering
+              the languages and frameworks that I have accrued so far while seeking out new skills that I can add to
+              my toolbelt. With every new project, I research what methods will best help me deliver a high quality
+              product both in respect to aesthentics and performance.
+            </p>
+            <p className="skills-indepth__learning-style">
+              I am proud to say that I am a quick learner - and no, not in the way that everyone in an interview says
+              that they are a quick learner. I learned how to be a developer in 12 weeks in a rigorous learning environment
+              with BrainStation. It is thanks to this experience that I can say that when presented with a new framework
+              (with learning curve considered) that I can pick up the fundamentals in days.
+            </p>
+            <p className="skills-indepth__skills-intro">
+              Below you can see some of the skills which I consider myself to be proficient in and those which will
+              be my focus next:
+            </p>
+            <div className="skills-indepth__skills-wrapper">
+              <ul className="skills-indepth__skills-list">Skills that I am proficient in:
+                <li className="skills-indepth__skills">HTML</li>
+                <li className="skills-indepth__skills">CSS/SCSS</li>
+                <li className="skills-indepth__skills">JavaScript</li>
+                <li className="skills-indepth__skills">React</li>
+                <li className="skills-indepth__skills">React Router</li>
+                <li className="skills-indepth__skills">nodeJS</li>
+                <li className="skills-indepth__skills">expressJS</li>
+                <li className="skills-indepth__skills">Firebase</li>
+              </ul>
+              <ul className="skills-indepth__skills-list">What's on the chopping block next:
+
+              </ul>
+            </div>
+        </section>
     )
 }
 

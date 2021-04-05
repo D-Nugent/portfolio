@@ -17,39 +17,17 @@ const [activeSection, setActiveSection] = useState(null);
 
   const updateActiveBranch = (trait) => {
     setActiveSection(trait);
-
-    switch (trait) {
-      case 'Profile':
-        console.log("It's profile");
-        break;
-      case 'Experience':
-        document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'});
-        break;
-      case 'Education':
-        document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'});
-        break;
-      case 'Skills':
-        document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'});
-        break;
-      case 'Projects':
-        document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'});
-        break;
-      case null:
-        document.querySelector('.wrapper').scrollIntoView({behavior:"smooth",block:'end',inline:'end'});
-        break;
-    
-      default:
-        break;
+    const scrollPath = {
+      'Profile': () => console.log("It's profile"),
+      'Experience':() => document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
+      'Education':() => document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
+      'Skills': () => document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
+      'Projects': () => document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
+      null: () => document.querySelector('.wrapper').scrollIntoView({behavior:"smooth",block:'end',inline:'end'})
     }
 
-    // return {
-    //   'Profile': console.log("It's profile"),
-    //   'Experience':document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
-    //   'Education':document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
-    //   'Skills':document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
-    //   'Projects':document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
-    //   null:document.querySelector('.wrapper').scrollIntoView({behavior:"smooth",block:'end',inline:'end'})
-    // }[trait]
+    scrollPath[trait]()
+
   }
 
   return (

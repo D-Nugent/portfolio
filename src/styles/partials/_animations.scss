@@ -11,6 +11,11 @@
     50% {transform: translateX(25%)};
     100% {transform: translateX(0)};
 }
+@keyframes float-left {
+    0% {transform: translateX(0) scaleX(-1)};
+    50% {transform: translateX(-25%) scaleX(-1)};
+    100% {transform: translateX(0) scaleX(-1)};
+}
 
 @keyframes color-fade-arrow {
     0% {color: $desert-tertiary-offset-color};
@@ -47,5 +52,42 @@
     }   
     100%{
         opacity: 0;
+    }
+}
+
+@keyframes experience-enter {
+    0%{
+        transform: scaleX(0) scaleY(0);
+    }
+    50%{
+        transform: scaleX(0) scaleY(1);
+    }
+
+    100%{
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+@keyframes quoteTyping {
+    0%{
+        color: rgba(255, 255, 255,0);
+    }
+    50%{
+        color: rgba(255, 255, 255,1);
+    }
+    100%{
+        color: $desert-primary-color;
+    }
+}
+
+@keyframes cursor-flash {
+    50%{
+        color: rgba(255, 255, 255,1);
+    }
+}
+
+@keyframes cursor-pulse {
+    50%{
+        color:rgba(255, 255, 255,1);
     }
 }

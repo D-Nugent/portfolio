@@ -1,5 +1,4 @@
 import React from 'react';
-import LearnMore from '../LearnMore/LearnMore';
 import './ExperienceOverview.scss';
 
 function ExperienceOverview() {

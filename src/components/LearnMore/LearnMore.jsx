@@ -8,8 +8,17 @@ function LearnMore({position, updateActiveBranch, trait}) {
         <p className={`learn-more__link ${trait==='Profile'?'learn-more__link--profile':''}`}
           onClick={()=>{updateActiveBranch(trait)}}
         >
+        {position==='left'?
+        <>
+        <img src={DoubleArrow} alt="Arrow Icon" className="learn-more__double-arrow--reverse"/>
           LEARN MORE
-        <img src={DoubleArrow} alt="Arrow Icon" className="learn-more__double-arrow"/>
+        </>
+          :
+        <>
+          LEARN MORE
+          <img src={DoubleArrow} alt="Arrow Icon" className="learn-more__double-arrow"/>
+        </>
+        }
         </p>
       </div>
     )

@@ -1,15 +1,33 @@
 @use '../../styles/global' as *;
 
 .experience-indepth{
+    width: 100%;
+    margin-top: 5%;
+    min-height: 200vh;
 
-    &__heading{
-        border-top: 4px solid $desert-primary-color;
-        border-bottom: 4px solid $desert-primary-color;
+    &__position-wrapper{
+        display: flex;
+        justify-content: space-between;
+        animation: experience-enter 1.7s ease-in-out forwards;
+        transform-origin: left;
+
+        &:nth-of-type(even){
+            flex-direction: row-reverse;
+            transform-origin: right;
+        }
+    }
+
+    &__date-range{
+        width: 50%;
         display: flex;
         justify-content: center;
-        text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 1rem;
-        padding: 10px;
+        align-items: center;
+        padding: 5%;
+        color: $desert-primary-color;
+    }
+    
+    &__position-details{
+        width: 50%;
+        padding: 5%;
     }
 }

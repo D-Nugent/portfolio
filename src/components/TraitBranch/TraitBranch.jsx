@@ -33,12 +33,14 @@ function TraitBranch({trait, updateActiveBranch, activeBranch}) {
         <div className="trait__heading-wrapper">
           {<BranchSVG position={positionControl(trait)} section={trait} activeBranch={activeBranch}/>}
         </div>
+        {activeBranch===null &&
         <div className="trait__wrapper">
           {conditionalRender(trait)}
           <LearnMore position={positionControl(trait)} updateActiveBranch={updateActiveBranch}
             trait={trait}
-          />
+            />
         </div>
+        }
       </article>
     )
 }

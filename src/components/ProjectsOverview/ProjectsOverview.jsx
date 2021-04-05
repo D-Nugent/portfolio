@@ -1,5 +1,4 @@
 import React from 'react';
-import LearnMore from '../LearnMore/LearnMore';
 import AcumenLogo from '../../assets/icons/acumen-logo.svg';
 import './ProjectsOverview.scss';
 
