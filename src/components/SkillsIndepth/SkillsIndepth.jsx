@@ -48,12 +48,19 @@ function SkillsIndepth() {
                 <li className="skills-indepth__skills">JavaScript</li>
                 <li className="skills-indepth__skills">React</li>
                 <li className="skills-indepth__skills">React Router</li>
+                <li className="skills-indepth__skills">Redux</li>
                 <li className="skills-indepth__skills">nodeJS</li>
                 <li className="skills-indepth__skills">expressJS</li>
                 <li className="skills-indepth__skills">Firebase</li>
               </ul>
               <ul className="skills-indepth__skills-list">What's on the chopping block next:
-
+                <li className="skills-indepth__skills">WebGL/ThreeJS</li>
+                <li className="skills-indepth__skills">MongoDB</li>
+                <li className="skills-indepth__skills">Python (Django, Flask,Tensorflow)</li>
+                <li className="skills-indepth__skills">Angular</li>
+                <li className="skills-indepth__skills">Vue</li>
+                <li className="skills-indepth__skills">Ruby (Ruby on Rails)</li>
+                <li className="skills-indepth__skills">Ionic</li>
               </ul>
             </div>
         </section>

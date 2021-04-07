@@ -21,7 +21,7 @@
             &--pulse{
                 color: rgba(255, 255, 255,0);
                 margin-left: .2rem;
-                animation: cursor-pulse 1s linear 8.6s infinite;
+                animation: cursor-flash 1s linear 8.6s infinite;
             }
         }
     }
@@ -37,6 +37,6 @@
 
     &__skills{
         color: #FFF;
-        margin: 4% 0;
+        margin: 4% 10%;
     }
 }
