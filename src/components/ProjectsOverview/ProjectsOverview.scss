@@ -32,18 +32,7 @@
   }
 
   &__link{
-    font-size: .8125rem;
-    text-decoration: none;
-    color: #FFF;
-    border: 1px solid $desert-primary-color;
-    border-radius: 4px;
-    padding: 3%;
-    margin: 2% 2% 2% 0;
-    background-color: $desert-secondary-offset-color;
-
-    &:hover{
-      animation: color-fade-button .4s linear forwards;
-    }
+    @include project-button;
   }
   &__wrapper{
     margin-bottom: 16px;

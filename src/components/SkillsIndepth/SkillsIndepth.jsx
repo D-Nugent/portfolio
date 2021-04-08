@@ -12,8 +12,7 @@ function SkillsIndepth() {
                 <blockquote className="skills-indepth__quote-wrapper">
                 <p className="skills-indepth__quote">
                   {quoteArray.map((letter, i)=>{
-                    console.log(i/6);
-                    return <span className="skills-indepth__quote-letter" style={{animationDelay: `${i/6}s`}}>
+                    return <span className="skills-indepth__quote-letter" style={{animationDelay: `${i/6}s`}} key={`${letter}${i}`}>
                       {letter}
                       <span className={`skills-indepth__quote-cursor ${i===53?'skills-indepth__quote-cursor--pulse':''}`}
                       style={{animationDelay: `${i/6}s`}}>
@@ -25,8 +24,8 @@ function SkillsIndepth() {
                 </blockquote>
             </figure>
             <p className="skills-indepth__overview">
-              While I am very confident in my aptitude as a developer, I am also not so naive as to think that
-              I know everything there is to know about my chosen field. I am constantly in the pursuit of mastering
+              While I am very confident in my aptitude as a developer, one of the beautiful and exciting things about this
+              field is that there is always more to learn. I am constantly in the pursuit of mastering
               the languages and frameworks that I have accrued so far while seeking out new skills that I can add to
               my toolbelt. With every new project, I research what methods will best help me deliver a high quality
               product both in respect to aesthentics and performance.
@@ -51,15 +50,24 @@ function SkillsIndepth() {
                 <li className="skills-indepth__skills">Redux</li>
                 <li className="skills-indepth__skills">nodeJS</li>
                 <li className="skills-indepth__skills">expressJS</li>
+                <li className="skills-indepth__skills">mySQL</li>
                 <li className="skills-indepth__skills">Firebase</li>
               </ul>
               <ul className="skills-indepth__skills-list">What's on the chopping block next:
-                <li className="skills-indepth__skills">WebGL/ThreeJS</li>
-                <li className="skills-indepth__skills">MongoDB</li>
-                <li className="skills-indepth__skills">Python (Django, Flask,Tensorflow)</li>
+                <li className="skills-indepth__skills">3D JS Libraries
+                  <p className="skills-indepth__skills-topics">(WebGL, ThreeJS, BabylonJS)</p>
+                </li>
+                <li className="skills-indepth__skills">Python 
+                  <p className="skills-indepth__skills-topics">(Django, Flask, Tensorflow)</p>
+                </li>
+                <li className="skills-indepth__skills">Ruby
+                  <p className="skills-indepth__skills-topics">(Ruby on Rails)</p>
+                </li>
+                <li className="skills-indepth__skills">Gatsby</li>
+                <li className="skills-indepth__skills">nextJS</li>
+                <li className="skills-indepth__skills">JAMstack Methodology</li>
                 <li className="skills-indepth__skills">Angular</li>
                 <li className="skills-indepth__skills">Vue</li>
-                <li className="skills-indepth__skills">Ruby (Ruby on Rails)</li>
                 <li className="skills-indepth__skills">Ionic</li>
               </ul>
             </div>

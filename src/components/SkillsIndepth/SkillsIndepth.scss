@@ -11,6 +11,7 @@
     }
     &__quote{
         font-size: 1.4rem;
+        text-align: center;
         &-letter{
             color: rgba(255, 255, 255,0);
             animation: quoteTyping .8s linear forwards;
@@ -38,5 +39,10 @@
     &__skills{
         color: #FFF;
         margin: 4% 10%;
+    }
+
+    &__skills-topics{
+        margin: 0;
+        font-size: .8125rem;
     }
 }
