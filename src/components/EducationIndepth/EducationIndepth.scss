@@ -1,1 +1,87 @@
-@use '../../styles/global';
+@use '../../styles/global' as *;
+
+.education-indepth{
+    width: 100%;
+    margin-top: 10%;
+    
+    &__institution-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.institution{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    &__locations{
+        width: 36vw;
+        height: 36vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    &__brainstation{
+        &-info{
+            width: 50%;
+        }
+
+        &-overlay{
+            position: absolute;
+            width: 18vw;
+            height: 36vw;
+            // background-color: $desert-primary-color;
+            background-color: rgba(255, 255, 255,0);
+            right: 1px;
+ 
+            &:hover{
+                .institution__brainstation-mask{
+                    animation: rotate-reveal 2s linear forwards;
+                }
+            }
+        }
+
+        &-mask{
+            height: 100%;
+            width: 100%;
+            transform-origin: center left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $desert-secondary-offset-color;
+            border-left: 2px solid $desert-primary-color;
+        }
+    }
+    
+    &__surrey{
+        &-info{
+            width: 50%;
+        }
+
+        &-overlay{
+            position: absolute;
+            width: 18vw;
+            height: 36vw;
+            // background-color: $desert-primary-color;
+            background-color: rgba(255, 255, 255,0);
+            left: -1px;
+            
+            &:hover{
+                .institution__surrey-mask{
+                    animation: rotate-reveal 2s linear forwards;
+                }
+            }
+        }
+        
+        &-mask{
+            @extend .institution__brainstation-mask;
+            border-left: none;
+            border-right: 2px solid $desert-primary-color;
+            transform-origin: center right;
+        }
+    }
+}

@@ -12,10 +12,10 @@ function SkillsIndepth() {
                 <blockquote className="skills-indepth__quote-wrapper">
                 <p className="skills-indepth__quote">
                   {quoteArray.map((letter, i)=>{
-                    return <span className="skills-indepth__quote-letter" style={{animationDelay: `${i/6}s`}} key={`${letter}${i}`}>
+                    return <span className="skills-indepth__quote-letter" style={{animationDelay: `${i/8}s`}} key={`${letter}${i}`}>
                       {letter}
                       <span className={`skills-indepth__quote-cursor ${i===53?'skills-indepth__quote-cursor--pulse':''}`}
-                      style={{animationDelay: `${i/6}s`}}>
+                      style={{animationDelay: `${i/8}s`}}>
                         |
                       </span>
                     </span>
@@ -63,6 +63,7 @@ function SkillsIndepth() {
                 <li className="skills-indepth__skills">Ruby
                   <p className="skills-indepth__skills-topics">(Ruby on Rails)</p>
                 </li>
+                <li className="skills-indepth__skills">GraphyQL</li>
                 <li className="skills-indepth__skills">Gatsby</li>
                 <li className="skills-indepth__skills">nextJS</li>
                 <li className="skills-indepth__skills">JAMstack Methodology</li>
