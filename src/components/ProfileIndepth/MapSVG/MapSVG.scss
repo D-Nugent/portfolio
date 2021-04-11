@@ -1,0 +1,11 @@
+@use '../../../styles/global' as *;
+
+.map{
+    &__countries{
+        box-shadow: 40px 40px 40px #000;
+    }
+    &__routes{
+        stroke-dasharray: 578.765380859375;
+        animation: map-route-reveal 8s ease-in-out 2.4s infinite;
+    }
+}

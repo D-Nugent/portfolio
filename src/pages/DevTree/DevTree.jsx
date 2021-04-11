@@ -5,6 +5,7 @@ import WelcomeRoot from '../../components/WelcomeRoot/WelcomeRoot';
 import TraitBranch from '../../components/TraitBranch/TraitBranch';
 import IndepthBranch from '../../components/IndepthBranch/IndepthBranch';
 import './DevTree.scss';
+import ProfileIndepth from '../../components/ProfileIndepth/ProfileIndepth';
 
 function DevTree() {
 const [activeSection, setActiveSection] = useState(null);
@@ -18,16 +19,14 @@ const [activeSection, setActiveSection] = useState(null);
   const updateActiveBranch = (trait) => {
     setActiveSection(trait);
     const scrollPath = {
-      'Profile': () => console.log("It's profile"),
+      'Profile': () => document.querySelector('.profile').scrollIntoView({behavior:"smooth",block:'start',inline:'center'}),
       'Experience':() => document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
       'Education':() => document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
       'Skills': () => document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
       'Projects': () => document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
       null: () => document.querySelector('.wrapper').scrollIntoView({behavior:"smooth",block:'end',inline:'end'})
     }
-
     scrollPath[trait]()
-
   }
 
   return (
@@ -61,6 +60,9 @@ const [activeSection, setActiveSection] = useState(null);
             <ProfileTrunk trait="Profile" updateActiveBranch={updateActiveBranch}
               activeBranch={activeSection}
             />
+            {activeSection==='Profile'&&
+              <ProfileIndepth/>
+            }
             <div className="appraisal__right">
               <TraitBranch trait="Skills" updateActiveBranch={updateActiveBranch}
                 activeBranch={activeSection}

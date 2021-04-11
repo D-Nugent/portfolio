@@ -89,5 +89,45 @@
 @keyframes rotate-reveal {
     100%{
         transform: rotateZ(-180deg);
+        z-index: 3;
+    }
+}
+
+@keyframes logo-fade-in {
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes logo-fade-out {
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes logo-color-trans {
+    100%{
+        fill: $desert-primary-color
+    }
+}
+
+@keyframes profile-trunk-expand {
+    0%{
+        transform: scaleX(1) scaleY(1);
+    }
+    50%{
+        transform: scaleX(1) scaleY(1.15);
+    }
+    100%{
+        transform: scaleX(4) scaleY(1.15);
+    }
+}
+
+@keyframes map-route-reveal{
+    0% {
+        stroke-dashoffset: 578.765380859375;
+    }
+    90% {
+        stroke-dashoffset: 0;
     }
 }

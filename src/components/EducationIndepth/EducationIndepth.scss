@@ -15,6 +15,7 @@
     width: 80%;
     display: flex;
     justify-content: center;
+    transform: rotateZ(45deg);
 
     &__locations{
         width: 36vw;
@@ -28,21 +29,17 @@
     &__brainstation{
         &-info{
             width: 50%;
+            padding: 2%;
+            transform: rotateZ(-45deg);
         }
 
         &-overlay{
             position: absolute;
-            width: 18vw;
-            height: 36vw;
+            width: 49.9%;
+            height: 100%;
             // background-color: $desert-primary-color;
             background-color: rgba(255, 255, 255,0);
-            right: 1px;
- 
-            &:hover{
-                .institution__brainstation-mask{
-                    animation: rotate-reveal 2s linear forwards;
-                }
-            }
+            right: 0;
         }
 
         &-mask{
@@ -53,35 +50,114 @@
             justify-content: center;
             align-items: center;
             background-color: $desert-secondary-offset-color;
-            border-left: 2px solid $desert-primary-color;
+            border-left: 1px solid $desert-primary-color;
+            position: relative;
+            
+            &.--active{
+                border-left: 2px solid $desert-primary-color;
+                z-index: 3;
+                animation: rotate-reveal 2s linear forwards;
+                
+                & .institution__brainstation-name{
+                    animation: logo-fade-out 1s linear forwards;
+                }
+
+                & .institution__brainstation-logo{
+                    display: flex;
+                    animation: logo-fade-in 1s linear 1s forwards;
+                    position: absolute;
+                    right: 30%;
+                }
+            }
+            
+            &.--inactive{
+                position: static;
+                border-left: none;
+                z-index: -1;
+            }
+        }
+
+        &-logo{
+            width: 50%;
+            transform: rotateZ(135deg);
+            opacity: 0;
+            display: none;
+
+            &-path{
+                animation: logo-color-trans .6s linear 2s forwards;
+            }
+        }
+
+        &-name{
+            transform: rotateZ(-45deg);
         }
     }
     
     &__surrey{
         &-info{
             width: 50%;
+            padding: 2%;
+            transform: rotateZ(-45deg);
         }
 
         &-overlay{
             position: absolute;
-            width: 18vw;
-            height: 36vw;
+            width: 49.9%;
+            height: 100%;
             // background-color: $desert-primary-color;
             background-color: rgba(255, 255, 255,0);
-            left: -1px;
-            
-            &:hover{
-                .institution__surrey-mask{
-                    animation: rotate-reveal 2s linear forwards;
-                }
-            }
+            left: 0;
         }
         
         &-mask{
-            @extend .institution__brainstation-mask;
-            border-left: none;
-            border-right: 2px solid $desert-primary-color;
+            height: 100%;
+            width: 100%;
             transform-origin: center right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $desert-secondary-offset-color;
+            border-right: 1px solid $desert-primary-color;
+            transform-origin: center right;
+            position: relative;
+            
+            &.--active{
+                border-right: 2px solid $desert-primary-color;
+                z-index: 3;
+                animation: rotate-reveal 2s linear forwards;
+
+                & .institution__surrey-name{
+                    animation: logo-fade-out 1s linear forwards;
+                }
+                
+                & .institution__surrey-logo{
+                    display: flex;
+                    animation: logo-fade-in 1s linear 1s forwards;
+                    position: absolute;
+                    left: 30%;
+                }
+            }
+            
+            &.--inactive{
+                border-right: none;
+                z-index: -1;
+                position: static;
+            }
+        }
+
+        &-name{
+            transform: rotateZ(-45deg);
+        }
+
+        &-logo{
+            width: 50%;
+            transform: rotateZ(135deg);
+            opacity: 0;
+            display: none;
+
+            &-path{
+                animation: logo-color-trans .6s linear 2s forwards;
+            }
         }
     }
 }

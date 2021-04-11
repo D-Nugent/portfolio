@@ -1,0 +1,39 @@
+@use '../../styles/global' as *;
+
+.profile-indepth{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 0;
+    width: 80%;
+    opacity: 0;
+    animation: logo-fade-in 1s linear 2s forwards;
+
+    &__title{
+        margin: 0;
+    }
+    
+    &__history{
+        background-color: $desert-secondary-offset-color;
+        border-radius: 16px;
+        width: 100%;
+        overflow: auto;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        
+        &-item{
+            width: 20%;
+            display: inline-block;
+            padding: 2% 5%;
+            text-align: center;
+        };
+    }
+
+    &__arrow{
+        width: 6%;
+        opacity: .6;
+    }
+}

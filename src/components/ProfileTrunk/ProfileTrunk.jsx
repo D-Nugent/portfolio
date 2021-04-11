@@ -9,9 +9,12 @@ import LinkedInIcon from '../../assets/icons/linkedin-icon.png';
 import LearnMore from '../LearnMore/LearnMore';
 import './ProfileTrunk.scss';
 
-function ProfileTrunk({trait, updateActiveBranch}) {
+function ProfileTrunk({trait, updateActiveBranch, activeBranch}) {
     return (
-      <section className="profile">
+      <section className={`profile ${activeBranch==='Profile' && 'profile--indepth'}`}>
+        {
+          activeBranch!=='Profile'&&
+          <>
           <img src={ProfileImage} alt="Profile" className="profile__image"/>
           <div className="profile__heading">
             <h2 className="profile__heading-first-name">DAVID</h2>
@@ -63,6 +66,8 @@ function ProfileTrunk({trait, updateActiveBranch}) {
               </a>
             </div>
           </section>
+        </>
+}
       </section>
     )
 }
