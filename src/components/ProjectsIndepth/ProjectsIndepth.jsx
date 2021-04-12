@@ -32,20 +32,6 @@ function ProjectsIndepth() {
                 <p className="project__description">
                   {project.description}
                 </p>
-                {/* <p className="project__status">
-                  Status: <span className={`${{
-                      'Planning':'project__status-planning',
-                      'Designing':'project__status-designing',
-                      'Developing':'project__status-developing',
-                      'Complete':'project__status-complete',
-                    }[project.status]}`}>
-                  {project.status}
-                  </span> 
-                </p>
-                <p className="project__methods">
-                  <span className="project__methods-key">Methods: </span>
-                  {project.methods.join(', ')}
-                </p> */}
                 <div className="project__links">
                   {
                     project.gitHubLink!=='TBC'?

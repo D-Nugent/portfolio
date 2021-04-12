@@ -45,6 +45,14 @@
         stroke-dashoffset: 0;
     }
 }
+@keyframes branch-reveal-two{
+    0% {
+        stroke-dashoffset: -174.96;
+    }
+    90% {
+        stroke-dashoffset: 0;
+    }
+}
 
 @keyframes branch-fade-out {
     0%{

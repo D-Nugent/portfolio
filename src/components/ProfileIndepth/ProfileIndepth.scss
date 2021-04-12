@@ -4,13 +4,17 @@
     position: absolute;
     left: 10%;
     right: 10%;
-    top: 0;
+    top: -10%;
     width: 80%;
     opacity: 0;
     animation: logo-fade-in 1s linear 2s forwards;
 
+    &__professional{
+        margin-bottom: 5%;
+    }
+
     &__title{
-        margin: 0;
+        color: $desert-primary-color
     }
     
     &__history{
@@ -19,6 +23,7 @@
         width: 100%;
         overflow: auto;
         white-space: nowrap;
+        margin-bottom: 5%;
 
         &::-webkit-scrollbar{
             display: none;
@@ -35,5 +40,10 @@
     &__arrow{
         width: 6%;
         opacity: .6;
+
+        &:hover{
+            cursor: pointer;
+            opacity: 1;
+        }
     }
 }

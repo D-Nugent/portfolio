@@ -29,18 +29,56 @@ function EducationIndepth() {
         <div className="institution">
           <div className="institution__locations">
             <article className="institution__surrey-info">
-              <p className="institution__surrey-course">Bachelor of Science (First Class Honors)</p>
+              <p className="institution__surrey-course">Bachelor of Science</p>
+              <p className="institution__surrey-grade">First Class Honors</p>
               <p className="institution__surrey-dates">Sep 2010 - Jul 2014</p>
               <p className="institution__surrey-details">
-                A University Degree
+                My degree covered the fundamentals of business management with a focus on 
+                the study of consumer behaviour. The four year degree included a year in 
+                industry and covered accounting acumen and application of tactical 
+                business strategy. I am proud to have graduated with a 'First Class
+                Honors' and to have been within the top percentile of my class.
               </p>
             </article>
             <article className="institution__brainstation-info">
-              <p className="institution__brainstation-course">Web Development Diploma (92.2%)</p>
+              <p className="institution__brainstation-course">Web Development Diploma</p>
+              <p className="institution__brainstation-grade">92.2%</p>
               <p className="institution__brainstation-dates">Nov 2020 - Feb 2021</p>
-              <p className="institution__brainstation-details">
-                An online bootcamp
-              </p>
+              <ul className="institution__brainstation-list">
+                <h4 className="institution__brainstation-list-title">
+                This course covered the following fundamentals:
+                </h4>
+                <li className="institution__brainstation-details">
+                  HTML/CSS
+                </li>
+                <li className="institution__brainstation-details">
+                  SASS
+                </li>
+                <li className="institution__brainstation-details">
+                  JavaScript
+                </li>
+                <li className="institution__brainstation-details">
+                  ExpressJS / Node
+                </li>
+                <li className="institution__brainstation-details">
+                  React
+                </li>
+                <li className="institution__brainstation-details">
+                  ReactRouter
+                </li>
+                <li className="institution__brainstation-details">
+                  Database Management
+                </li>
+                <li className="institution__brainstation-details">
+                  MySQL
+                </li>
+                <li className="institution__brainstation-details">
+                  Authentication & Security
+                </li>
+                <li className="institution__brainstation-details">
+                  Agile/Scrum Development
+                </li>
+              </ul>
             </article>
             <div className="institution__surrey-overlay"
               onMouseEnter={(event)=>{mouseEnterHandler(event)}}

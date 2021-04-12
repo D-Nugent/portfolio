@@ -2,7 +2,7 @@
 
 .education-indepth{
     width: 100%;
-    margin-top: 10%;
+    margin: 10% 0 20%;
     
     &__institution-container{
         width: 100%;
@@ -12,14 +12,14 @@
 }
 
 .institution{
+    margin-top: 5%;
     width: 80%;
     display: flex;
     justify-content: center;
-    transform: rotateZ(45deg);
 
     &__locations{
-        width: 36vw;
-        height: 36vw;
+        width: 50vw;
+        height: 50vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -30,7 +30,19 @@
         &-info{
             width: 50%;
             padding: 2%;
-            transform: rotateZ(-45deg);
+        }
+        
+        &-course{
+            margin-bottom: 0;
+        }
+
+        &-grade{
+            margin: 0;
+            color: $desert-primary-color;
+        }
+
+        &-list-title{
+            margin-left: -15%;
         }
 
         &-overlay{
@@ -79,7 +91,7 @@
 
         &-logo{
             width: 50%;
-            transform: rotateZ(135deg);
+            transform: rotateZ(180deg);
             opacity: 0;
             display: none;
 
@@ -87,17 +99,20 @@
                 animation: logo-color-trans .6s linear 2s forwards;
             }
         }
-
-        &-name{
-            transform: rotateZ(-45deg);
-        }
     }
     
     &__surrey{
         &-info{
             width: 50%;
-            padding: 2%;
-            transform: rotateZ(-45deg);
+            padding: 2% 6%;
+        }
+        &-course{
+            margin-bottom: 0;
+        }
+
+        &-grade{
+            margin: 0;
+            color: $desert-primary-color;
         }
 
         &-overlay{
@@ -145,13 +160,9 @@
             }
         }
 
-        &-name{
-            transform: rotateZ(-45deg);
-        }
-
         &-logo{
             width: 50%;
-            transform: rotateZ(135deg);
+            transform: rotateZ(180deg);
             opacity: 0;
             display: none;
 

@@ -16,7 +16,21 @@
         stroke-dasharray: 134.960;
 
         &--active{
-            animation: branch-reveal 2s linear 1s reverse forwards;
+            animation: branch-reveal 5s linear 1s reverse forwards;
+        }
+    }
+    &__two{
+        stroke-dasharray: 134.960;
+
+        &--active{
+            animation: branch-reveal 5s linear 2s reverse forwards;
+        }
+    }
+    &__three{
+        stroke-dasharray: 174.96;
+
+        &--active{
+            animation: branch-reveal-two 5s linear 3s reverse forwards;
         }
     }
     &--left{

@@ -4,8 +4,8 @@ import ProfileTrunk from '../../components/ProfileTrunk/ProfileTrunk';
 import WelcomeRoot from '../../components/WelcomeRoot/WelcomeRoot';
 import TraitBranch from '../../components/TraitBranch/TraitBranch';
 import IndepthBranch from '../../components/IndepthBranch/IndepthBranch';
-import './DevTree.scss';
 import ProfileIndepth from '../../components/ProfileIndepth/ProfileIndepth';
+import './DevTree.scss';
 
 function DevTree() {
 const [activeSection, setActiveSection] = useState(null);
@@ -19,7 +19,7 @@ const [activeSection, setActiveSection] = useState(null);
   const updateActiveBranch = (trait) => {
     setActiveSection(trait);
     const scrollPath = {
-      'Profile': () => document.querySelector('.profile').scrollIntoView({behavior:"smooth",block:'start',inline:'center'}),
+      'Profile': () => document.querySelector('.interests').scrollIntoView({behavior:"smooth",block:'start',inline:'center'}),
       'Experience':() => document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
       'Education':() => document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
       'Skills': () => document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
@@ -31,10 +31,6 @@ const [activeSection, setActiveSection] = useState(null);
 
   return (
     <>
-      {/* <section className="more-detail more-detail-left">
-        <IndepthBranch trait="Experience"/>
-        <IndepthBranch trait="Education"/>
-      </section> */}
       <div className="wrapper">
         <InterestCrown/>
         <main>
@@ -61,7 +57,7 @@ const [activeSection, setActiveSection] = useState(null);
               activeBranch={activeSection}
             />
             {activeSection==='Profile'&&
-              <ProfileIndepth/>
+              <ProfileIndepth updateActiveBranch={updateActiveBranch}/>
             }
             <div className="appraisal__right">
               <TraitBranch trait="Skills" updateActiveBranch={updateActiveBranch}
@@ -87,10 +83,6 @@ const [activeSection, setActiveSection] = useState(null);
           <WelcomeRoot/>
         }
       </div>
-      {/* <section className="more-detail more-detail-right">
-        <IndepthBranch trait="Skills"/>
-        <IndepthBranch trait="Projects"/>
-      </section> */}
         <div className="width-control"></div>
     </>
     )

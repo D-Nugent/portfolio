@@ -3,9 +3,10 @@ import ExperienceIndepth from '../ExperienceIndepth/ExperienceIndepth';
 import EducationIndepth from '../EducationIndepth/EducationIndepth';
 import SkillsIndepth from '../SkillsIndepth/SkillsIndepth';
 import ProjectsIndepth from '../ProjectsIndepth/ProjectsIndepth';
+import ReturnToHome from '../ReturnToHome/ReturnToHome';
 import './IndepthBranch.scss';
 
-function IndepthBranch({trait,updateActiveBranch,activeBranch}) {
+function IndepthBranch({trait,updateActiveBranch}) {
 
   const conditionalRender = (trait) => {
     switch (trait) {
@@ -27,9 +28,17 @@ function IndepthBranch({trait,updateActiveBranch,activeBranch}) {
       <div className="indepth__wrapper">
         {conditionalRender(trait)}
       </div>
-      <p className="indepth__return" onClick={()=>{updateActiveBranch(null)}}>
-        Return to HOME
-      </p>
+      <ReturnToHome 
+        updateActiveBranch={updateActiveBranch}
+        position={
+        {
+          'Experience':'left',
+          'Education':'left',
+          'Skills':'right',
+          'Projects':'right'
+        }[trait]
+      }
+      />
     </aside>
   )
 }
