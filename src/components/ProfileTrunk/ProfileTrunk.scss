@@ -38,15 +38,23 @@
         &-first-name{
             margin-bottom: 0;
             letter-spacing: .3rem;
-            font-size: 3rem;
             font-weight: 800;
+            text-align: center;
+            font-size: 1.6rem;
+            @include desktop-adapt{
+                font-size: 3rem;
+            }
         }
         
         &-last-name{
             margin: 0 0 2px;
-            align-self: flex-end;
-            font-size: 3rem;
             font-weight: 800;
+            font-size: 1.6rem;
+            text-align: center;
+            @include desktop-adapt{
+                align-self: flex-end;
+                font-size: 3rem;
+            }
         }
 
         &-position{
