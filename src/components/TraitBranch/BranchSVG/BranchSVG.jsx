@@ -13,10 +13,10 @@ function BranchSVG({position, section, activeBranch}) {
       <text className={`branch__heading branch__heading--${position}`}
         x={
           {
-            'Experience':'-128',
-            'Education':'-122',
-            'Skills':'36',
-            'Projects':'20'
+            'Experience':'-80%',
+            'Education':'-77%',
+            'Skills':'23%',
+            'Projects':'13%'
           }[section]
         }
         y="117"

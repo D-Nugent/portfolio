@@ -11,7 +11,7 @@ import './ProfileTrunk.scss';
 
 function ProfileTrunk({trait, updateActiveBranch, activeBranch}) {
     return (
-      <section className={`profile ${activeBranch==='Profile' && 'profile--indepth'}`}>
+      <section className={`profile ${activeBranch==='Profile'? 'profile--indepth':''}`}>
         {
           activeBranch!=='Profile'&&
           <>

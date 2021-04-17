@@ -1,7 +1,7 @@
 @use '../../styles/global' as *;
 
 .profile{
-    min-height: 100vh;
+    min-height: 80vh;
     width: 22%;
     max-width: 300px;
     background-color: $desert-primary-offset-color;
@@ -9,6 +9,10 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+
+    @include desktop-adapt{
+        min-height: 100vh;
+    }
 
     &--indepth{
         animation: profile-trunk-expand 2s linear forwards;
@@ -31,16 +35,20 @@
     
     &__heading {
         width: 80%;
-        margin: 35% 0 0;
+        margin: 45% 0 0;
         display: flex;
         flex-direction: column;
+
+        @include desktop-adapt{
+            margin-top: 35%;
+        }
 
         &-first-name{
             margin-bottom: 0;
             letter-spacing: .3rem;
             font-weight: 800;
             text-align: center;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             @include desktop-adapt{
                 font-size: 3rem;
             }
@@ -49,7 +57,7 @@
         &-last-name{
             margin: 0 0 2px;
             font-weight: 800;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             text-align: center;
             @include desktop-adapt{
                 align-self: flex-end;
@@ -62,8 +70,7 @@
             font-style: italic;
             margin-top: 0;
             color: $desert-primary-color;
-            align-self: center;
-            
+            text-align: center;
         }
     }
 

@@ -1,4 +1,4 @@
-@use '../../../styles/global';
+@use '../../../styles/global' as *;
 
 .branch{
     overflow: visible;
@@ -46,7 +46,11 @@
         letter-spacing: .4rem;
         padding: 10px;
         position: absolute;
-        font-size: .625rem;
+        font-size: 1rem;
+
+        @include desktop-adapt{
+            font-size: .625rem;
+        }
 
         &--left{
             transform: scaleX(-1);
