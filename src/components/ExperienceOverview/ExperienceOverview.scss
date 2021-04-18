@@ -3,25 +3,37 @@
 .experience{
     &__current{
         margin: 0;
-        font-size: 1.25rem;
+        font-size: $header-mobile;
     };
 
     &__employer{
         color: $desert-tertiary-offset-color;
         font-weight: 800;
         letter-spacing: .2rem;
-        font-size: 1.5rem;
+        font-size: $header-mobile;
+
+        @include tablet-adapt{
+            font-size: $header-tablet;
+        }
     };
 
     &__role{
         margin: 1% 0;
-        font-size: .9125rem;
+        font-size: $content-mobile;
+
+        @include tablet-adapt{
+            font-size: $content-tablet;
+        }
     }
 
     &__dates{
         color: $desert-primary-color;
         margin: 0;
-        font-size: .9125rem;
+        font-size: $content-mobile;
+
+        @include tablet-adapt{
+            font-size: $content-tablet;
+        }
     }
 
     &__responsibilities{
@@ -29,6 +41,11 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        padding-left: 10%;
+    
+        @include desktop-adapt{
+            padding-left: 36%;
+        }
         
         &-heading{
             font-size: .9125rem;
@@ -38,8 +55,12 @@
         &-item{
             align-self: flex-end;
             color: #FFF;
-            font-size: .9125rem;
             margin-bottom: 1%;
+            font-size: $content-mobile;
+            
+            @include tablet-adapt{
+                font-size: .9125rem;
+            }
 
             &::marker{
                 color: $desert-tertiary-offset-color;

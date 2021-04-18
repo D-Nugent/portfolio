@@ -3,6 +3,11 @@ import './BranchSVG.scss';
 
 function BranchSVG({position, section, activeBranch}) {
 
+  const tabletQuery = window.matchMedia('(min-width: 768px)');
+  const textPositionQuery = {
+    experience: tabletQuery.matches?'-80%':'-78%',
+    education: tabletQuery.matches?'-75%':'-73%'
+  }
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -13,10 +18,18 @@ function BranchSVG({position, section, activeBranch}) {
       <text className={`branch__heading branch__heading--${position}`}
         x={
           {
-            'Experience':'-80%',
-            'Education':'-77%',
+            'Experience': textPositionQuery.experience,
+            'Education': textPositionQuery.education,
             'Skills':'23%',
-            'Projects':'13%'
+            'Projects':'15%'
+          }[section]
+        }
+        textLength={
+          {
+            'Experience':'70%',
+            'Education':'63%',
+            'Skills':'42%',
+            'Projects':'56%'
           }[section]
         }
         y="117"

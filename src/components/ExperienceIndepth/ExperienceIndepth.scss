@@ -8,7 +8,7 @@
     &__position-wrapper{
         display: flex;
         justify-content: space-between;
-        animation: experience-enter 1.7s ease-in-out forwards;
+        animation: experience-enter 1.3s ease-in-out forwards;
         transform-origin: left;
 
         &:nth-of-type(even){
@@ -26,12 +26,26 @@
         color: $desert-primary-color;
     }
     
-    &__position-details{
-        width: 50%;
-        padding: 5%;
-    }
+    &__position{
+        &-details{
+            padding: 5%;
+            width: 65%;
+            
+            @include desktop-adapt{
+                width: 50%;
+            }
+        }
 
-    &__position-title{
-        color: $desert-primary-color; 
+        &-title{
+            color: $desert-primary-color; 
+        }
+
+        &-description-list{
+            padding-left: 5%;
+            
+            // @include tablet-adapt{
+            //     padding-left: 15%;
+            // }
+        }
     }
 }

@@ -3,6 +3,7 @@
 .education-indepth{
     width: 100%;
     margin: 10% 0 20%;
+    min-height: 60vh;
     
     &__institution-container{
         width: 100%;
@@ -29,7 +30,13 @@
     &__brainstation{
         &-info{
             width: 50%;
-            padding: 2%;
+            padding: 2% 4%;
+            font-size: $content-mobile;
+
+            @include tablet-adapt{
+                font-size: $content-tablet;
+                padding: 2% 6%;
+            }
         }
         
         &-course{
@@ -41,8 +48,11 @@
             color: $desert-primary-color;
         }
 
-        &-list-title{
-            margin-left: -15%;
+        &-list{
+            padding-left: 20%;
+            &-title{
+                margin-left: -15%;
+            }
         }
 
         &-overlay{
@@ -104,7 +114,13 @@
     &__surrey{
         &-info{
             width: 50%;
-            padding: 2% 6%;
+            padding: 2% 4%;
+            font-size: $content-mobile;
+
+            @include tablet-adapt{
+                padding: 2% 6%;
+                font-size: $content-tablet;
+            }
         }
         &-course{
             margin-bottom: 0;
@@ -122,6 +138,11 @@
             // background-color: $desert-primary-color;
             background-color: rgba(255, 255, 255,0);
             left: 0;
+        }
+
+        &-name{
+            width: 50%;
+            text-align: center;
         }
         
         &-mask{

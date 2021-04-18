@@ -19,16 +19,16 @@ function ExperienceIndepth() {
   const desktopQuery = window.matchMedia('(min-width: 1280px)');
   const tabletQuery = window.matchMedia('(min-width: 768px)');
   const scrollMediaQueries = {
-    expRangeOne: desktopQuery.matches?16:tabletQuery.matches?0:7,
-    expRangeTwo: desktopQuery.matches?27:tabletQuery.matches?8:19,
-    expRangeThree: desktopQuery.matches?39:tabletQuery.matches?16:32,
-    expRangeFour: desktopQuery.matches?49:tabletQuery.matches?28:48,
-    expRangeFive: desktopQuery.matches?58:tabletQuery.matches?40:56,
+    expRangeOne: desktopQuery.matches?16:tabletQuery.matches?0:0,
+    expRangeTwo: desktopQuery.matches?27:tabletQuery.matches?8:15,
+    expRangeThree: desktopQuery.matches?41:tabletQuery.matches?16:28,
+    expRangeFour: desktopQuery.matches?49:tabletQuery.matches?28:42,
+    expRangeFive: desktopQuery.matches?59:tabletQuery.matches?40:48,
   }
   /* #ToDo - Need to come back and adjust mobile query scroll rates*/
 
   return (
-    <section className="experience-indepth" onScroll={() =>{console.log(document.body.scrollTop);}}>
+    <section className="experience-indepth">
       <article className="experience-indepth__position-wrapper">
         <h2 className="experience-indepth__date-range">
           Feb 2021 - Present
@@ -37,7 +37,7 @@ function ExperienceIndepth() {
           <h4 className="experience-indepth__position-title">
             BrainStation - Teaching Assistant
           </h4>
-          <ul className="experience-indepth__position-description">
+          <ul className="experience-indepth__position-description-list">
           Responsibilities include:
             <li className="experience-indepth__position-description">
               The education of 25+ students
@@ -69,7 +69,7 @@ function ExperienceIndepth() {
           <h4 className="experience-indepth__position-title">
             Fairmont Chateau Lake Louise - Front Office Manager
           </h4>
-          <ul className="experience-indepth__position-description">
+          <ul className="experience-indepth__position-description-list">
             Noteworthy Achievements:
             <li className="experience-indepth__position-description">
               Created an app that analyzed the performance of team members across multiple competencies allowing for targeted training and greater reporting.
@@ -101,7 +101,7 @@ function ExperienceIndepth() {
           <h4 className="experience-indepth__position-title">
             Fairmont St Andrews - Front Office Manager
           </h4>
-          <ul className="experience-indepth__position-description">
+          <ul className="experience-indepth__position-description-list">
             Noteworthy Achievements:
             <li className="experience-indepth__position-description">
               Revamped the hotels Incremental Revenue programme which for 
@@ -141,7 +141,7 @@ function ExperienceIndepth() {
           <h4 className="experience-indepth__position-title">
             Fairmont St Andrews - Assistant Front Office Manager
           </h4>
-          <ul className="experience-indepth__position-description">
+          <ul className="experience-indepth__position-description-list">
             Noteworthy Achievements:
             <li className="experience-indepth__position-description">
               Took a key role in the set-up and continued management of the hotels’ 
@@ -170,7 +170,7 @@ function ExperienceIndepth() {
           <h4 className="experience-indepth__position-title">
             Fairmont St Andrews - Front Office Supervisor
           </h4>
-          <ul className="experience-indepth__position-description">
+          <ul className="experience-indepth__position-description-list">
             Noteworthy Achievements:
             <li className="experience-indepth__position-description">
               Developed a excel program for tracking and analysing guest satisfaction 
@@ -202,7 +202,7 @@ function ExperienceIndepth() {
           <h4 className="experience-indepth__position-title">
             Prior Professional Experience
           </h4>
-          <ul className="experience-indepth__position-description">
+          <ul className="experience-indepth__position-description-list">
             In the early stages of my career alongside my academic studies I took advantage of leadership development programs with Starbucks, Marriott and Intercontinental Hotels Group. This experience shaped my career in it's early stages and gave me firm footing for establishing my professional competencies.
           </ul>
         </div>

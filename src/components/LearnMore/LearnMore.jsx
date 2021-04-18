@@ -10,7 +10,7 @@ function LearnMore({position, updateActiveBranch, trait}) {
         >
         {position==='left'?
         <>
-        <img src={DoubleArrow} alt="Arrow Icon" className="learn-more__double-arrow--reverse"/>
+        <img src={DoubleArrow} alt="Arrow Icon" className="learn-more__double-arrow learn-more__double-arrow--reverse"/>
           LEARN MORE
         </>
           :

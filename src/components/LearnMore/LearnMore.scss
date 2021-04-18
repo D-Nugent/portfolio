@@ -41,7 +41,11 @@
             }
         }
     }
-    &__double-arrow--reverse{
-        transform: scaleX(-1);
+    &__double-arrow{
+        height: 1.2rem;
+        
+        &--reverse{
+            transform: scaleX(-1);
+        }
     }
 }
