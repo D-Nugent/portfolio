@@ -18,7 +18,15 @@
     &--indepth{
         animation: profile-trunk-expand 2s linear forwards;
         transform-origin: bottom;
-        height: 150vh;
+        min-height: 100vh;
+
+        @include tablet-adapt {
+            min-height: 130vh;
+        }
+
+        @include desktop-adapt {
+            min-height: 200vh;
+        }
     }
 
     &__indepth-test{

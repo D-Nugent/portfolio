@@ -15,25 +15,7 @@ function App () {
 
     return (
       <div className="app">
-      {/* <Home/> */}
         <Switch>
-          {/* <Route exact path="/">
-            <Redirect to="/landing"/>
-          </Route>
-          <Route exact path="/landing" render={(routeProps) =>
-            <Landing {...routeProps}/>}/>
-          <Route exact path="/profile" render={(routeProps) =>
-            <Profile {...routeProps}/>}/>
-          <Route exact path="/process" render={(routeProps) =>
-            <Process {...routeProps}/>}/>
-          <Route exact path="/projects" render={(routeProps) =>
-            <Projects {...routeProps}/>}/>
-          <Route exact path="/testimonials" render={(routeProps) =>
-            <Testimonials {...routeProps}/>}/>
-          <Route exact path="/blog" render={(routeProps) =>
-            <Blog {...routeProps}/>}/>
-          <Route exact path="/contact" render={(routeProps) =>
-            <Contact {...routeProps}/>}/> */}
           <Route exact path="/" render={(routeProps) =>
             <DevTree {...routeProps}/>}/>
         </Switch>

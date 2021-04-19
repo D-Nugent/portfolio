@@ -7,7 +7,7 @@
     width: 80%;
     opacity: 0;
     animation: logo-fade-in 1s linear 2s forwards;
-    // top: 5%;
+
     @include desktop-adapt{
         top: -10%;
     }
