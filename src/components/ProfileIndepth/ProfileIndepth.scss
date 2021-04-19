@@ -4,10 +4,13 @@
     position: absolute;
     left: 10%;
     right: 10%;
-    top: -10%;
     width: 80%;
     opacity: 0;
     animation: logo-fade-in 1s linear 2s forwards;
+    // top: 5%;
+    @include desktop-adapt{
+        top: -10%;
+    }
 
     &__professional{
         margin-bottom: 5%;
@@ -32,8 +35,15 @@
         &-item{
             width: 20%;
             display: inline-block;
-            padding: 2% 5%;
+            padding: 2% 2%;
             text-align: center;
+            font-size: $content-mobile;
+            margin: 0 2%;
+            @include tablet-adapt{
+                margin: 0;
+                padding: 2% 5%;
+                font-size: $content-tablet;
+            }
         };
     }
 

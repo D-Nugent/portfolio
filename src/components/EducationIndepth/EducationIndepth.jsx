@@ -34,9 +34,7 @@ function EducationIndepth() {
   }
 
   const touchQuery = window.matchMedia('(hover: hover)');
-  const touchQueryEvaluator = touchQuery.matches?false:true;
 
-  console.log(touchQueryEvaluator);
   return (
     <section className="education-indepth">
       <div className="education-indepth__institution-container">

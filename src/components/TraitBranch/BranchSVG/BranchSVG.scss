@@ -9,28 +9,35 @@
         opacity: 0;
 
         &--active{
-            animation: leaves-fade-in 1s linear 2s forwards;
+            animation: leaves-fade-in .5s linear 3.5s forwards;
         }
     }
-    &__one{
+    &__primary{
         stroke-dasharray: 134.960;
 
         &--active{
-            animation: branch-reveal 5s linear 1s reverse forwards;
+            animation: branch-reveal 2.5s ease-out reverse forwards;
         }
     }
-    &__two{
-        stroke-dasharray: 134.960;
+    &__secondary{
+        stroke-dasharray: 174.960;
 
         &--active{
-            animation: branch-reveal 5s linear 2s reverse forwards;
+            animation: branch-reveal-two 2.5s ease-out reverse forwards;
         }
     }
-    &__three{
-        stroke-dasharray: 174.96;
+    &__tertiary{
+        stroke-dasharray: 134.96;
 
         &--active{
-            animation: branch-reveal-two 5s linear 3s reverse forwards;
+            animation: branch-reveal 2.5s ease-out reverse forwards;
+        }
+    }
+    &__quarternary{
+        stroke-dasharray: 134.96;
+
+        &--active{
+            animation: branch-reveal 2.5s ease-out reverse forwards;
         }
     }
     &--left{
