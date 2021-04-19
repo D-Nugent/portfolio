@@ -1,1 +1,195 @@
-@use '../../styles/global';
+@use '../../styles/global' as *;
+
+.education-indepth{
+    width: 100%;
+    margin: 10% 0 20%;
+    min-height: 60vh;
+    
+    &__institution-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.institution{
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    &__locations{
+        width: 50vw;
+        height: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    &__brainstation{
+        &-info{
+            width: 50%;
+            padding: 2% 4%;
+            font-size: $content-mobile;
+
+            @include tablet-adapt{
+                font-size: $content-tablet;
+                padding: 2% 6%;
+            }
+        }
+        
+        &-course{
+            margin-bottom: 0;
+        }
+
+        &-grade{
+            margin: 0;
+            color: $desert-primary-color;
+        }
+
+        &-list{
+            padding-left: 20%;
+            &-title{
+                margin-left: -15%;
+            }
+        }
+
+        &-overlay{
+            position: absolute;
+            width: 49.9%;
+            height: 100%;
+            // background-color: $desert-primary-color;
+            background-color: rgba(255, 255, 255,0);
+            right: 0;
+        }
+
+        &-mask{
+            height: 100%;
+            width: 100%;
+            transform-origin: center left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $desert-secondary-offset-color;
+            border-left: 1px solid $desert-primary-color;
+            position: relative;
+            
+            &.--active{
+                border-left: 2px solid $desert-primary-color;
+                z-index: 3;
+                animation: rotate-reveal 2s linear forwards;
+                
+                & .institution__brainstation-name{
+                    animation: logo-fade-out 1s linear forwards;
+                }
+
+                & .institution__brainstation-logo{
+                    display: flex;
+                    animation: logo-fade-in 1s linear 1s forwards;
+                    position: absolute;
+                    right: 30%;
+                }
+            }
+            
+            &.--inactive{
+                position: static;
+                border-left: none;
+                z-index: -1;
+            }
+        }
+
+        &-logo{
+            width: 50%;
+            transform: rotateZ(180deg);
+            opacity: 0;
+            display: none;
+
+            &-path{
+                animation: logo-color-trans .6s linear 2s forwards;
+            }
+        }
+    }
+    
+    &__surrey{
+        &-info{
+            width: 50%;
+            padding: 2% 4%;
+            font-size: $content-mobile;
+
+            @include tablet-adapt{
+                padding: 2% 6%;
+                font-size: $content-tablet;
+            }
+        }
+        &-course{
+            margin-bottom: 0;
+        }
+
+        &-grade{
+            margin: 0;
+            color: $desert-primary-color;
+        }
+
+        &-overlay{
+            position: absolute;
+            width: 49.9%;
+            height: 100%;
+            // background-color: $desert-primary-color;
+            background-color: rgba(255, 255, 255,0);
+            left: 0;
+        }
+
+        &-name{
+            width: 50%;
+            text-align: center;
+        }
+        
+        &-mask{
+            height: 100%;
+            width: 100%;
+            transform-origin: center right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $desert-secondary-offset-color;
+            border-right: 1px solid $desert-primary-color;
+            transform-origin: center right;
+            position: relative;
+            
+            &.--active{
+                border-right: 2px solid $desert-primary-color;
+                z-index: 3;
+                animation: rotate-reveal 2s linear forwards;
+
+                & .institution__surrey-name{
+                    animation: logo-fade-out 1s linear forwards;
+                }
+                
+                & .institution__surrey-logo{
+                    display: flex;
+                    animation: logo-fade-in 1s linear 1s forwards;
+                    position: absolute;
+                    left: 30%;
+                }
+            }
+            
+            &.--inactive{
+                border-right: none;
+                z-index: -1;
+                position: static;
+            }
+        }
+
+        &-logo{
+            width: 50%;
+            transform: rotateZ(180deg);
+            opacity: 0;
+            display: none;
+
+            &-path{
+                animation: logo-color-trans .6s linear 2s forwards;
+            }
+        }
+    }
+}

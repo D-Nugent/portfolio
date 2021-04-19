@@ -2,19 +2,23 @@ import React from 'react';
 import './LearnMore.scss';
 import DoubleArrow from '../../assets/icons/double_arrow.svg';
 
-function LearnMore({position, alt}) {
-
-  const tempAlert = () => {
-    alert('Apologies, this section of the site is still in development. It should be added within the week.')
-  }
-
+function LearnMore({position, updateActiveBranch, trait}) {
     return (
       <div className={`learn-more ${position==='left'?'learn-more--left':'learn-more--right'}`}>
-        <p className={`learn-more__link ${alt==='profile'?'learn-more__link--profile':''}`}
-          onClick={()=>{tempAlert()}}
+        <p className={`learn-more__link ${trait==='Profile'?'learn-more__link--profile':''}`}
+          onClick={()=>{updateActiveBranch(trait)}}
         >
+        {position==='left'?
+        <>
+        <img src={DoubleArrow} alt="Arrow Icon" className="learn-more__double-arrow learn-more__double-arrow--reverse"/>
           LEARN MORE
-        <img src={DoubleArrow} alt="Arrow Icon" className="learn-more__double-arrow"/>
+        </>
+          :
+        <>
+          LEARN MORE
+          <img src={DoubleArrow} alt="Arrow Icon" className="learn-more__double-arrow"/>
+        </>
+        }
         </p>
       </div>
     )

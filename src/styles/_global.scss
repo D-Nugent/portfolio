@@ -1,7 +1,7 @@
-@import './partials/variables';
 @import './partials/typography';
 @import './partials/mixins';
 @import './partials/animations';
+@import './partials/variables';
 
 // ---Global Reset 
 
@@ -12,6 +12,11 @@ html, body {
     height: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar{
+      display: none;
+    }
   }
 
   // html {
@@ -20,6 +25,7 @@ html, body {
   
   *, *:before, *:after {
     box-sizing: inherit;
+    scroll-behavior: inherit;
   }
 
 // ---Re-usable Component styling---

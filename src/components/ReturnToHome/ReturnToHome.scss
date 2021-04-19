@@ -1,0 +1,21 @@
+@use '../../styles/global' as *;
+
+.return-home{
+    @include project-button;
+    position: fixed;
+    bottom: 3%;
+    padding: 1% 2%;
+
+    &--right{
+        right: 5%;
+    }
+
+    &--left{
+        left: 5%;
+    }
+
+    &--top{
+        bottom: unset;
+        top: 5%;
+    }
+}

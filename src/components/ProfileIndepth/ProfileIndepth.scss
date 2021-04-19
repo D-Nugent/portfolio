@@ -1,0 +1,59 @@
+@use '../../styles/global' as *;
+
+.profile-indepth{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    opacity: 0;
+    animation: logo-fade-in 1s linear 2s forwards;
+    // top: 5%;
+    @include desktop-adapt{
+        top: -10%;
+    }
+
+    &__professional{
+        margin-bottom: 5%;
+    }
+
+    &__title{
+        color: $desert-primary-color
+    }
+    
+    &__history{
+        background-color: $desert-secondary-offset-color;
+        border-radius: 16px;
+        width: 100%;
+        overflow: auto;
+        white-space: nowrap;
+        margin-bottom: 5%;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        
+        &-item{
+            width: 20%;
+            display: inline-block;
+            padding: 2% 2%;
+            text-align: center;
+            font-size: $content-mobile;
+            margin: 0 2%;
+            @include tablet-adapt{
+                margin: 0;
+                padding: 2% 5%;
+                font-size: $content-tablet;
+            }
+        };
+    }
+
+    &__arrow{
+        width: 6%;
+        opacity: .6;
+
+        &:hover{
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
+}

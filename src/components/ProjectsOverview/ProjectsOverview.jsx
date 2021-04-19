@@ -1,5 +1,4 @@
 import React from 'react';
-import LearnMore from '../LearnMore/LearnMore';
 import AcumenLogo from '../../assets/icons/acumen-logo.svg';
 import './ProjectsOverview.scss';
 
@@ -28,7 +27,6 @@ function ProjectsOverview() {
             To see more of the projects I am working on, click below.
           </p>
         </article>
-        <LearnMore position="right"/>
       </div>
     )
 }

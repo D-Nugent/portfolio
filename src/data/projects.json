@@ -1,0 +1,92 @@
+[
+  {
+    "projectName": "Portfolio Site",
+    "status":"Developing",
+    "methods":["react","sass","js","react-router"],
+    "gitHubLink":"https://github.com/D-Nugent/portfolio",
+    "deployLink":"https://www.davidnugent.me",
+    "description":"The site that you are hopefully appreciating right now. A creative representation of my skills, experience and development style.",
+    "projectID": "23ec360e-af79-4139-93bc-e6e1cf5e9cad"
+  },
+  {
+    "projectName": "Acumen",
+    "status":"Developing",
+    "methods":["react","sass","js","react-router"],
+    "gitHubLink":"https://github.com/D-Nugent/acumen",
+    "deployLink":"https://www.acumen-resume.com",
+    "description":"A web app created in 14 days as part of my BrainStation course. Acumen seeks to modernize the job application process and mark a transition away from the paper resume to an immersive video interview.",
+    "projectID": "be09f5de-394b-4309-9551-3a3c35e385c5"
+  },
+  {
+    "projectName": "BeerCode",
+    "status":"Planning",
+    "methods":["react","sass","js","react-router"],
+    "gitHubLink":"TBC",
+    "deployLink":"TBC",
+    "description":"A website for posting my own web development tutorials in both written and video format. Built with a focus on scalability.",
+    "projectID": "4258f6f8-329a-4fc7-ade1-699d453dcb7c"
+  },
+  {
+    "projectName": "Who Wants to Be...",
+    "status":"Complete",
+    "methods":["react","sass","js","react-router"],
+    "gitHubLink":"https://github.com/D-Nugent/brainstationnaire",
+    "deployLink":"TBC",
+    "description":"A 'Who wants to be a Millionnaire?' themed online web quiz. This was built as part of a coding challenge and put together in 4 hours.",
+    "projectID": "a2c556bc-d4b0-4280-83e0-f84475973991"
+  },
+  {
+    "projectName": "Aegis",
+    "status":"Planning",
+    "methods":["react","sass","js","react-router"],
+    "gitHubLink":"TBC",
+    "deployLink":"TBC",
+    "description":"A Web App designed to help Hotels manage lost and found procedures, communication and delivery. Built with a focus on intelligent back-end data searching and filtering",
+    "projectID": "969218c4-7913-4c85-86fa-fea0fc5aad8c"
+  },
+  {
+    "projectName": "Hear.Me",
+    "status":"Planning",
+    "methods":["react","sass","js","react-router"],
+    "gitHubLink":"TBC",
+    "deployLink":"TBC",
+    "description":"A social web app intended to create a fresh perspective for sharing individuals passions and unique ideas",
+    "projectID": "03debc45-4b87-4597-84f9-4682ac97755e"
+  },
+  {
+    "projectName": "Pokemon Battler",
+    "status":"Planning",
+    "methods":["react","sass","js","react-router"],
+    "gitHubLink":"TBC",
+    "deployLink":"TBC",
+    "description":"A fun project to emulate the traditional pokemon battle experience utilizing the Pokemon API",
+    "projectID": "647c2120-a91e-454c-8d8d-f6d2b9aa474f"
+  },
+  {
+    "projectName": "re:wards",
+    "status":"Planning",
+    "methods":["react","sass","js","react-router"],
+    "gitHubLink":"TBC",
+    "deployLink":"TBC",
+    "description":"A platform designed to leverage the benefits a multi-store rewards platform for small businesses. Intended to raise awareness of local business and give a platform for sales and marketing which is inexpensive and accessible.",
+    "projectID": "157fbf87-0460-4cd7-8cde-d51e6bfc919f"
+  },
+  {
+    "projectName": "ÆTHER Strategy",
+    "status":"Planning",
+    "methods":["react","sass","js","react-router"],
+    "gitHubLink":"TBC",
+    "deployLink":"TBC",
+    "description":"A long-term passion project for creating a 3d RPG tactics game with an immersive storyline and enemy AI.",
+    "projectID": "05df11f1-7364-4b46-b48e-a99174a4e569"
+  },
+  {
+    "projectName": "Sage Advice",
+    "status":"Planning",
+    "methods":["react","sass","js","react-router"],
+    "gitHubLink":"TBC",
+    "deployLink":"TBC",
+    "description":"A platform designed to connect users looking for mentors in their industry. Leveraging the increase in life-expectancy and tapping into a large resource of retired industry experts",
+    "projectID": "5c8a8dba-6bf0-44f9-9306-1b033d4829da"
+  }
+]

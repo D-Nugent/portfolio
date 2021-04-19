@@ -1,1 +1,48 @@
 @use '../../styles/global' as *;
+
+.skills-indepth{
+    margin-top: 5%;
+    padding: 0 5%;
+    
+    &__quote-container{
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    &__quote{
+        font-size: 1.4rem;
+        text-align: center;
+        &-letter{
+            color: rgba(255, 255, 255,0);
+            animation: quoteTyping .8s linear forwards;
+        }
+        &-cursor{
+            color: rgba(255, 255, 255,0);
+            animation: cursor-flash .2s linear forwards;
+            &--pulse{
+                color: rgba(255, 255, 255,0);
+                margin-left: .2rem;
+                animation: cursor-flash 1s linear 8.6s infinite;
+            }
+        }
+    }
+
+    &__skills-wrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__skills-list{
+        color: $desert-primary-color;
+    }
+
+    &__skills{
+        color: #FFF;
+        margin: 4% 10%;
+    }
+
+    &__skills-topics{
+        margin: 0;
+        font-size: .8125rem;
+    }
+}

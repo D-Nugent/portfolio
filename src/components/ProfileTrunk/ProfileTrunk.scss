@@ -1,14 +1,29 @@
 @use '../../styles/global' as *;
 
 .profile{
-    min-height: 100vh;
-    min-width: 22%;
+    min-height: 70vh;
     max-width: 300px;
     background-color: $desert-primary-offset-color;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: 26%;
+
+    @include desktop-adapt{
+        min-height: 100vh;
+        width: 22%;
+    }
+
+    &--indepth{
+        animation: profile-trunk-expand 2s linear forwards;
+        transform-origin: bottom;
+        height: 150vh;
+    }
+
+    &__indepth-test{
+        position: absolute;
+    }
     
     &__image {
         width: 80%; 
@@ -21,22 +36,34 @@
     
     &__heading {
         width: 80%;
-        margin: 35% 0 0;
+        margin: 45% 0 0;
         display: flex;
         flex-direction: column;
+
+        @include desktop-adapt{
+            margin-top: 35%;
+        }
 
         &-first-name{
             margin-bottom: 0;
             letter-spacing: .3rem;
-            font-size: 3rem;
             font-weight: 800;
+            text-align: center;
+            font-size: 1.8rem;
+            @include desktop-adapt{
+                font-size: 3rem;
+            }
         }
         
         &-last-name{
             margin: 0 0 2px;
-            align-self: flex-end;
-            font-size: 3rem;
             font-weight: 800;
+            font-size: 1.8rem;
+            text-align: center;
+            @include desktop-adapt{
+                align-self: flex-end;
+                font-size: 3rem;
+            }
         }
 
         &-position{
@@ -44,25 +71,29 @@
             font-style: italic;
             margin-top: 0;
             color: $desert-primary-color;
-            align-self: center;
-            
+            text-align: center;
         }
     }
 
     &__overview{
         width: 80%;
         margin: 0;
-        font-size: 1rem;
+        font-size: $content-tablet;
         text-align: center;
         padding-bottom: 10%;
     }
 
     &__contact{
-        border-top: 4px solid $desert-primary-color;
-        border-bottom: 4px solid $desert-primary-color;
         width: 80%;
         margin-top: 10%;
         padding: 3% 0;
+        border-top: solid $desert-primary-color;
+        border-bottom: solid $desert-primary-color;
+        border-width: 2px 0;
+
+        @include tablet-adapt {
+            border-width: 4px 0;
+        }
 
         &-method{
             margin: 10% 0;
@@ -70,9 +101,9 @@
             & > a {
                 color: white;
                 text-decoration: none;
-                font-size: .9125rem;
                 display: flex;
                 align-items: center;
+                font-size: $content-mobile;
             }
         }
 

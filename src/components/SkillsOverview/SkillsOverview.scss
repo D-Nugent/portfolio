@@ -3,7 +3,11 @@
 .skills{
   &__heading{
     margin: 0;
-    font-size: .9125rem;
+    font-size: $content-mobile;
+
+    @include tablet-adapt{
+      font-size: $content-tablet;
+    }
   }
 
   &__list{
@@ -13,8 +17,12 @@
     margin: 4% 0;
 
     &-item{
-      font-size: .9125rem;
       margin-bottom: 1%;
+      font-size: $content-mobile;
+
+      @include tablet-adapt{
+        font-size: $content-tablet;
+      }
 
       &::marker{
         color: $desert-tertiary-offset-color;
@@ -23,7 +31,11 @@
   }
 
   &__caption{
-    font-size: .9125rem;
     color: $desert-primary-color;
+    font-size: $content-mobile;
+    
+    @include tablet-adapt{
+      font-size: $content-tablet;
+    }
   }
 }

@@ -1,19 +1,23 @@
 @use '../../styles/global' as *;
 
 .indepth {
-    width: 100%;
+    width: 250%;
     display: flex;
     flex-direction: column;
-
+    padding: 0 5%;
+    position: relative;
+    
     &-left{
-        align-items: flex-end;
+        align-items: flex-start;
+        right: 150%;
     }
-
+    
     &-right{
         align-items: flex-start;
     }
 
     &__wrapper{
         position: relative;
+        width: 100%;
     }
 }

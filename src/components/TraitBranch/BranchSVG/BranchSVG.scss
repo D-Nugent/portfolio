@@ -1,0 +1,62 @@
+@use '../../../styles/global' as *;
+
+.branch{
+    overflow: visible;
+    position: relative;
+
+
+    &__leaves{
+        opacity: 0;
+
+        &--active{
+            animation: leaves-fade-in .5s linear 3.5s forwards;
+        }
+    }
+    &__primary{
+        stroke-dasharray: 134.960;
+
+        &--active{
+            animation: branch-reveal 2.5s ease-out reverse forwards;
+        }
+    }
+    &__secondary{
+        stroke-dasharray: 174.960;
+
+        &--active{
+            animation: branch-reveal-two 2.5s ease-out reverse forwards;
+        }
+    }
+    &__tertiary{
+        stroke-dasharray: 134.96;
+
+        &--active{
+            animation: branch-reveal 2.5s ease-out reverse forwards;
+        }
+    }
+    &__quarternary{
+        stroke-dasharray: 134.96;
+
+        &--active{
+            animation: branch-reveal 2.5s ease-out reverse forwards;
+        }
+    }
+    &--left{
+        transform: scaleX(-1);
+    }
+
+    &__heading{
+        fill: white;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .4rem;
+        padding: 10px;
+        position: absolute;
+        font-size: 10px;
+
+        &--left{
+            transform: scaleX(-1);
+        }
+    }
+}

@@ -5,13 +5,20 @@
     color: $desert-tertiary-offset-color;
     font-weight: 800;
     letter-spacing: .2rem;
-    font-size: 1.5rem;
-    margin-bottom: 0;
+    font-size: $header-mobile;
+    margin: 0;
+
+    @include tablet-adapt{
+      font-size: $header-tablet;
+    }
   };
 
   &__description{
-    font-size: .9125rem;
     margin: 0 0 4%;
+    font-size: $content-mobile;
+    @include tablet-adapt{
+      font-size: $content-tablet;
+    }
   }
 
   &__name{
@@ -22,27 +29,24 @@
     margin: 1% 0;
 
     &-logo{
-      margin: 0 -4px;
+      margin: 0 -3px;
+      height: 2rem;
     }
   }
 
   &__links{
-    width: 60%;
     display: flex;
+    width: 80%;
+    
+    @include tablet-adapt{
+      width: 60%;
+    }
   }
 
   &__link{
-    font-size: .8125rem;
-    text-decoration: none;
-    color: #FFF;
-    border: 1px solid $desert-primary-color;
-    border-radius: 4px;
-    padding: 3%;
-    margin: 2% 2% 2% 0;
-    background-color: $desert-secondary-offset-color;
-
-    &:hover{
-      animation: color-fade-button .4s linear forwards;
-    }
+    @include project-button;
   }
+  &__wrapper{
+    margin-bottom: 3.5%;
+}
 }

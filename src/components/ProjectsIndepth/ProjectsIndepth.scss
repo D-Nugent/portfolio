@@ -1,1 +1,113 @@
 @use '../../styles/global' as *;
+
+.projects-indepth{
+    margin: 10% 0;
+
+    &__projects-wrapper{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+.project{
+    border-radius: 16px;
+    width: 15vw;
+    min-width: 120px;
+    margin: 3% 1%;
+    padding: 0 0 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 8px 8px 30px rgba(0, 0, 0,0.4);
+
+    &__name{
+        height: 15%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 1.25rem;
+        background-color: $desert-primary-color;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom: 2px solid $desert-primary-color;
+        margin: -2px 0 0;
+        padding: 5% 0;
+        color: $desert-secondary-offset-color;
+    }
+
+    &__description{
+        text-align: center;
+        padding: 0 5%;
+    }
+
+    &__status{
+        color: #FFF;
+        margin-bottom: 0;
+
+        // &-planning{
+        //     color: red;
+        // }
+
+        // &-designing{
+        //     color: orange;
+        // }
+
+        // &-developing{
+        //     color: yellowgreen;
+        // }
+        // &-complete{
+        //     color: green;
+        // }   
+    }
+
+    &__methods{
+        text-align: center;
+        color: $desert-primary-color;
+
+        &-key{
+            color: #FFF;
+        }
+    }
+
+    &__links{
+        display: flex;
+        color: $desert-primary-color;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link{
+        @include project-button;
+
+        &--inactive{
+            color: gainsboro;
+            text-decoration-line: line-through;
+            position: relative;
+
+            &:hover{
+                animation: none;
+
+                &::after{
+                    content: "Not available";
+                    position: absolute;
+                    width: 100%;
+                    top: 120%;
+                    left: 0;
+                    padding: 5%;
+                    border-radius: 4px;
+                    text-align: center;
+                    background-color: $desert-primary-offset-color;
+                    color: #FFF;
+                    font-size: .7125rem;
+                }
+            }
+        }
+    }
+
+}

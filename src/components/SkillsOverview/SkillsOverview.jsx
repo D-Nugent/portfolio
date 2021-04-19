@@ -1,5 +1,4 @@
 import React from 'react';
-import LearnMore from '../LearnMore/LearnMore';
 import './SkillsOverview.scss';
 
 function SkillsOverview() {
@@ -25,7 +24,6 @@ function SkillsOverview() {
         <p className="skills__caption">
           I am constantly expanding my tool kit of development skills and truly love learning something new.
         </p>
-        <LearnMore/>
       </div>
     )
 }

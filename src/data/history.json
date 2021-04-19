@@ -1,0 +1,52 @@
+[
+    {
+      "dates": "1991 - 1996",
+      "details":"Yorkshire, UK",
+      "id":"473c01f0-3fd0-4756-9cc3-b56278812a7f"
+    },
+    {
+      "dates": "1996 - 1999",
+      "details":"Illinois, USA",
+      "id":"4a332c4b-6396-4016-b13e-4556b4a1e585"
+    },
+    {
+      "dates": "1999 - 2007",
+      "details":"Durham, UK",
+      "id":"9fa90335-48af-477a-9a1f-c40ec5d3bacc"
+    },
+    {
+      "dates": "2007 - 2010",
+      "details":"Auckland, NZ",
+      "id":"0ad210c4-ddfb-4949-8c82-542cce402860"
+    },
+    {
+      "dates": "2010 - 2012",
+      "details":"Surrey, UK",
+      "id":"d4776ec8-aee2-4eb4-be88-993d94ebc82f"
+    },
+    {
+      "dates": "2012 - 2013",
+      "details":"Chicago, USA",
+      "id":"817a9e60-036f-4356-a74d-07ec46c5dcaf"
+    },
+    {
+      "dates": "2013 - 2014",
+      "details":"Surrey, UK",
+      "id":"c4ed35aa-4baa-4aef-9126-71095601e980"
+    },
+    {
+      "dates": "2014 - 2018",
+      "details":"St Andrews, UK",
+      "id":"0167ffb3-7ba6-45da-b04f-9f11b7388bff"
+    },
+    {
+      "dates": "2018 - 2020",
+      "details":"Lake Louise, CA",
+      "id":"5da88525-f005-47b6-a9aa-13992052400b"
+    },
+    {
+        "dates":"2020 - Current",
+        "details":"Kelowna, CA",
+        "id":"f79aa8da-895f-46a7-bf81-c22b823e2f29"
+    }
+  ]
