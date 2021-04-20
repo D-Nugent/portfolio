@@ -1,0 +1,88 @@
+@use '../../styles/global' as *;
+
+.loading-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #12343b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: load-remove 1s linear 8s forwards;
+}
+
+.loading{
+    overflow: visible;
+    width: 60vw;
+    
+    @include tablet-adapt{
+        width: 40vw;
+    }
+
+    @include desktop-adapt{
+        width: 20vw;
+    }
+
+    &__stem{
+        stroke-dasharray: 121;
+        // stroke-dashoffset: 121;
+        animation: plant-growth 5s ease-out forwards;
+
+        &-upper{
+            stroke-dasharray: 20;
+            animation: plant-growth-upper 2s ease-out 2s backwards;
+        }
+    }
+
+    &__curl{
+        stroke-dasharray: 11.7;
+        animation: plant-growth-curl 1s ease-out backwards;
+
+        &-one{
+            animation-delay: 2.5s;
+        }
+        &-two{
+            animation-delay: 3s;
+        }
+        &-three{
+            animation-delay: 4s;
+        }
+    }
+
+    &__branch{
+        stroke-dasharray: 20;
+        animation: plant-growth-upper 2s ease-out backwards;
+
+        &-one{
+            animation-delay: 1s;
+        }
+        &-two{
+            animation-delay: 2s;
+        }
+        &-three{
+            animation-delay: 3s;
+        }
+    }
+
+    &__hexagon{
+        animation: spinner 6s ease-in-out forwards;
+        transform-origin: center;
+    }
+
+    &__leaves{
+        opacity: 0;
+        animation: leaves-fade-in 1s ease-in 4s forwards;
+    }
+
+    &__header{
+        font-size: 10px;
+        animation: load-fade 2s ease-in-out infinite;
+    }
+
+    &__welcome{
+        font-size: 10px;
+        animation: welcome-fade 1s ease-in-out forwards;
+    }
+}
