@@ -18,6 +18,12 @@
     }
 }
 
+@mixin desktop-large-adapt {
+    @media screen and (min-width: $desktop-large-breakpoint) {
+        @content;
+    }
+}
+
 /* The below mixins implement flex row with center. While row is the default, it is declared to force swap
 between breakpoints (order: horizontal center, vertical center, full center) */
 

@@ -23,10 +23,26 @@ main {
     &__left{
         margin-top: 14vw;
         width: 39%;
+        max-width: 40vw;
+        @include tablet-adapt{
+            max-width: 35vw;
+        }
+        @include desktop-large-adapt{
+            margin-top: 10vw;
+            max-width: 31vw;
+        }
     }
     &__right{
         margin-top: 14vw;
         width: 39%;
+        max-width: 40vw;
+        @include tablet-adapt{
+            max-width: 35vw;
+        }
+        @include desktop-large-adapt{
+            margin-top: 10vw;
+            max-width: 31vw;
+        }
     }
 }
 

@@ -54,6 +54,7 @@
         padding: 10px;
         position: absolute;
         font-size: 10px;
+        user-select: none;
 
         &--left{
             transform: scaleX(-1);

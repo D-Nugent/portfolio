@@ -16,6 +16,7 @@
     }
 
     &--indepth{
+        z-index: 2;
         animation: profile-trunk-expand 2s linear forwards;
         transform-origin: bottom;
         min-height: 100vh;
@@ -39,7 +40,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
-        top: -8vw;
+        top: -9vw;
     }
     
     &__heading {
@@ -58,7 +59,12 @@
             font-weight: 800;
             text-align: center;
             font-size: 1.8rem;
+            @include tablet-adapt{
+                align-self: flex-start;
+                font-size: 2.4rem;
+            }
             @include desktop-adapt{
+                align-self: flex-start;
                 font-size: 3rem;
             }
         }
@@ -68,6 +74,10 @@
             font-weight: 800;
             font-size: 1.8rem;
             text-align: center;
+            @include tablet-adapt{
+                align-self: flex-end;
+                font-size: 2.4rem;
+            }
             @include desktop-adapt{
                 align-self: flex-end;
                 font-size: 3rem;
@@ -75,7 +85,7 @@
         }
 
         &-position{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-style: italic;
             margin-top: 0;
             color: $desert-primary-color;

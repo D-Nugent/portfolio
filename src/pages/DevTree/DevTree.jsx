@@ -7,7 +7,7 @@ import IndepthBranch from '../../components/IndepthBranch/IndepthBranch';
 import ProfileIndepth from '../../components/ProfileIndepth/ProfileIndepth';
 import './DevTree.scss';
 
-function DevTree() {
+function DevTree({loading}) {
 const [activeSection, setActiveSection] = useState(null);
 
   useLayoutEffect(() => {
@@ -80,10 +80,10 @@ const [activeSection, setActiveSection] = useState(null);
           </section>
         </main>
         {activeSection===null &&
-          <WelcomeRoot/>
+          <WelcomeRoot loading={loading}/>
         }
       </div>
-        <div className="width-control"></div>
+      <div className="width-control"></div>
     </>
     )
 }

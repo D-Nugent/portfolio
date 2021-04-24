@@ -33,9 +33,16 @@
         width: 60%;
         max-width: 770px;
         margin-bottom: 0;
+        font-size: 1.5rem;
+        @include desktop-adapt{
+            font-size: 1rem;
+        }
 
         &--emph{
-            font-size: 2rem;
+            font-size: 3rem;
+            @include desktop-adapt {
+                font-size: 2rem;
+            }
             color: $desert-primary-color;
         }
     }
@@ -47,8 +54,11 @@
 
         &-gif{
             align-self: flex-start;
-            width: 20%;
             height: 70%;
+            width: 35%;
+            @include desktop-adapt{
+                width: 20%;
+            }
         }
     }
 

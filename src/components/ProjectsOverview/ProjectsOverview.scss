@@ -38,7 +38,7 @@
     display: flex;
     width: 80%;
     
-    @include tablet-adapt{
+    @include desktop-adapt{
       width: 60%;
     }
   }

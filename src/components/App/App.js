@@ -9,7 +9,10 @@ function App () {
 
   useEffect(() => {
     setTimeout(() => {
-      setLoading(false)
+      document.querySelector('.wrapper').scrollIntoView({behavior:'auto',block:'end',inline:'end'});
+    }, 7000);
+    setTimeout(() => {
+      setLoading(false);
     }, 9000);
   }, [])
 
@@ -17,7 +20,7 @@ function App () {
       <div className="app">
         <Switch>
           <Route exact path="/" render={(routeProps) =>
-            <DevTree {...routeProps}/>}/>
+            <DevTree {...routeProps} loading={loading}/>}/>
         </Switch>
         {loading===true && <LoadingSeed/>}
       </div>

@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     animation: load-remove 1s linear 8s forwards;
+    z-index: 3;
 }
 
 .loading{
@@ -27,7 +28,6 @@
 
     &__stem{
         stroke-dasharray: 121;
-        // stroke-dashoffset: 121;
         animation: plant-growth 5s ease-out forwards;
 
         &-upper{

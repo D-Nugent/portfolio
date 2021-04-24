@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileImage from '../../assets/images/profileSide.svg';
+import ProfileImage from '../../assets/images/portfolioProfile.png';
 import PhoneIcon from '../../assets/icons/phone-gold.png';
 import EmailIcon from '../../assets/icons/email-gold.png';
 import LocationIcon from '../../assets/icons/location-gold.png';

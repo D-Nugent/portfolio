@@ -1,10 +1,11 @@
 import React from 'react';
 import TreeRoots from '../../assets/images/roots.svg';
 import Signature from '../../assets/images/signature-once.gif';
+import PreSignature from '../../assets/images/pre-signature.gif';
 import Arrow from '../../assets/icons/arrow.svg';
 import './WelcomeRoot.scss';
 
-function WelcomeRoot() {
+function WelcomeRoot({loading}) {
 
   const scrollToTop = () => {
     document.body.scrollTop = 0;
@@ -25,11 +26,13 @@ function WelcomeRoot() {
         <p className="welcome__message">Take your time exploring, should you have any questions about
         me or my work please do not hesitate to contact me. Happy Browsing!</p>
         <div className="welcome__signature">
-          <img src={Signature} alt="Signature" className="welcome__signature-gif"/>
+          {loading===false ? 
+            <img src={Signature} alt="Signature" className="welcome__signature-gif"/>
+            :
+            <img src={PreSignature} alt="Pre-Signature" className="welcome__signature-gif"/>
+          }
         </div>
-        
         <img onClick={()=>{scrollToTop()}} src={Arrow} alt="Arrow Icon" className="welcome__arrow"/>
-        
         <p onClick={()=>{scrollToTop()}} className="welcome__arrow-scroll">SCROLL UP</p>
       </div>
     </footer>

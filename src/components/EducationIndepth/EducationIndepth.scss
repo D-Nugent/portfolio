@@ -14,9 +14,9 @@
 
 .institution{
     margin-top: 5%;
-    width: 80%;
     display: flex;
     justify-content: center;
+    width: 80%;
 
     &__locations{
         width: 50vw;
@@ -25,6 +25,11 @@
         align-items: center;
         justify-content: space-between;
         position: relative;
+
+        @include desktop-adapt{
+            width: 40vw;
+            height: 40vw;
+        }
     }
     
     &__brainstation{
@@ -59,9 +64,12 @@
             position: absolute;
             width: 49.9%;
             height: 100%;
-            // background-color: $desert-primary-color;
             background-color: rgba(255, 255, 255,0);
             right: 0;
+            
+            &:hover{
+                cursor: pointer;
+            }
         }
 
         &-mask{
@@ -74,6 +82,7 @@
             background-color: $desert-secondary-offset-color;
             border-left: 1px solid $desert-primary-color;
             position: relative;
+            user-select: none;
             
             &.--active{
                 border-left: 2px solid $desert-primary-color;
@@ -135,9 +144,12 @@
             position: absolute;
             width: 49.9%;
             height: 100%;
-            // background-color: $desert-primary-color;
             background-color: rgba(255, 255, 255,0);
             left: 0;
+                        
+            &:hover{
+                cursor: pointer;
+            }
         }
 
         &-name{
@@ -156,6 +168,7 @@
             border-right: 1px solid $desert-primary-color;
             transform-origin: center right;
             position: relative;
+            user-select: none;
             
             &.--active{
                 border-right: 2px solid $desert-primary-color;

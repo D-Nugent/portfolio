@@ -2,27 +2,6 @@ import React from 'react';
 import './EducationIndepth.scss';
 
 function EducationIndepth() {
-
-  const mouseEnterHandler = (event) => {
-    let activeElement = event.currentTarget;
-    let offsetElement = activeElement.classList.contains('institution__brainstation-overlay')?
-    document.querySelector('.institution__surrey-overlay')
-    :
-    document.querySelector('.institution__brainstation-overlay');
-    activeElement.childNodes[0].classList.toggle(`--active`)
-    offsetElement.childNodes[0].classList.toggle(`--inactive`)
-  }
-  
-  const mouseLeaveHandler = (event) => {
-    let activeElement = event.currentTarget;
-    let offsetElement = activeElement.classList.contains('institution__brainstation-overlay')?
-    document.querySelector('.institution__surrey-overlay')
-    :
-    document.querySelector('.institution__brainstation-overlay');
-    activeElement.childNodes[0].classList.toggle(`--active`)
-    offsetElement.childNodes[0].classList.toggle(`--inactive`)
-  }
-
   const clickHandler = (event) => {
     let activeElement = event.currentTarget;
     let offsetElement = activeElement.classList.contains('institution__brainstation-overlay')?
@@ -32,8 +11,6 @@ function EducationIndepth() {
     activeElement.childNodes[0].classList.toggle(`--active`)
     offsetElement.childNodes[0].classList.toggle(`--inactive`)
   }
-
-  const touchQuery = window.matchMedia('(hover: hover)');
 
   return (
     <section className="education-indepth">
@@ -93,18 +70,7 @@ function EducationIndepth() {
               </ul>
             </article>
             <div className="institution__surrey-overlay"
-              onMouseEnter={
-                touchQuery.matches?
-                (event)=>{mouseEnterHandler(event)}:undefined
-              }
-              onMouseLeave={
-                touchQuery.matches?
-                (event)=>{mouseLeaveHandler(event)}:undefined
-              }
-              onClick={
-                touchQuery.matches?
-                undefined:(event)=>{clickHandler(event)}
-              }
+              onClick={(event)=>{clickHandler(event)}}
             >
               <div className="institution__surrey-mask">
                 <h3 className="institution__surrey-name">University of Surrey</h3>
@@ -124,18 +90,7 @@ function EducationIndepth() {
               </div>
             </div>
             <div className="institution__brainstation-overlay"
-              onMouseEnter={
-                touchQuery.matches?
-                (event)=>{mouseEnterHandler(event)}:undefined
-              }
-              onMouseLeave={
-                touchQuery.matches?
-                (event)=>{mouseLeaveHandler(event)}:undefined
-              }
-              onClick={
-                touchQuery.matches?
-                undefined:(event)=>{clickHandler(event)}
-              }
+              onClick={(event)=>{clickHandler(event)}}
             >
               <div className="institution__brainstation-mask">
                 <h3 className="institution__brainstation-name">BrainStation</h3>

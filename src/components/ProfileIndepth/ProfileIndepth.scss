@@ -1,6 +1,7 @@
 @use '../../styles/global' as *;
 
 .profile-indepth{
+    z-index: 3;
     position: absolute;
     left: 10%;
     right: 10%;
@@ -10,6 +11,9 @@
 
     @include desktop-adapt{
         top: -10%;
+        left: 15%;
+        right: 15%;
+        width: 70%;
     }
 
     &__professional{
