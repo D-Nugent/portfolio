@@ -44,13 +44,15 @@ function SkillsIndepth() {
               <ul className="skills-indepth__skills-list">Skills that I am proficient in:
                 <li className="skills-indepth__skills">HTML</li>
                 <li className="skills-indepth__skills">CSS/SCSS</li>
-                <li className="skills-indepth__skills">JavaScript</li>
+                <li className="skills-indepth__skills">JavaScript
+                  <p className="skills-indepth__skills-topics">(including ES6)</p>
+                </li>
                 <li className="skills-indepth__skills">React</li>
                 <li className="skills-indepth__skills">React Router</li>
-                <li className="skills-indepth__skills">Redux</li>
+                {/* <li className="skills-indepth__skills">Redux</li> */}
                 <li className="skills-indepth__skills">nodeJS</li>
                 <li className="skills-indepth__skills">expressJS</li>
-                <li className="skills-indepth__skills">mySQL</li>
+                {/* <li className="skills-indepth__skills">mySQL</li> */}
                 <li className="skills-indepth__skills">Firebase</li>
               </ul>
               <ul className="skills-indepth__skills-list">What's on the chopping block next:

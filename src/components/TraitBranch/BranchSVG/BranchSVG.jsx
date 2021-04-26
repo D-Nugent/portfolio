@@ -50,7 +50,7 @@ function BranchSVG({position, section, activeBranch}) {
         stroke="none"
         strokeWidth="0.264583"
         d="m 309.72834,11.240447 1.5875,-1.32291 -0.52916,1.5875 c 2.84083,0 7.89225,-0.0128 8.46666,-3.7041693 l -6.08541,0.529169 c 0.72284,-2.2606299 1.08558,-4.3175999 0.23997,-6.6145799 -1.09564,-2.9760811 -3.4708,-1.66663003 -4.43415,0.79375 -1.19486,3.05181 0.68527,5.7858499 0.75459,8.7312402 m 10.31875,4.7625 c 2.34606,2.17073 5.41549,2.48759 8.46667,1.90373 0.73528,-0.1407 2.74214,-0.30302 2.74214,-1.36477 0,-1.13437 -1.87351,-1.9036 -2.74214,-2.1926 -3.15198,-1.04884 -5.97244,-0.39095 -8.46667,1.65364 m -69.05625,1.5875 c -0.84799,3.56212 0.2847,5.94905 2.38125,8.73125 2.71966,-2.59011 1.1303,-7.88699 -2.38125,-8.73125 m 42.33334,6.35 c -3.46737,0.59463 -4.1918,8.474341 -2.1553,10.763521 1.78805,2.01004 2.96466,-2.17964 3.13425,-3.355181 0.14764,-1.024469 0.13124,-2.14366 0.0556,-3.175 -0.10716,-1.460241 -0.70723,-2.81887 -1.03452,-4.23334 m 38.62916,7.40834 c 4.9239,0 9.5131,-0.1905 10.05417,-6.35 -5.57636,0 -7.08184,1.83674 -10.05417,6.35 m -78.05208,1.852081 c 4.23227,-1.724822 8.10419,-2.74029 9.525,-7.672921 -4.59158,-1.35718 -9.23925,3.22528 -9.525,7.672921 m 78.31667,-0.264581 c 1.14511,2.947461 5.25198,4.398431 8.20208,3.704161 -1.58485,-4.085161 -3.96028,-5.833001 -8.20208,-3.704161 m -93.6625,3.704161 c -1.95501,2.961749 -1.13586,6.952459 2.11666,8.46667 l 1.05834,-2.645831 1.05833,3.439581 h 0.26458 c 0.47731,-1.645711 1.95527,-1.411291 3.03504,-2.509042 1.43669,-1.460769 1.95104,-3.98331 1.99205,-5.957628 -3.37794,0.15426 -4.90511,2.145768 -5.55625,5.29167 l -3.96875,-6.08542 m 76.99375,16.66875 c 0.4138,1.56396 0.55456,3.236651 1.08505,4.7625 0.61939,1.78118 1.87431,3.31047 3.41392,4.38045 0.50483,0.351099 1.54041,1.123151 2.1082,0.475451 0.48498,-0.553241 0.2802,-1.799431 0.27093,-2.474651 -0.0447,-3.31761 -3.36629,-7.263871 -6.8781,-7.14375 m -33.86667,3.70417 c 1.25809,0.362209 2.39316,1.050131 3.70417,1.243279 1.1938,0.175951 6.25766,-0.525729 5.2451,-2.720178 -0.33576,-0.727612 -1.64333,-0.921282 -2.33469,-1.045901 -2.71436,-0.489752 -5.04772,0.20479 -6.61458,2.5228 m -0.79375,24.341669 c 3.5396,-0.83847 6.40397,-1.00463 7.50332,-5.02709 0.21325,-0.78105 0.85804,-2.54899 0.01,-3.15701 -0.76914,-0.55139 -2.3278,0.25903 -3.01545,0.65194 -2.83925,1.62242 -3.65707,4.58549 -4.49792,7.53216 m 64.55833,0 c 2.62017,-3.13849 5.15567,-3.94679 5.82084,-8.46667 -3.59252,0.0302 -8.03037,4.75377 -5.82084,8.46667 M 191.4596,78.973787 c -3.85736,3.86847 -2.86306,6.306598 -2.11667,11.112518 h 0.26459 l 1.5875,-1.58752 -1.5875,2.91043 c 3.02604,0.38233 7.43294,0.2876 8.99583,-2.91043 -1.8288,-0.57838 -4.47172,-1.26815 -6.35,-0.79375 1.46844,-2.57281 1.43669,-6.504778 -0.79375,-8.731248 m 89.69374,3.70416 c 2.12223,2.939785 5.6007,2.18123 8.73125,2.11667 -0.7493,-4.64476 -5.95444,-3.81609 -8.73125,-2.11667 m 90.4875,10.583358 h 0.26459 c 3.50176,-3.21549 6.62754,-5.16866 5.02708,-10.583358 -3.15304,1.40521 -7.80785,7.071808 -5.29167,10.583358 m -36.5125,-1.5875 -1.05833,-2.91044 2.11667,3.4396 c 0.97657,-0.45561 4.97893,-4.32622 3.01439,-5.513929 -1.02684,-0.620454 -2.24155,1.219199 -3.39116,0.797979 -1.25148,-0.458519 -2.61408,-2.946658 -4.03701,-2.713298 -0.80169,0.13123 -0.61886,1.580882 -0.61225,2.137569 0.0318,2.693739 1.79996,3.648619 3.96769,4.762519 m -143.40416,-3.70419 -0.52917,0.52917 0.52917,-0.52917 m 91.28125,23.812535 v 1.5875 l -0.79375,-1.32293 c -2.90804,1.12819 -5.792,2.70986 -6.87917,5.82084 2.16879,0.81095 4.07591,0.16061 6.08542,-0.79375 0.046,2.21562 0.81994,3.96981 2.39183,5.55123 0.47863,0.48127 1.41155,1.52188 2.18466,1.04059 2.13043,-1.32608 0.0386,-5.10513 1.01071,-6.74157 0.66887,-1.12608 3.36048,-0.644 4.46696,-0.644 -0.59504,-3.85603 -5.35781,-4.49791 -8.46666,-4.49791 m 78.58125,2.11666 v 0.26459 c 0.84005,0.9226 1.46552,2.08993 2.41564,2.89904 2.744,2.33706 5.6224,1.37927 8.69686,0.54053 -2.99773,-4.34101 -6.00843,-6.87361 -11.1125,-3.70416 m -130.96875,8.73125 c 2.62017,-3.13848 5.15567,-3.94679 5.82083,-8.46666 -3.59251,0.0302 -8.03037,4.75377 -5.82083,8.46666 m 138.1125,2.11666 c 3.04694,2.72972 8.10127,3.08637 9.525,-1.5875 -3.21337,-0.76491 -6.73788,-0.16535 -9.525,1.5875 m -62.44167,0.26459 c -1.18163,3.99865 1.77165,9.26571 5.82083,10.31875 0.0431,-5.20489 -0.92339,-7.71155 -5.82083,-10.31875 m 61.64792,0.52916 c 1.25571,2.0881 1.40361,4.59237 2.73288,6.60427 0.80751,1.22184 3.76581,3.61368 5.38506,2.63816 1.49754,-0.90197 0.13124,-4.2664 -0.61383,-5.26309 -1.59861,-2.13862 -5.06862,-3.13664 -7.50411,-3.97934 m -146.57917,20.10834 c 0.94086,0.47308 5.69727,1.75789 5.31258,-0.74401 -0.35296,-2.2934 -4.64106,-0.15689 -5.31258,0.74401 m 62.44167,1.05834 c -1.2745,1.54383 -3.59172,6.34919 -1.84468,8.29256 1.51395,1.68434 3.91742,-3.1189 4.22593,-4.05924 1.44938,2.01454 2.83368,3.13055 5.29166,3.64835 0.67654,0.1426 1.82642,0.52149 2.22065,-0.29396 2.22647,-4.60639 -5.63853,-7.15672 -8.57065,-7.58771 l 1.05834,3.96875 h -0.26459 c -0.26961,-1.51792 -0.89482,-3.00329 -2.11666,-3.96875 z"
-        className={`branch__leaves ${activeBranch!==null?'branch__leaves--active':''} `}
+        className={`branch__leaves ${activeBranch!=='Home'?'branch__leaves--active':''} `}
       />
       <g
         id="primary-branches"
@@ -66,7 +66,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 204.09541,100.11399 c 2.71029,-1.322309 5.24161,-1.570773 7.70361,-1.403258 l 7.54662,-8.175555 14.42165,-17.757686 9.06949,-3.137486 2.71709,-3.878339 2.87386,-6.048294 c 2.07362,-2.215806 3.25723,-5.024957 4.27308,-7.945942 l 1.23774,-7.600818 -1.9352,-5.796573 1.2868,-8.815715 2.56193,-6.800158"
         id="branch-2-a"
-        className={`branch__primary ${activeBranch!==null?'branch__primary--active':''} `}
+        className={`branch__primary ${activeBranch!=='Home'?'branch__primary--active':''} `}
       />
       <path
         fill="none"
@@ -79,7 +79,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 212.48596,98.057847 7.27621,-0.880905 14.98929,-21.97601 15.5768,-11.104685 10.0524,-2.146511"
         id="path843"
-        className={`branch__primary ${activeBranch!==null?'branch__primary--active':''} `}
+        className={`branch__primary ${activeBranch!=='Home'?'branch__primary--active':''} `}
       />
       <path
         fill="none"
@@ -92,7 +92,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 163.15979,103.50543 c -0.0536,-0.10723 3.41068,-0.15898 5.79959,-0.58685 1.63274,-0.29244 2.09342,-0.79582 3.23156,-1.47343 2.35647,-1.40296 2.82367,-3.298436 4.29857,-4.169442 1.83631,-1.084437 5.14209,-0.772459 7.32923,-2.083136 2.17322,-1.302335 5.2449,-1.725732 5.2449,-1.725732 l 15.0501,1.200025 7.56282,-8.317691 1.31981,-5.315829 3.94954,-4.89074 7.93467,-6.171443"
         id="branch-1-a"
-        className={`branch__primary ${activeBranch!==null?'branch__primary--active':''} `}
+        className={`branch__primary ${activeBranch!=='Home'?'branch__primary--active':''} `}
       />
       <path
         fill="none"
@@ -105,7 +105,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 168.80417,103.45208 5.56227,-0.32911 2.88052,-4.243617 5.31554,-1.115813 2.84427,0.793751 5.55625,-0.727605 2.05052,3.638024 2.18281,1.65364 2.46326,-0.54442 2.89455,-0.97693"
         id="branch-1-b"
-        className={`branch__primary ${activeBranch!==null?'branch__primary--active':''} `}
+        className={`branch__primary ${activeBranch!=='Home'?'branch__primary--active':''} `}
       />
       <path
         fill="none"
@@ -118,7 +118,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 157.8901,119.12865 c 3.7776,-0.49178 7.63764,-3.90461 10.78177,-3.63802 l 7.60678,0.66145 9.32655,7.34219 12.51674,2.04267 18.17059,4.02945 -6.43627,0.54725 2.19028,2.71135 1.86907,3.23699 4.17886,5.90643 2.20846,3.77073 1.08717,3.81659"
         id="branch-1-e"
-        className={`branch__primary ${activeBranch!==null?'branch__primary--active':''} `}
+        className={`branch__primary ${activeBranch!=='Home'?'branch__primary--active':''} `}
       />
       <path
         fill="none"
@@ -132,7 +132,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 163.79613,117.21105 11.66094,1.72254 8.91881,6.32227 9.38792,0.33673 13.62399,3.12441 c 0.98637,0.52079 1.97274,1.04159 2.9591,1.56239 l 3.69826,-0.72001 7.90378,-0.86038 2.90826,-1.19807 2.22252,-3.31724 2.57163,-2.24866 -0.65481,-4.06917"
         id="branch-1-c"
-        className={`branch__primary ${activeBranch!==null?'branch__primary--active':''} `}
+        className={`branch__primary ${activeBranch!=='Home'?'branch__primary--active':''} `}
       />
       <path
         fill="none"
@@ -145,7 +145,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 162.11233,118.00618 10.14956,2.26845 c 1.2081,1.00763 2.59431,-0.20321 2.03617,2.51297 1.38773,-1.55857 3.29608,-1.00221 5.03349,-0.43377 0.94711,0.30987 1.75175,0.99176 2.63556,1.31178 l 2.89988,2.10475 -1.30962,4.49013 5.23848,2.64262"
         id="branch-1-f"
-        className={`branch__primary ${activeBranch!==null?'branch__primary--active':''} `}
+        className={`branch__primary ${activeBranch!=='Home'?'branch__primary--active':''} `}
       />
       <path
         fill="none"
@@ -158,7 +158,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 222.55137,113.8634 6.21253,-8.01457 8.44423,1.46242 7.31676,-3.94476 6.73519,17.49279 11.78658,6.64165 11.7154,7.18507 7.83538,5.25633 14.12519,-1.49671"
         id="branch-2-c"
-        className={`branch__primary ${activeBranch!==null?'branch__primary--active':''} `}
+        className={`branch__primary ${activeBranch!=='Home'?'branch__primary--active':''} `}
       />
     </g>
     <g
@@ -176,7 +176,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 184.56297,115.90143 1.05109,0.84882 3.43904,8.03789"
         id="branch-1s-a"
-        className={`branch__secondary ${activeBranch!==null?'branch__secondary--active':''} `}
+        className={`branch__secondary ${activeBranch!=='Home'?'branch__secondary--active':''} `}
         style={{animationDelay: '.5s'}}
       />
       <path
@@ -190,7 +190,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 185.61406,116.75025 6.01151,1.11561 2.80633,6.50133 -0.44955,3.38793 1.1979,4.04885 -0.4005,2.42821 1.97285,-0.66991 11.85126,4.08822 3.0402,-0.23386 7.20291,-3.50792 6.78196,1.07576"
         id="branch-1s-b"
-        className={`branch__secondary ${activeBranch!==null?'branch__secondary--active':''} `}
+        className={`branch__secondary ${activeBranch!=='Home'?'branch__secondary--active':''} `}
         style={{animationDelay: '.5s'}}
       />
       <path
@@ -204,7 +204,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 257.83646,125.80937 c -0.21844,5.88054 6.88795,11.38313 4.6302,16.7349"
         id="branch-2s-d"
-        className={`branch__secondary ${activeBranch!==null?'branch__secondary--active':''} `}
+        className={`branch__secondary ${activeBranch!=='Home'?'branch__secondary--active':''} `}
         style={{animationDelay: '1.2s'}}
       />
       <path
@@ -218,7 +218,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 233.01894,71.88882 c -0.0649,-1.097803 -0.22226,-2.244851 0.75151,-3.777404 1.10526,-1.739505 0.76054,-4.248847 0.65165,-4.314181 l 2.75956,-11.085002"
         id="branch-2s-a"
-        className={`branch__secondary ${activeBranch!==null?'branch__secondary--active':''} `}
+        className={`branch__secondary ${activeBranch!=='Home'?'branch__secondary--active':''} `}
         style={{animationDelay: '1s'}}
       />
       <path
@@ -232,7 +232,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 246.34901,59.400653 c -0.60005,-0.502457 -0.56467,-1.535841 -2.50249,-1.834321 l -2.68923,-0.972011 -4.63044,0.841899"
         id="branch-2s-b"
-        className={`branch__secondary ${activeBranch!==null?'branch__secondary--active':''} `}
+        className={`branch__secondary ${activeBranch!=='Home'?'branch__secondary--active':''} `}
         style={{animationDelay: '1.25s'}}
       />
       <path
@@ -246,7 +246,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 247.08566,58.196268 -4.0328,-10.868925 c 0,0 -0.76067,-3.538802 -1.4552,-3.141927 -3.78531,2.163043 -4.33255,5.655469 -4.33255,5.655469"
         id="branch-2s-c"
-        className={`branch__secondary ${activeBranch!==null?'branch__secondary--active':''} `}
+        className={`branch__secondary ${activeBranch!=='Home'?'branch__secondary--active':''} `}
         style={{animationDelay: '1.25s'}}
       />
       <path
@@ -260,7 +260,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 230.11906,84.938255 c 4.66023,-1.160057 5.45413,-0.888369 7.52159,-0.525597 1.15571,0.202788 3.06595,1.042094 8.19386,0.338508 l 2.34833,-1.136284 6.09405,-5.34166 4.18887,-0.717137 5.84375,-3.843151 c 1.52122,-1.423126 2.40031,-2.198065 2.78647,-2.682638 2.2249,-2.791942 6.51317,-7.136238 8.95335,-9.711986 l 6.42322,-7.852058 4.94242,-4.916743 c 1.75799,-3.738359 3.01455,-7.309574 5.27397,-11.215076 l -0.13,-1.367144 1.40413,0.140823 3.20483,-3.210443 c 0.45194,-0.542538 2.82303,-1.669982 3.62907,-3.473466 0.87203,-1.951128 3.58488,-4.632029 1.16414,-2.647139 l 2.80632,-2.642626 9.40121,-3.695001 6.36102,-6.641648 9.91571,-4.2094947"
         id="branch-3s-a"
-        className={`branch__secondary ${activeBranch!==null?'branch__secondary--active':''} `}
+        className={`branch__secondary ${activeBranch!=='Home'?'branch__secondary--active':''} `}
         style={{animationDelay: '.6s'}}
       />
       <path
@@ -274,7 +274,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 228.57558,86.715599 8.28006,-0.535721 12.58032,-0.446497 6.12716,-5.472343 6.92228,-1.96443 c 0,0 7.67065,1.777341 8.41899,2.899873 0.74835,1.122532 2.89987,3.086963 4.11594,4.583674 1.21608,1.496708 6.08038,5.986837 6.08038,5.986837 l 6.36101,7.39 c 0,0 2.24509,5.425568 3.46115,5.799748 1.21607,0.37418 5.42557,1.30962 5.42557,1.30962"
         id="branch-3s-b"
-        className={`branch__secondary ${activeBranch!==null?'branch__secondary--active':''} `}
+        className={`branch__secondary ${activeBranch!=='Home'?'branch__secondary--active':''} `}
         style={{animationDelay: '.65s'}}
       />
       <path
@@ -288,7 +288,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 230.11906,84.938255 21.60874,2.525697 7.85773,4.630443 c 0,0 2.94664,-0.70158 5.33202,-0.327404 2.38537,0.374177 4.2095,-0.374178 4.2095,-0.374178 0,0 2.05797,-1.356392 3.695,-3.695001 1.63703,-2.338607 -0.32739,-0.935442 1.96443,-1.449938 2.29184,-0.514492 3.64824,-1.122529 5.0514,-0.65481 1.40317,0.467723 6.50132,2.75956 6.50132,2.75956 l 7.34324,3.227279 c 0,0 2.60533,0.583182 3.69499,1.309621 2.66602,1.777342 1.68381,-0.561266 1.68381,-0.561266 l 6.54809,-2.525697 5.47235,-3.040192"
         id="branch-3s-c"
-        className={`branch__secondary ${activeBranch!==null?'branch__secondary--active':''} `}
+        className={`branch__secondary ${activeBranch!=='Home'?'branch__secondary--active':''} `}
         style={{animationDelay: '.75s'}}
       />
       <path
@@ -302,7 +302,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 229.92291,87.312499 c 0,0 17.92552,0.926042 19.38073,1.521354 1.45521,0.595313 5.29167,3.175 5.29167,3.175 0,0 4.23333,2.38125 6.21771,2.38125 1.98437,0 7.40833,-0.264583 7.40833,-0.264583 0,0 0.33073,-0.793753 1.5875,-0.06615 0.6118,0.354201 2.17978,3.438634 3.62802,5.221246 1.52675,1.879254 5.30167,3.906884 5.30167,3.906884 1.87474,1.14567 6.10436,4.0869 6.94531,4.23333 2.27613,0.39634 7.73906,3.04271 7.40833,3.04271 -0.33073,0 8.53282,7.47448 11.1125,8.13594 2.57969,0.66146 9.45886,-0.59531 9.45886,-0.59531 l 7.54063,-1.78594 12.69999,-1.12448 c 0,0 13.36147,0.46302 15.67657,-0.79375 2.31511,-1.25677 3.38717,-2.11389 5.02707,-3.175 2.24897,-1.45521 5.29167,-7.14375 5.29167,-7.14375 0,0 1.45521,-3.96875 3.50573,-5.225526 2.05052,-1.256771 5.55625,-3.770313 5.55625,-3.770313 0,0 1.7198,-0.595312 0.99219,-2.315104 -0.7276,-1.719791 -2.3151,-4.828645 -2.3151,-4.828645 l -1.25677,-7.011459"
         id="branch-3s-d"
-        className={`branch__secondary ${activeBranch!==null?'branch__secondary--active':''} `}
+        className={`branch__secondary ${activeBranch!=='Home'?'branch__secondary--active':''} `}
         style={{animationDelay: '.7s'}}
       />
       <path
@@ -316,7 +316,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 246.98854,100.27708 c 0,0 0.90994,-1.706698 2.9198,-3.705214 1.92062,-1.909768 4.90715,-4.112473 6.47291,-4.232284 3.20428,-0.24519 8.73125,0.992188 8.73125,0.992188 0,0 6.2177,4.564062 6.74687,5.622395 0.52917,1.058335 6.74688,7.143755 8.06979,7.937505 1.32292,0.79375 6.94532,2.51354 6.94532,2.51354 0,0 5.68854,2.38125 6.48229,3.70416 0.79375,1.32292 8.20208,7.07761 8.20208,7.07761 0,0 4.96094,3.37344 7.01146,3.04271 2.05052,-0.33073 11.64167,-2.51355 11.64167,-2.51355 l 8.26822,-1.19062 9.12813,-0.99219 c 0,0 4.56406,-0.19844 6.48229,0.92604 1.91823,1.12448 8.00365,3.3073 9.65729,3.175 1.65365,-0.13229 7.9375,-1.78593 7.9375,-1.78593 0,0 1.12448,0.19843 2.84427,1.38906 1.71979,1.19062 9.65729,5.29167 9.65729,5.29167"
         id="branch-3s-e"
-        className={`branch__secondary ${activeBranch!==null?'branch__secondary--active':''} `}
+        className={`branch__secondary ${activeBranch!=='Home'?'branch__secondary--active':''} `}
         style={{animationDelay: '1s'}}
       />
       <path
@@ -330,7 +330,7 @@ function BranchSVG({position, section, activeBranch}) {
         strokeOpacity="1"
         d="m 247.75217,101.07465 c 0,0 2.75955,-0.0935 5.65943,-2.61924 2.89987,-2.525697 5.47234,-4.911077 5.47234,-4.911077 l 9.33741,0.581187 11.28911,11.81344 c 0,0 10.75761,2.94664 12.72204,4.81753 1.96443,1.87089 9.32635,9.43049 9.32635,9.43049 0,0 1.24415,1.5142 7.0439,1.32711 5.79974,-0.18709 19.8314,-4.2095 19.8314,-4.2095 0,0 7.95128,-1.40317 10.85114,-3.27405 1.40839,-0.90863 3.91288,-1.6973 5.443,-2.84555 1.62042,-1.21601 2.88245,-2.20584 2.88245,-2.20584 l 8.32546,-3.83532 c 0,0 3.13645,-0.79878 3.96327,-1.85711 0.82683,-1.05834 4.82103,-4.884419 4.82103,-4.884419 0,0 0.89752,-0.274297 2.30068,0.286972 1.40317,0.561265 4.16275,0.795125 4.16275,0.795125 0,0 6.08036,-2.38538 5.75296,-2.291836"
         id="branch-3s-f"
-        className={`branch__secondary ${activeBranch!==null?'branch__secondary--active':''} `}
+        className={`branch__secondary ${activeBranch!=='Home'?'branch__secondary--active':''} `}
         style={{animationDelay: '1.1s'}}
       />
   </g>
@@ -349,7 +349,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 223.17524,98.258543 c 3.00838,2.590767 3.32146,1.917387 3.69028,0.455774 0.58286,-2.30986 3.54869,-3.289671 4.01557,-3.708308 0.35327,-0.316765 1.37123,-0.229667 3.14287,-4.386218 l 5.15937,-12.104688"
        id="branch-2t-a"
-       className={`branch__tertiary ${activeBranch!==null?'branch__tertiary--active':''} `}
+       className={`branch__tertiary ${activeBranch!=='Home'?'branch__tertiary--active':''} `}
        style={{animationDelay: '.3s'}}
     />
     <path
@@ -363,7 +363,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 212.32812,84.534374 6.28386,-1.190625"
        id="branch-1t-a" 
-       className={`branch__tertiary ${activeBranch!==null?'branch__tertiary--active':''} `}
+       className={`branch__tertiary ${activeBranch!=='Home'?'branch__tertiary--active':''} `}
        style={{animationDelay: '1.1s'}}
     />
     <path
@@ -377,7 +377,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 211.89817,127.39687 c 0.19844,-0.0992 0.26459,-1.62057 1.2237,-1.32291 0.95912,0.29765 4.63021,0.99218 4.63021,0.99218 L 220.76172,127"
        id="branch-1t-b" 
-       className={`branch__tertiary ${activeBranch!==null?'branch__tertiary--active':''} `}
+       className={`branch__tertiary ${activeBranch!=='Home'?'branch__tertiary--active':''} `}
        style={{animationDelay: '1.175s'}}
     />
     <path
@@ -391,7 +391,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 208.3263,138.34401 c 0,0 1.91823,1.85208 2.08359,2.24895 0.16537,0.39688 1.02526,2.41433 1.02526,2.41433 l 1.48828,2.34818"
        id="branch-1t-c"
-       className={`branch__tertiary ${activeBranch!==null?'branch__tertiary--active':''} `}
+       className={`branch__tertiary ${activeBranch!=='Home'?'branch__tertiary--active':''} `}
        style={{animationDelay: '1.3s'}}
     />
     <path
@@ -405,7 +405,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 220.30293,145.73914 2.51967,-2.52277"
        id="branch-1t-d" 
-       className={`branch__tertiary ${activeBranch!==null?'branch__tertiary--active':''} `}
+       className={`branch__tertiary ${activeBranch!=='Home'?'branch__tertiary--active':''} `}
        style={{animationDelay: '1.525s'}}
     />
     <path
@@ -419,7 +419,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 252.70081,51.76743 c 0,0 4.45256,-3.311464 5.38801,-4.621086 0.93544,-1.309621 4.58367,-7.951268 4.58367,-7.951268"
        id="branch-2t-b" 
-       className={`branch__tertiary ${activeBranch!==null?'branch__tertiary--active':''} `}
+       className={`branch__tertiary ${activeBranch!=='Home'?'branch__tertiary--active':''} `}
        style={{animationDelay: '1.25s'}}
     />
     <path
@@ -433,7 +433,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 267.72388,70.625972 c 0,-3.835318 -1.40316,-1.403165 0,-3.835318 1.40317,-2.432153 6.17392,-6.828737 6.73518,-8.606078 0.56129,-1.777344 -0.65479,-8.512535 -0.65479,-8.512535"
        id="branch-2t-c"
-       className={`branch__tertiary ${activeBranch!==null?'branch__tertiary--active':''} `}
+       className={`branch__tertiary ${activeBranch!=='Home'?'branch__tertiary--active':''} `}
        style={{animationDelay: '1.45s'}}
     />
     <path
@@ -447,7 +447,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 261.73705,76.238631 c 0,0 3.64823,-2.338607 5.23848,-1.870885 1.59026,0.46772 4.02241,0.374177 4.02241,0.374177 0,0 2.71277,1.028988 4.30303,0"
        id="branch-2t-d" 
-       className={`branch__tertiary ${activeBranch!==null?'branch__tertiary--active':''} `}
+       className={`branch__tertiary ${activeBranch!=='Home'?'branch__tertiary--active':''} `}
        style={{animationDelay: '1.2s'}}
     />
     <path
@@ -461,7 +461,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 294.81616,29.934187 c 2.07983,-1.603195 4.1045,-5.452852 6.0299,-8.5323 2.23135,-3.56878 3.65612,-4.61733 13.14671,-7.931503"
        id="branch-3t-a"
-       className={`branch__tertiary ${activeBranch!==null?'branch__tertiary--active':''} `}
+       className={`branch__tertiary ${activeBranch!=='Home'?'branch__tertiary--active':''} `}
        style={{animationDelay: '1.85s'}}
     />
     <path
@@ -475,7 +475,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 288.62734,47.757291 c 0,0 4.41835,3.627715 6.97839,3.96875 2.2431,0.298814 4.00182,-0.363802 4.00182,-0.363802 2.08359,-2.447396 0.42995,1.719792 2.08359,-2.447396 1.65365,-4.167187 2.44739,-5.688541 2.44739,-5.688541 l 2.34819,-2.348178 4.53098,-4.894791 c 0,0 2.31511,-2.910413 4.36563,-2.976563 0.9029,-0.02913 3.77814,1.550855 6.3435,1.699644 3.26063,0.189114 6.3565,-0.376727 6.3565,-0.376727 l 9.72344,-3.307292"
        id="branch-3t-b"
-       className={`branch__tertiary ${activeBranch!==null?'branch__tertiary--active':''} `}
+       className={`branch__tertiary ${activeBranch!=='Home'?'branch__tertiary--active':''} `}
        style={{animationDelay: '1.8s'}}
     />
     <path
@@ -489,7 +489,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 287.66823,50.072395 c 2.24895,1.5875 0.39687,1.719792 2.24895,1.5875 1.85209,-0.132291 4.10105,0.132292 4.10105,0.132292 0,0 2.44739,0 4.03489,0.926042 1.5875,0.926041 4.10104,1.653645 5.22552,1.653645 1.12448,0 3.50573,-1.322916 4.69636,-1.521354 1.19062,-0.198437 6.2638,-2.640598 7.19923,-2.523668 0.31935,0.03992 1.78693,0.218758 2.92757,0.392807 1.21786,0.18583 2.10231,0.3662 2.10231,0.3662 1.04848,-0.03918 2.47708,0.620769 2.47708,0.620769"
        id="branch-3t-c"
-       className={`branch__tertiary ${activeBranch!==null?'branch__tertiary--active':''} `}
+       className={`branch__tertiary ${activeBranch!=='Home'?'branch__tertiary--active':''} `}
        style={{animationDelay: '1.8s'}}
     />
     <path
@@ -503,7 +503,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 328.88015,113.13287 c 0,0 2.34327,-0.51923 2.7684,-1.26024 0.49354,-0.86028 -1.8887,-0.7627 -0.65507,-2.58219 1.15657,-1.70586 0.80383,-2.40643 1.08889,-3.02408 0.56126,-1.21608 1.3564,-2.66601 3.13374,-4.0224 0.54624,-0.41687 1.37141,-1.42074 1.68075,-2.06502 0.47447,-0.988189 1.56499,-1.735677 2.24627,-2.692387 1.60389,-2.252329 3.61524,-5.692523 5.33387,-4.176081 0,0 -0.5229,-1.231663 -0.5187,-5.176119 0.004,-3.944453 -0.18288,-10.77319 -0.18288,-10.77319"
        id="branch-3t-d"
-       className={`branch__tertiary ${activeBranch!==null?'branch__tertiary--active':''} `}
+       className={`branch__tertiary ${activeBranch!=='Home'?'branch__tertiary--active':''} `}
        style={{animationDelay: '2.2s'}}
     />
   </g>
@@ -522,7 +522,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 188.08567,93.199478 c 1.91823,-4.299479 1.91823,-4.299479 1.91823,-4.299479 l 1.72028,-0.930386"
        id="branch-1q-a" 
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '.65s'}}
     />
     <path
@@ -536,7 +536,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 281.38136,143.21637 c 0,0 2.41733,1.36188 3.16147,3.0486 0.74415,1.68672 1.85209,6.15156 1.85209,6.15156"
        id="branch-2q-a" 
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '1.525s'}}
     />
     <path
@@ -550,7 +550,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 278.85567,84.517306 c 0,0 0.83297,-0.426352 1.3228,-1.1251 0.40402,-0.576352 0.44751,-1.435207 0.71177,-1.540913 0.58467,-0.233867 4.86431,-1.543482 4.86431,-1.543482"
        id="branch-2q-b"
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '1.7s'}}
     />
     <path
@@ -564,7 +564,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 282.40963,109.30599 0.39688,5.25859"
        id="branch-2q-c" 
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '1.8s'}}
     />
     <path
@@ -578,7 +578,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 300.4013,20.835937 -4.86172,-5.093229"
        id="branch-3q-a" 
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '2.3s'}}
     />
     <path
@@ -592,7 +592,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 309.62864,12.534635 1.6872,-2.6170982"
        id="branch-3a-b" 
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '2.6s'}}
     />
     <path
@@ -606,7 +606,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="M 304.13854,43.226302 303.0802,38.1"
        id="branch-3q-c" 
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '2.5s'}}
     />
     <path
@@ -620,7 +620,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 324.77604,33.205208 2.77812,-2.248958"
        id="path942" 
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '2.9s'}}
     />
     <path
@@ -634,7 +634,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 316.24323,50.667708 1,2.64149"
        id="branch-3q-d"
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '2.6s'}}
     />
    <path
@@ -648,7 +648,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeDasharray="none"
        d="M 333.20492,102.15041 V 96.350663"
        id="path948" 
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '2.7s'}}
     />
     <path
@@ -662,7 +662,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeDasharray="none"
        d="m 338.63049,96.537752 -5.42557,-9.822156"
        id="branch-4q-b" 
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '2.8s'}}
     />
     <path
@@ -676,7 +676,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 355.28138,111.31776 3.37628,-0.1068 5.2298,3.10021"
        id="branch-4q-c"
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '2.4s'}}
     />
     <path
@@ -690,7 +690,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeDasharray="none"
        d="m 361.03435,103.83421 6.87552,-0.74835"
        id="branch-4q-d" 
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '2.6s'}}
     />
     <path
@@ -704,7 +704,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeOpacity="1"
        d="m 362.85848,97.286108 1.0964,-1.678209 0.5874,-4.542489"
        id="branch-4q-e"
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '2.65s'}}
     />
     <path
@@ -718,7 +718,7 @@ function BranchSVG({position, section, activeBranch}) {
        strokeDasharray="none"
        d="m 368.49843,84.666666 1.52136,-2.645834"
        id="branch-4q-f" 
-       className={`branch__quarternary ${activeBranch!==null?'branch__quarternary--active':''} `}
+       className={`branch__quarternary ${activeBranch!=='Home'?'branch__quarternary--active':''} `}
        style={{animationDelay: '2.8s'}}
     />
   </g>

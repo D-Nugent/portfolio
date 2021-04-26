@@ -29,11 +29,11 @@ function TraitBranch({trait, updateActiveBranch, activeBranch}) {
   }
   
     return (
-      <article className={`trait ${activeBranch!==trait&&activeBranch!==null?'trait--inactive':''}`}>
+      <article className={`trait ${activeBranch!==trait&&activeBranch!=='Home'?'trait--inactive':''}`}>
         <div className="trait__heading-wrapper">
           {<BranchSVG position={positionControl(trait)} section={trait} activeBranch={activeBranch}/>}
         </div>
-        {activeBranch===null &&
+        {activeBranch==='Home' &&
         <div className="trait__wrapper">
           {conditionalRender(trait)}
           <LearnMore position={positionControl(trait)} updateActiveBranch={updateActiveBranch}

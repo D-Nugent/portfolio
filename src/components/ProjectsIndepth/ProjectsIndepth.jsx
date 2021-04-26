@@ -35,13 +35,17 @@ function ProjectsIndepth() {
                 <div className="project__links">
                   {
                     project.gitHubLink!=='TBC'?
-                    <a href={project.gitHubLink} className="project__link">Repository</a>
+                    <a href={project.gitHubLink} className="project__link" target="_blank" rel="noreferrer noopener">
+                      Repository
+                    </a>
                     :
                     <p className="project__link project__link--inactive">Repository</p>
                   }
                   {
                     project.deployLink!=='TBC'?
-                    <a href={project.deployLink} className="project__link">Deployed Site</a>
+                    <a href={project.deployLink} className="project__link" target="_blank" rel="noreferrer noopener">
+                      Deployed Site
+                    </a>
                     :
                     <p className="project__link project__link--inactive">Deployed Site</p>
                   }

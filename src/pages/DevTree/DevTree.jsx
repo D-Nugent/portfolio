@@ -1,4 +1,4 @@
-import React, {useLayoutEffect, useState} from 'react';
+import React, {useLayoutEffect, useEffect, useState} from 'react';
 import InterestCrown from '../../components/InterestCrown/InterestCrown';
 import ProfileTrunk from '../../components/ProfileTrunk/ProfileTrunk';
 import WelcomeRoot from '../../components/WelcomeRoot/WelcomeRoot';
@@ -7,8 +7,23 @@ import IndepthBranch from '../../components/IndepthBranch/IndepthBranch';
 import ProfileIndepth from '../../components/ProfileIndepth/ProfileIndepth';
 import './DevTree.scss';
 
+const scrollPath = {
+  'Profile': () => document.querySelector('.interests').scrollIntoView({behavior:"smooth",block:'start',inline:'center'}),
+  'Experience':() => document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
+  'Education':() => document.querySelectorAll('.branch--left')[1].scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
+  'Skills': () => document.querySelector('.branch--right').scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
+  'Projects': () => document.querySelectorAll('.branch--right')[1].scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
+  'Home': () => document.querySelector('.wrapper').scrollIntoView({behavior:"smooth",block:'start',inline:'start'})
+}
+
 function DevTree({loading}) {
-const [activeSection, setActiveSection] = useState(null);
+const [activeSection, setActiveSection] = useState('Home');
+
+  useEffect(() => {
+    window.onresize = () => {
+      scrollPath[activeSection]()
+    }
+  }, [activeSection])
 
   useLayoutEffect(() => {
     setTimeout(() => {
@@ -18,14 +33,6 @@ const [activeSection, setActiveSection] = useState(null);
 
   const updateActiveBranch = (trait) => {
     setActiveSection(trait);
-    const scrollPath = {
-      'Profile': () => document.querySelector('.interests').scrollIntoView({behavior:"smooth",block:'start',inline:'center'}),
-      'Experience':() => document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
-      'Education':() => document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
-      'Skills': () => document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
-      'Projects': () => document.querySelector(`.branch--right`).scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
-      null: () => document.querySelector('.wrapper').scrollIntoView({behavior:"smooth",block:'end',inline:'end'})
-    }
     scrollPath[trait]()
   }
 
@@ -79,7 +86,7 @@ const [activeSection, setActiveSection] = useState(null);
             </div>
           </section>
         </main>
-        {activeSection===null &&
+        {activeSection==='Home' &&
           <WelcomeRoot loading={loading}/>
         }
       </div>

@@ -51,16 +51,16 @@ function ProfileTrunk({trait, updateActiveBranch, activeBranch}) {
           </address>
           <section className="profile__social">
             <div className="profile__social-icons">
-              <a href="https://www.github.com/d-nugent" className="profile__social-link">
+              <a href="https://www.github.com/d-nugent" className="profile__social-link" target="_blank" rel="noreferrer noopener">
                 <h6 className="profile__social-heading">GitHub</h6>
                 <img src={GithubIcon} alt="Github Icon" className="profile__social-icon"/>
               </a>
-              <a href="https://www.linkedin.com/in/d-nugent" className="profile__social-link">
+              <a href="https://www.linkedin.com/in/d-nugent" className="profile__social-link" target="_blank" rel="noreferrer noopener">
                 <h6 className="profile__social-heading">LinkedIn</h6>
                 <img src={LinkedInIcon} alt="LinkedIn Icon" className="profile__social-icon"/>
               </a>
               <a href="https://acumen-resume.com/user/QDnFBjYt6jZ67LCtqWftF2BxMC13/abfc0d01-ecb0-4481-b18d-fece67c776d8"
-               className="profile__social-link">
+               className="profile__social-link" target="_blank" rel="noreferrer noopener">
                 <img src={AcumenIcon} alt="Acumen Icon" className="profile__social-icon"/>
                 <h6 className="profile__social-heading">Acumen</h6>
               </a>
