@@ -143,6 +143,11 @@
 
         &-icon{
             width: 100%;
+
+            &:hover{
+                transform: translateY(-4px) rotateY(360deg);
+                transition-duration: .6s;
+            }
         }
 
         &-link {

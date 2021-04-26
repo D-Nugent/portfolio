@@ -9,7 +9,8 @@ import './DevTree.scss';
 
 const scrollPath = {
   'Profile': () => document.querySelector('.interests').scrollIntoView({behavior:"smooth",block:'start',inline:'center'}),
-  'Experience':() => document.querySelector('.branch--left').scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
+  'Experience':() => document.body.scrollLeft = document.body.scrollWidth*0.03,
+  //Experience required a different scroll control just to the conditional rendering of elements
   'Education':() => document.querySelectorAll('.branch--left')[1].scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
   'Skills': () => document.querySelector('.branch--right').scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
   'Projects': () => document.querySelectorAll('.branch--right')[1].scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),

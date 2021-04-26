@@ -25,7 +25,6 @@ function ExperienceIndepth() {
     expRangeFour: desktopQuery.matches?49:tabletQuery.matches?28:42,
     expRangeFive: desktopQuery.matches?59:tabletQuery.matches?40:48,
   }
-  /* #ToDo - Need to come back and adjust mobile query scroll rates*/
 
   return (
     <section className="experience-indepth">

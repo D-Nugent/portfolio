@@ -3,12 +3,12 @@
 .experience-indepth{
     width: 100%;
     margin: 5% 0;
-    min-height: 200vh;
+    min-height: 180vh;
 
     &__position-wrapper{
         display: flex;
         justify-content: space-between;
-        animation: experience-enter 1.3s ease-in-out forwards;
+        animation: experience-enter .8s ease-in-out forwards;
         transform-origin: left;
 
         &:nth-of-type(even){
