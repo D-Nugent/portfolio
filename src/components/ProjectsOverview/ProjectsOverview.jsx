@@ -24,7 +24,7 @@ function ProjectsOverview() {
         </p>
         <div className="projects__links">
           <a href="https://www.acumen-resume.com" className="projects__link" target="_blank" rel="noreferrer noopener">
-            Deployed Site
+            Site
           </a>
           <a href="https://github.com/D-Nugent/capstone-acumen" className="projects__link" target="_blank" rel="noreferrer noopener">
             Repository

@@ -44,10 +44,10 @@ function ProjectsIndepth() {
                   {
                     project.deployLink!=='TBC'?
                     <a href={project.deployLink} className="project__link" target="_blank" rel="noreferrer noopener">
-                      Deployed Site
+                      Site
                     </a>
                     :
-                    <p className="project__link project__link--inactive">Deployed Site</p>
+                    <p className="project__link project__link--inactive">Site</p>
                   }
                 </div>
               </article>
