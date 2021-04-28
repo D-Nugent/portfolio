@@ -54,6 +54,9 @@ function ExperienceIndepth() {
               Mentoring Junior Developers
             </li>
             <li className="experience-indepth__position-description">
+              Project Manager for Multi-Discipline Hackathon event
+            </li>
+            <li className="experience-indepth__position-description">
               Teaching the fundamentals of web development
             </li>
           </ul>

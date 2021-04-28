@@ -7,9 +7,10 @@ import IndepthBranch from '../../components/IndepthBranch/IndepthBranch';
 import ProfileIndepth from '../../components/ProfileIndepth/ProfileIndepth';
 import './DevTree.scss';
 
+const curScrollPos = Math.floor(document.body.scrollLeft/document.body.scrollWidth*100)
 const scrollPath = {
   'Profile': () => document.querySelector('.interests').scrollIntoView({behavior:"smooth",block:'start',inline:'center'}),
-  'Experience':() => document.body.scrollLeft = document.body.scrollWidth*0.03,
+  'Experience':() => curScrollPos===29?document.querySelectorAll('.branch--left')[0].scrollIntoView({behavior:"smooth",block:'end',inline:'end'}):document.body.scrollLeft = document.body.scrollWidth*0.03,
   //Experience required a different scroll control just to the conditional rendering of elements
   'Education':() => document.querySelectorAll('.branch--left')[1].scrollIntoView({behavior:"smooth",block:'end',inline:'end'}),
   'Skills': () => document.querySelector('.branch--right').scrollIntoView({behavior:"smooth",block:'end',inline:'start'}),
