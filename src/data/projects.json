@@ -21,9 +21,9 @@
     "projectName": "BeerCode",
     "status":"Planning",
     "methods":["react","sass","js","react-router"],
-    "gitHubLink":"TBC",
+    "gitHubLink":"https://github.com/D-Nugent/beercode",
     "deployLink":"TBC",
-    "description":"A website for posting my own web development tutorials in both written and video format. Built with a focus on scalability.",
+    "description":"A website for hosting and sharing my own web development tutorials in both written and video format. Built with a focus on scalability.",
     "projectID": "4258f6f8-329a-4fc7-ade1-699d453dcb7c"
   },
   {
