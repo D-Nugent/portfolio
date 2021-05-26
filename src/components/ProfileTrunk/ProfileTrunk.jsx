@@ -59,7 +59,7 @@ function ProfileTrunk({trait, updateActiveBranch, activeBranch}) {
                 <h6 className="profile__social-heading">LinkedIn</h6>
                 <img src={LinkedInIcon} alt="LinkedIn Icon" className="profile__social-icon"/>
               </a>
-              <a href="https://acumen-resume.com/user/QDnFBjYt6jZ67LCtqWftF2BxMC13/abfc0d01-ecb0-4481-b18d-fece67c776d8"
+              <a href="https://acumen-resume.com/user/QDnFBjYt6jZ67LCtqWftF2BxMC13/07c9fc01-63be-4afc-a3e1-d7ef5c68b202"
                className="profile__social-link" target="_blank" rel="noreferrer noopener">
                 <img src={AcumenIcon} alt="Acumen Icon" className="profile__social-icon"/>
                 <h6 className="profile__social-heading">Acumen</h6>
