@@ -49,9 +49,10 @@ function SkillsIndepth() {
                 </li>
                 <li className="skills-indepth__skills">React</li>
                 <li className="skills-indepth__skills">React Router</li>
-                {/* <li className="skills-indepth__skills">Redux</li> */}
+                <li className="skills-indepth__skills">Redux/ReduxToolkit</li>
                 <li className="skills-indepth__skills">nodeJS</li>
                 <li className="skills-indepth__skills">expressJS</li>
+                <li className="skills-indepth__skills">JEST</li>
                 <li className="skills-indepth__skills">MochaJS</li>
                 <li className="skills-indepth__skills">MySQL</li>
                 <li className="skills-indepth__skills">Firebase</li>

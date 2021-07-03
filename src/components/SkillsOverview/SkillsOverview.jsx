@@ -14,10 +14,12 @@ function SkillsOverview() {
           <li className="skills__list-item">JavaScript</li>
           <li className="skills__list-item">React</li>
           <li className="skills__list-item">React Router</li>
+          <li className="skills__list-item">Redux/ReduxToolkit</li>
           <li className="skills__list-item">Git</li>
           <li className="skills__list-item">nodeJS</li>
           <li className="skills__list-item">expressJS</li>
           <li className="skills__list-item">MochaJS</li>
+          <li className="skills__list-item">JEST</li>
           <li className="skills__list-item">Firebase</li>
           <li className="skills__list-item">MySQL</li>
         </ul>
