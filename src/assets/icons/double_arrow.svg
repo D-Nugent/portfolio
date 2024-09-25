@@ -1,76 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   enable-background="new 0 0 24 24"
-   viewBox="0 0 24 24"
-   fill="black"
-   width="18px"
-   height="18px"
-   version="1.1"
-   id="svg14"
-   sodipodi:docname="double_arrow.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
-  <metadata
-     id="metadata20">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs18" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     id="namedview16"
-     showgrid="false"
-     inkscape:zoom="29.888889"
-     inkscape:cx="9"
-     inkscape:cy="9"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg14" />
-  <g
-     id="g4">
-    <rect
-       fill="none"
-       height="24"
-       width="24"
-       id="rect2" />
-  </g>
-  <g
-     id="g12"
-     style="fill:#e1b382;fill-opacity:1">
-    <g
-       id="g10"
-       style="fill:#e1b382;fill-opacity:1">
-      <polygon
-         points="15.5,5 11,5 16,12 11,19 15.5,19 20.5,12"
-         id="polygon6"
-         style="fill:#e1b382;fill-opacity:1" />
-      <polygon
-         points="8.5,5 4,5 9,12 4,19 8.5,19 13.5,12"
-         id="polygon8"
-         style="fill:#e1b382;fill-opacity:1" />
-    </g>
-  </g>
+<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1494_4820)">
+<path d="M11.625 3.75H8.25L12 9L8.25 14.25H11.625L15.375 9L11.625 3.75Z" fill="#E1B382"/>
+<path d="M6.375 3.75H3L6.75 9L3 14.25H6.375L10.125 9L6.375 3.75Z" fill="#E1B382"/>
+</g>
+<defs>
+<clipPath id="clip0_1494_4820">
+<rect width="18" height="18" fill="white"/>
+</clipPath>
+</defs>
 </svg>
