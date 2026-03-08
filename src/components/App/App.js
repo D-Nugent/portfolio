@@ -10,17 +10,16 @@ function App () {
   const [showUpdateNotice, setShowUpdateNotice] = useState(false);
 
   useEffect(() => {
-    // Check if user has seen the update notice before
-    const hasSeenNotice = localStorage.getItem('hasSeenUpdateNotice');
-    if (!hasSeenNotice) {
-      setShowUpdateNotice(true);
-    }
-
     setTimeout(() => {
       document.querySelector('.wrapper').scrollIntoView({behavior:'auto',block:'end',inline:'end'});
     }, 7000);
     setTimeout(() => {
       setLoading(false);
+      // Show update notice modal after loading completes
+      const hasSeenNotice = localStorage.getItem('hasSeenUpdateNotice');
+      if (!hasSeenNotice) {
+        setShowUpdateNotice(true);
+      }
     }, 9000);
   }, [])
 
