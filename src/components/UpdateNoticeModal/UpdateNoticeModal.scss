@@ -26,11 +26,6 @@
     gap: 2rem;
 
     @include large-mobile-adapt {
-      padding: 2rem;
-      max-width: 500px;
-    }
-
-    @include mobile-adapt {
       padding: 1.5rem;
       max-width: 90%;
     }
@@ -38,7 +33,7 @@
 
   &__message {
     color: $text-offset-color;
-    font-family: $raleway-font;
+    font-family: 'Raleway', 'Ubuntu', 'Calibri', 'Verdana', sans-serif;
     line-height: 1.6;
 
     p {
@@ -88,7 +83,7 @@
     padding: 0.875rem 2rem;
     font-size: 1rem;
     font-weight: 600;
-    font-family: $raleway-font;
+    font-family: 'Raleway', 'Ubuntu', 'Calibri', 'Verdana', sans-serif;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
