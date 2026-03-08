@@ -1,0 +1,142 @@
+@use '../../styles/global' as *;
+
+.update-notice-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+
+  &__content {
+    background-color: $slate-primary-color;
+    padding: 2.5rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: slideIn 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include large-mobile-adapt {
+      padding: 2rem;
+      max-width: 500px;
+    }
+
+    @include mobile-adapt {
+      padding: 1.5rem;
+      max-width: 90%;
+    }
+  }
+
+  &__message {
+    color: $text-offset-color;
+    font-family: $raleway-font;
+    line-height: 1.6;
+
+    p {
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  &__greeting {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem !important;
+  }
+
+  &__body {
+    font-size: 1rem;
+    color: $text-offset-color;
+    margin-bottom: 1.5rem !important;
+  }
+
+  &__link {
+    color: $desert-primary-color;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: lighten($desert-primary-color, 10%);
+      text-decoration: underline;
+    }
+  }
+
+  &__signature {
+    font-size: 1rem;
+    margin-bottom: 0.25rem !important;
+  }
+
+  &__name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0 !important;
+  }
+
+  &__button {
+    background-color: $desert-primary-color;
+    color: $slate-primary-color;
+    border: none;
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: $raleway-font;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+
+    &:hover {
+      background-color: lighten($desert-primary-color, 10%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba($desert-primary-color, 0.3);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+
+    &:focus {
+      outline: 2px solid $desert-primary-color;
+      outline-offset: 2px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .update-notice-modal {
+    animation: none;
+    
+    &__content {
+      animation: none;
+    }
+  }
+}
