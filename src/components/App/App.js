@@ -3,9 +3,11 @@ import React, {useState, useEffect} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import DevTree from '../../pages/DevTree/DevTree';
 import LoadingSeed from '../LoadingSeed/LoadingSeed';
+import UpdateNoticeModal from '../UpdateNoticeModal/UpdateNoticeModal';
 
 function App () {
   const [loading,setLoading] = useState(true);
+  const [showUpdateNotice, setShowUpdateNotice] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -13,8 +15,18 @@ function App () {
     }, 7000);
     setTimeout(() => {
       setLoading(false);
+      // Show update notice modal after loading completes
+      const hasSeenNotice = localStorage.getItem('hasSeenUpdateNotice');
+      if (!hasSeenNotice) {
+        setShowUpdateNotice(true);
+      }
     }, 9000);
   }, [])
+
+  const handleCloseUpdateNotice = () => {
+    localStorage.setItem('hasSeenUpdateNotice', 'true');
+    setShowUpdateNotice(false);
+  };
 
     return (
       <div className="app">
@@ -23,6 +35,10 @@ function App () {
             <DevTree {...routeProps} loading={loading}/>}/>
         </Switch>
         {loading===true && <LoadingSeed/>}
+        <UpdateNoticeModal 
+          isOpen={showUpdateNotice} 
+          onClose={handleCloseUpdateNotice} 
+        />
       </div>
     );
   }
