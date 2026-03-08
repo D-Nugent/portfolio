@@ -21,10 +21,16 @@ const UpdateNoticeModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="update-notice-modal" onClick={onClose}>
+    <div 
+      className="update-notice-modal" 
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-greeting"
+    >
       <div className="update-notice-modal__content" onClick={(e) => e.stopPropagation()}>
         <div className="update-notice-modal__message">
-          <p className="update-notice-modal__greeting">Hi there,</p>
+          <p className="update-notice-modal__greeting" id="modal-greeting">Hi there,</p>
           <p className="update-notice-modal__body">
             Looks like you're visiting while I'm in the process of updating my portfolio website. 
             While you can expect great things soon, in the meantime feel free to check out my{' '}

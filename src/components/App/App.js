@@ -11,13 +11,10 @@ function App () {
 
   useEffect(() => {
     // Check if user has seen the update notice before
-    // Defer modal display to avoid layout thrashing with loading animations
-    requestAnimationFrame(() => {
-      const hasSeenNotice = localStorage.getItem('hasSeenUpdateNotice');
-      if (!hasSeenNotice) {
-        setShowUpdateNotice(true);
-      }
-    });
+    const hasSeenNotice = localStorage.getItem('hasSeenUpdateNotice');
+    if (!hasSeenNotice) {
+      setShowUpdateNotice(true);
+    }
 
     setTimeout(() => {
       document.querySelector('.wrapper').scrollIntoView({behavior:'auto',block:'end',inline:'end'});
